@@ -81,23 +81,25 @@ const smtpServer = new SMTPServer({
             parsedWithoutAttachments.html = parsedWithoutAttachments.textAsHtml;
          }
          logger.info({sessionInfo: session, parsedMailInfo: parsedMail}, "SMTPServer.onData.simpleParser: make directory for session.id" + session.id);
-         fs.mkdirSync(session.id);
+         let dateNowUtc = (new Date()).toISOString();
+         let mailDirectory = dateNowUtc + "_" + session.id;
+         fs.mkdirSync(mailDirectory);
 
          logger.info({sessionInfo: session, parsedMailInfo: parsedMail}, "SMTPServer.onData.simpleParser: write JSON file");
-         fs.writeFileSync(session.id + "/" + session.id + ".json", JSON.stringify(parsedWithoutAttachments));
+         fs.writeFileSync(mailDirectory + "/" + session.id + ".json", JSON.stringify(parsedWithoutAttachments));
 
          logger.info({sessionInfo: session, parsedMailInfo: parsedMail}, "SMTPServer.onData.simpleParser: write HTML file");
-         fs.writeFileSync(session.id + "/" + session.id + ".html", parsedWithoutAttachments.html);
+         fs.writeFileSync(mailDirectory + "/" + session.id + ".html", parsedWithoutAttachments.html);
 
          parsedMail.attachments.forEach(attachment => {
             logger.info({sessionInfo: session, parsedMailInfo: parsedMail}, "SMTPServer.onData.simpleParser: write attachment: " + attachment.filename);
-            fs.writeFileSync(session.id + "/" + attachment.filename, attachment.content);
+            fs.writeFileSync(mailDirectory + "/" + attachment.filename, attachment.content);
          });
 
          // publish sessionId via MQTT
          if (mqttClientConnected) {
             let topic = "/" + session.clientHostname;
-            let playload = JSON.stringify({topic: topic, sessionId: session.id});
+            let playload = JSON.stringify({topic: topic, mailDirectory: mailDirectory, sessionId: session.id});
             logger.info({topic: topic, payload: playload }, "Publish to MQTT with topic " + topic);
             mqttClient.publish(topic, JSON.stringify(playload));
          }
