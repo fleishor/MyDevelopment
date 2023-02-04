@@ -139,7 +139,7 @@ const smtpServer = new SMTPServer({
             let topic = "/" + mqttPrefix + "/" + mqttDevice + "/" + mqttSubDevice;
             let playload = JSON.stringify({
                   topic: topic,
-                  mqttPrefix: "smtp2mqtt", 
+                  mqttPrefix: mqttPrefix, 
                   mqttDevice: mqttDevice,
                   mqttSubDevice: mqttSubDevice,
                   mailDirectory: mailDirectory, 

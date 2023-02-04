@@ -7,7 +7,7 @@ import mqtt from "mqtt";
 
 const expressApp = express();
 const expressPort = 3001;
-const expressRoute = "/Grafana/*";
+const grafanaRoute = "/Grafana/*";
 const mqttBroker = "mqtt://docker.fritz.box";
 const mqttClientId = "webhook2mqtt";
 
@@ -44,23 +44,34 @@ let mqttClientConnected = false;
 const mqttClient = mqtt.connect(mqttBroker, { clientId: mqttClientId });
 
 // Handle POST request for /Grafana/*
-expressApp.post(expressRoute, (req, res) => {
+expressApp.post(grafanaRoute, (request, response) => {
    // generate new uuid
    loggerUuid = uuidv4();
-   logger.info(`Received POST requst for url "${req.path}"`, {
-      request_path: req.path,
-      request_body: req.body,
+   logger.info(`Received POST requst for url "${request.path}"`, {
+      request_path: request.path,
+      request_body: request.body,
    });
+   let grafanaAlert = request.body;
 
    // forward POST request to MQTT
    if (mqttClientConnected) {
-      let topic = req.path;
-      let playload = JSON.stringify({topic: topic, payload: req.body});
+      let mqttPrefix = "webhook2mqtt";
+      let mqttWebHook = "Grafana";
+      let mqttAlertName = grafanaAlert.commonLabels.alertname;
+      let topic = "/" + mqttPrefix + "/" + mqttWebHook + "/" + mqttAlertName;
+      let playload = JSON.stringify({
+         topic: topic, 
+         mqttPrefix: mqttPrefix, 
+         mqttWebHook: mqttWebHook,
+         mqttAlertName: mqttAlertName,
+         path: request.path,
+         payload: request.body
+      });
 
-      logger.info("Publish to MQTT with topic " + topic), {topic: topic, payload: playload };
+      logger.info("Publish to MQTT with topic " + topic, {topic: topic, payload: playload });
       mqttClient.publish(topic, JSON.stringify(playload));
    }
-   res.end();
+   response.end();
    loggerUuid = null;
 });
 
