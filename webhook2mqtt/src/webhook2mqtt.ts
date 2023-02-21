@@ -69,7 +69,7 @@ expressApp.post(grafanaRoute, (request, response) => {
       });
 
       logger.info("Publish to MQTT with topic " + topic, {topic: topic, payload: playload });
-      mqttClient.publish(topic, JSON.stringify(playload));
+      mqttClient.publish(topic, playload);
    }
    response.end();
    loggerUuid = null;

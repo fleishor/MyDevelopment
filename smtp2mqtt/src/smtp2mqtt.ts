@@ -147,7 +147,7 @@ const smtpServer = new SMTPServer({
                   clientHostname: session.clientHostname
                });
             logger.info({topic: topic, payload: playload }, "Publish to MQTT with topic " + topic);
-            mqttClient.publish(topic, JSON.stringify(playload));
+            mqttClient.publish(topic, playload);
          }
 
          logger.info({sessionInfo: session, parsedMailInfo: parsedMail}, "SMTPServer.onData.simpleParser: done");
