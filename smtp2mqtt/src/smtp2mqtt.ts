@@ -1,18 +1,8 @@
-const { SMTPServer } = require("smtp-server");
-const { simpleParser } = require("mailparser");
+import { SMTPServer } from "smtp-server";
+import { simpleParser } from "mailparser";
 import mqtt from "mqtt";
 import fs from "fs";
 import bunyan from "bunyan";
-
-function mapToObj(inputMap) {
-   let obj = {};
-
-   inputMap.forEach(function (value, key) {
-      obj[key] = value;
-   });
-
-   return obj;
-}
 
 function sessionInfoSerializer(sessionInfo) {
    return {
@@ -30,7 +20,7 @@ function parsedMailInfoSerializer(parsedMailInfo) {
    };
 }
 
-var logger = bunyan.createLogger({
+const logger = bunyan.createLogger({
    name: "smtp2mqtt",
    level: "debug",
    serializers: {
@@ -74,9 +64,8 @@ const smtpServer = new SMTPServer({
          logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: parsed email with subject: " + parsedMail.subject);
 
          // Parsed mail without attachments
-         var parsedMailWithoutAttachments = Object.assign({}, parsedMail);
+         const parsedMailWithoutAttachments = Object.assign({}, parsedMail);
          delete parsedMailWithoutAttachments.attachments;
-         // parsedMailWithoutAttachments.headers = mapToObj(parsedMail.headers);
          parsedMailWithoutAttachments.clientHostname = session.clientHostname;
          if (!parsedMailWithoutAttachments.html) {
             logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: replace html with textAsHtml");
@@ -85,8 +74,8 @@ const smtpServer = new SMTPServer({
 
          // Create directory for writing mail
          logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: make directory for session.id" + session.id);
-         let dateNowUtc = new Date().toISOString();
-         let mailDirectory = dateNowUtc + "_" + session.id;
+         const dateNowUtc = new Date().toISOString();
+         const mailDirectory = dateNowUtc + "_" + session.id;
          fs.mkdirSync(mailDirectory);
 
          // Write email as JSON
@@ -105,7 +94,7 @@ const smtpServer = new SMTPServer({
 
          // Publish sessionId via MQTT
          if (mqttClientConnected) {
-            let mqttPrefix = "smtp2mqtt";
+            const mqttPrefix = "smtp2mqtt";
             let mqttDevice = parsedMail.from.value["0"].name;
             if (!mqttDevice) {
                mqttDevice = session.clientHostname.replace(".fritz.box", "");
@@ -124,8 +113,8 @@ const smtpServer = new SMTPServer({
                mqttSubDevice = "Wintergarten";
             }
 
-            let topic = "/" + mqttPrefix + "/" + mqttDevice + "/" + mqttSubDevice;
-            let mqttPayload = JSON.stringify({
+            const topic = "/" + mqttPrefix + "/" + mqttDevice + "/" + mqttSubDevice;
+            const mqttPayload = JSON.stringify({
                topic: topic,
                mqttPrefix: mqttPrefix,
                mqttDevice: mqttDevice,
@@ -134,7 +123,7 @@ const smtpServer = new SMTPServer({
                sessionId: session.id,
                clientHostname: session.clientHostname,
             });
-            logger.info({ topic: topic, payload: mqttPayload }, "Publish to MQTT with topic " + topic);
+            logger.info({ topic: topic, mqttPayload: mqttPayload }, "Publish to MQTT with topic " + topic);
             mqttClient.publish(topic, mqttPayload);
          }
 

@@ -35,6 +35,7 @@ expressApp.use(expressLogger);
 expressApp.use(bodyParser.urlencoded({ extended: false }));
 expressApp.use(bodyParser.json());
 expressApp.use(expressErrorLogger);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 expressApp.use(function (err, req, res, next) {
    res.status(500).send("Internal Error");
 });
@@ -51,24 +52,24 @@ expressApp.post(grafanaRoute, (request, response) => {
       request_path: request.path,
       request_body: request.body,
    });
-   let grafanaAlert = request.body;
+   const grafanaAlert = request.body;
 
    // forward POST request to MQTT
    if (mqttClientConnected) {
-      let mqttPrefix = "webhook2mqtt";
-      let mqttWebHook = "Grafana";
-      let mqttAlertName = grafanaAlert.commonLabels.alertname;
-      let topic = "/" + mqttPrefix + "/" + mqttWebHook + "/" + mqttAlertName;
-      let mqttPayload = JSON.stringify({
+      const mqttPrefix = "webhook2mqtt";
+      const mqttWebHook = "Grafana";
+      const mqttAlertName = grafanaAlert.commonLabels.alertname;
+      const topic = "/" + mqttPrefix + "/" + mqttWebHook + "/" + mqttAlertName;
+      const mqttPayload = JSON.stringify({
          topic: topic,
          mqttPrefix: mqttPrefix,
          mqttWebHook: mqttWebHook,
          mqttAlertName: mqttAlertName,
          path: request.path,
-         webhookBody: request.body,
+         payload: request.body,
       });
 
-      logger.info("Publish to MQTT with topic " + topic, { topic: topic, mqttPlayload: mqttPayload });
+      logger.info("Publish to MQTT with topic " + topic, { topic: topic, payload: mqttPayload });
       mqttClient.publish(topic, mqttPayload);
    }
    response.end();
