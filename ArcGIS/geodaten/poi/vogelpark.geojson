@@ -1,0 +1,258 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.433045,
+          48.446369
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Vogelpark Greifvogelpark Konzenberg</b></p><br/>Sandbergstraße 15 <br/>89356 Haldenwang, Kr Günzburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://greifenzucht.de/\" target=\"_blank\">Vogelpark Greifvogelpark Konzenberg</a>",
+        "Name": "Vogelpark Greifvogelpark Konzenberg",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "10.433045",
+        "hw_wgs84": "48.446369",
+        "adresse_strasse": "Sandbergstraße 15 ",
+        "adresse_ort": "89356 Haldenwang, Kr Günzburg",
+        "url": "https://greifenzucht.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.51958,
+          49.579658
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Vogelpark Eslarn</b></p><br/>Brennerstraße  <br/>92693 Eslarn<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.eslarn.de/default.asp?SID=N1ALN1AM3&pNav=V\" target=\"_blank\">Vogelpark Eslarn</a>",
+        "Name": "Vogelpark Eslarn",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "12.519580",
+        "hw_wgs84": "49.579658",
+        "adresse_strasse": "Brennerstraße  ",
+        "adresse_ort": "92693 Eslarn",
+        "url": "https://www.eslarn.de/default.asp?SID=N1ALN1AM3&pNav=V"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.257872,
+          49.289724
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Falknerei Fürstlicher Falkenhof Schloss Schillingsfürst</b></p><br/>Am Wall 14 <br/>91583 Schillingsfürst, Mittelfr<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.falkenhof-schillingsfuerst.de/\" target=\"_blank\">Falknerei Fürstlicher Falkenhof Schloss Schillingsfürst</a>",
+        "Name": "Falknerei Fürstlicher Falkenhof Schloss Schillingsfürst",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "10.257872",
+        "hw_wgs84": "49.289724",
+        "adresse_strasse": "Am Wall 14 ",
+        "adresse_ort": "91583 Schillingsfürst, Mittelfr",
+        "url": "http://www.falkenhof-schillingsfuerst.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.370444,
+          49.824018
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Falknerei Burg Rabenstein</b></p><br/>Rabenstein 33 <br/>95491 Ahorntal<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.falknerei-rabenstein.de/\" target=\"_blank\">Falknerei Burg Rabenstein</a>",
+        "Name": "Falknerei Burg Rabenstein",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "11.370444",
+        "hw_wgs84": "49.824018",
+        "adresse_strasse": "Rabenstein 33 ",
+        "adresse_ort": "95491 Ahorntal",
+        "url": "http://www.falknerei-rabenstein.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.048539,
+          47.633245
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Adlergehege Berchtesgaden</b></p><br/>Hintereck 9 <br/>83471 Berchtesgaden<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://adlergehege-berchtesgaden.de/?page_id=2\" target=\"_blank\">Adlergehege Berchtesgaden</a>",
+        "Name": "Adlergehege Berchtesgaden",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "13.048539",
+        "hw_wgs84": "47.633245",
+        "adresse_strasse": "Hintereck 9 ",
+        "adresse_ort": "83471 Berchtesgaden",
+        "url": "https://adlergehege-berchtesgaden.de/?page_id=2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.009622,
+          50.032308
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Falknerei Katharinenberg</b></p><br/>Am Katharinenberg 1 <br/>95632 Wunsiedel<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.falknerei-katharinenberg.de/kontakt\" target=\"_blank\">Falknerei Katharinenberg</a>",
+        "Name": "Falknerei Katharinenberg",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "12.009622",
+        "hw_wgs84": "50.032308",
+        "adresse_strasse": "Am Katharinenberg 1 ",
+        "adresse_ort": "95632 Wunsiedel",
+        "url": "http://www.falknerei-katharinenberg.de/kontakt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.320909,
+          48.208329
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Vogelpark Olching</b></p><br/>Toni-März-Straße 1 <br/>82140 Olching<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.vogelpark-olching.de/\" target=\"_blank\">Vogelpark Olching</a>",
+        "Name": "Vogelpark Olching",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "11.320909",
+        "hw_wgs84": "48.208329",
+        "adresse_strasse": "Toni-März-Straße 1 ",
+        "adresse_ort": "82140 Olching",
+        "url": "https://www.vogelpark-olching.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.678757,
+          48.960544
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Falknerei Falkenhof Schloss Rosenburg</b></p><br/>Schloßweg  <br/>93339 Riedenburg, Altmühltal<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.falkenhof-rosenburg.de/\" target=\"_blank\">Falknerei Falkenhof Schloss Rosenburg</a>",
+        "Name": "Falknerei Falkenhof Schloss Rosenburg",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "11.678757",
+        "hw_wgs84": "48.960544",
+        "adresse_strasse": "Schloßweg  ",
+        "adresse_ort": "93339 Riedenburg, Altmühltal",
+        "url": "https://www.falkenhof-rosenburg.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.867342,
+          49.192737
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Greifvogelpark Grafenwiesen</b></p><br/>Feßmannsdorf 31 <br/>93479 Grafenwiesen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.greifvogelpark-grafenwiesen.de/\" target=\"_blank\">Greifvogelpark Grafenwiesen</a>",
+        "Name": "Greifvogelpark Grafenwiesen",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "12.867342",
+        "hw_wgs84": "49.192737",
+        "adresse_strasse": "Feßmannsdorf 31 ",
+        "adresse_ort": "93479 Grafenwiesen",
+        "url": "https://www.greifvogelpark-grafenwiesen.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.825026,
+          48.804971
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Vogelpark und Tierpark Abensberg</b></p><br/>Welschenbach 3 <br/>93326 Abensberg, Hallertau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.vogelpark-abensberg.de/\" target=\"_blank\">Vogelpark und Tierpark Abensberg</a>",
+        "Name": "Vogelpark und Tierpark Abensberg",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "11.825026",
+        "hw_wgs84": "48.804971",
+        "adresse_strasse": "Welschenbach 3 ",
+        "adresse_ort": "93326 Abensberg, Hallertau",
+        "url": "http://www.vogelpark-abensberg.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.321433,
+          47.764944
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-1e6dc19d",
+        "description": "<p><b>Falknerei Burg Hohenaschau</b></p><br/>Schloßbergstraße  <br/>83229 Aschau i. Chiemgau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.falknerei-burghohenaschau.de/\" target=\"_blank\">Falknerei Burg Hohenaschau</a>",
+        "Name": "Falknerei Burg Hohenaschau",
+        "objektart": "Vogelpark",
+        "art": "",
+        "rw_wgs84": "12.321433",
+        "hw_wgs84": "47.764944",
+        "adresse_strasse": "Schloßbergstraße  ",
+        "adresse_ort": "83229 Aschau i. Chiemgau",
+        "url": "https://www.falknerei-burghohenaschau.de/"
+      }
+    }
+  ]
+}

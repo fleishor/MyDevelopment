@@ -1,0 +1,1953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+	xmlns:gx="http://www.google.com/kml/ext/2.2"
+	xmlns:kml="http://www.opengis.net/kml/2.2"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/kml/2.2         http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd         http://www.google.com/kml/ext/2.2         https://developers.google.com/kml/schema/kml22gx.xsd         http://www.w3.org/2005/Atom         http://schemas.opengis.net/kml/2.2.0/atom-author-link.xsd">
+	<Document id="root_doc">
+		<Schema name="wildgehege" id="wildgehege">
+			<SimpleField name="Name" type="string"></SimpleField>
+			<SimpleField name="objektart" type="string"></SimpleField>
+			<SimpleField name="art" type="string"></SimpleField>
+			<SimpleField name="rw_wgs84" type="float"></SimpleField>
+			<SimpleField name="hw_wgs84" type="float"></SimpleField>
+			<SimpleField name="adresse_strasse" type="string"></SimpleField>
+			<SimpleField name="adresse_ort" type="string"/>
+			<SimpleField name="url" type="string"></SimpleField>
+		</Schema>
+		<Folder>
+			<name>Wildgehege</name>
+			<Style id="Icon">
+				<IconStyle>
+					<color>ffffffff</color>
+					<Icon>
+						<href>http://www.geodaten.bayern.de/ba-data/Themen/icons/wildgehege-pik.png</href>
+					</Icon>
+				</IconStyle>
+			</Style>
+
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Hirschpark Buchet&lt;/b&gt;&lt;/p&gt;Buchet 2 &lt;br/&gt;94505 Bernried, Niederbay&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildberghof-buchet.de" target="_blank"&gt;Hirschpark Buchet&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Hirschpark Buchet</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.921313</SimpleData>
+						<SimpleData name="hw_wgs84">48.925980</SimpleData>
+						<SimpleData name="adresse_strasse">Buchet 2 </SimpleData>
+						<SimpleData name="adresse_ort">94505 Bernried, Niederbay</SimpleData>
+						<SimpleData name="url">http://www.wildberghof-buchet.de</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.921313,48.925980</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Hohenlindener Sauschütte  &lt;br/&gt;85664 Hohenlinden&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.baysf.de/de/wald-erkunden/ausflugsziele-tipps/die-hohenlinder-sauschuett-im-ebersberger-forst.html" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.971108</SimpleData>
+						<SimpleData name="hw_wgs84">48.134703</SimpleData>
+						<SimpleData name="adresse_strasse">Hohenlindener Sauschütte  </SimpleData>
+						<SimpleData name="adresse_ort">85664 Hohenlinden</SimpleData>
+						<SimpleData name="url">https://www.baysf.de/de/wald-erkunden/ausflugsziele-tipps/die-hohenlinder-sauschuett-im-ebersberger-forst.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.971108,48.134703</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Kühedorf&lt;/b&gt;&lt;/p&gt;91186 Büchenbach, Mittelfr&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.kreis-rh.de/desktopdefault.aspx/tabid-107/199_read-18371/" target="_blank"&gt;Wildgehege Kühedorf&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Kühedorf</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.013682</SimpleData>
+						<SimpleData name="hw_wgs84">49.276944</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">91186 Büchenbach, Mittelfr</SimpleData>
+						<SimpleData name="url">http://www.kreis-rh.de/desktopdefault.aspx/tabid-107/199_read-18371/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.013682,49.276944</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Rotwildgehege&lt;/b&gt;&lt;/p&gt;Katharinenberg 1 &lt;br/&gt;95632 Wunsiedel&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Rotwildgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.013412</SimpleData>
+						<SimpleData name="hw_wgs84">50.035736</SimpleData>
+						<SimpleData name="adresse_strasse">Katharinenberg 1 </SimpleData>
+						<SimpleData name="adresse_ort">95632 Wunsiedel</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.013412,50.035736</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Pfrentschweiher&lt;/b&gt;&lt;/p&gt;92693 Eslarn&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.baysg.bayern.de/zentren/almesbach/247785/index.php" target="_blank"&gt;Wildgehege Pfrentschweiher&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Pfrentschweiher</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.525964</SimpleData>
+						<SimpleData name="hw_wgs84">49.620176</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92693 Eslarn</SimpleData>
+						<SimpleData name="url">https://www.baysg.bayern.de/zentren/almesbach/247785/index.php</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.525964,49.620176</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Heinzhof 5 &lt;br/&gt;92289 Ursensollen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.waldschaenke-heinzhof.de" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.784748</SimpleData>
+						<SimpleData name="hw_wgs84">49.365231</SimpleData>
+						<SimpleData name="adresse_strasse">Heinzhof 5 </SimpleData>
+						<SimpleData name="adresse_ort">92289 Ursensollen</SimpleData>
+						<SimpleData name="url">http://www.waldschaenke-heinzhof.de</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.784748,49.365231</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Zum Vogelsang  &lt;br/&gt;90768 Fürth, Bay&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.funpark-zirndorf.de/wildschweingehege-stadtwald-fuerth-zirndorf/" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.945227</SimpleData>
+						<SimpleData name="hw_wgs84">49.463746</SimpleData>
+						<SimpleData name="adresse_strasse">Zum Vogelsang  </SimpleData>
+						<SimpleData name="adresse_ort">90768 Fürth, Bay</SimpleData>
+						<SimpleData name="url">https://www.funpark-zirndorf.de/wildschweingehege-stadtwald-fuerth-zirndorf/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.945227,49.463746</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>91052 Erlangen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.baysf.de/index.php?id=778" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.036699</SimpleData>
+						<SimpleData name="hw_wgs84">49.586977</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">91052 Erlangen</SimpleData>
+						<SimpleData name="url">http://www.baysf.de/index.php?id=778</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.036699,49.586977</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege&lt;/b&gt;&lt;/p&gt;Perchtoldsdorfer Straße  &lt;br/&gt;86609 Donauwörth&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.donauwoerth.de" target="_blank"&gt;Wildgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.790953</SimpleData>
+						<SimpleData name="hw_wgs84">48.744420</SimpleData>
+						<SimpleData name="adresse_strasse">Perchtoldsdorfer Straße  </SimpleData>
+						<SimpleData name="adresse_ort">86609 Donauwörth</SimpleData>
+						<SimpleData name="url">http://www.donauwoerth.de</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.790953,48.744420</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Halmstein  &lt;br/&gt;94094 Malching, Niederbay&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.154424</SimpleData>
+						<SimpleData name="hw_wgs84">48.336080</SimpleData>
+						<SimpleData name="adresse_strasse">Halmstein  </SimpleData>
+						<SimpleData name="adresse_ort">94094 Malching, Niederbay</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.154424,48.336080</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Rotwildgehege Scheuereck&lt;/b&gt;&lt;/p&gt;Scheuereck  &lt;br/&gt;94227 Lindberg, Kr Regen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.bayerischer-wald.de/Media/Attraktionen/Rothirschgehege-in-Scheuereck" target="_blank"&gt;Rotwildgehege Scheuereck&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Rotwildgehege Scheuereck</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.303245</SimpleData>
+						<SimpleData name="hw_wgs84">49.062112</SimpleData>
+						<SimpleData name="adresse_strasse">Scheuereck  </SimpleData>
+						<SimpleData name="adresse_ort">94227 Lindberg, Kr Regen</SimpleData>
+						<SimpleData name="url">https://www.bayerischer-wald.de/Media/Attraktionen/Rothirschgehege-in-Scheuereck</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.303245,49.062112</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Bächlesgrund&lt;/b&gt;&lt;/p&gt;63869 Heigenbrücken&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.heigenbruecken.de/freizeitanlage-baechlesgrund" target="_blank"&gt;Wildgehege Bächlesgrund&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Bächlesgrund</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">9.387887</SimpleData>
+						<SimpleData name="hw_wgs84">50.025527</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">63869 Heigenbrücken</SimpleData>
+						<SimpleData name="url">http://www.heigenbruecken.de/freizeitanlage-baechlesgrund</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>9.387887,50.025527</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Krönau  &lt;br/&gt;82383 Hohenpeißenberg&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.018278</SimpleData>
+						<SimpleData name="hw_wgs84">47.818070</SimpleData>
+						<SimpleData name="adresse_strasse">Krönau  </SimpleData>
+						<SimpleData name="adresse_ort">82383 Hohenpeißenberg</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.018278,47.818070</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>84034 Landshut, Isar&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.044342</SimpleData>
+						<SimpleData name="hw_wgs84">48.516565</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">84034 Landshut, Isar</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.044342,48.516565</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92723 Gleiritsch&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.330590</SimpleData>
+						<SimpleData name="hw_wgs84">49.494466</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92723 Gleiritsch</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.330590,49.494466</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>93149 Nittenau&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.250697</SimpleData>
+						<SimpleData name="hw_wgs84">49.179966</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">93149 Nittenau</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.250697,49.179966</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>86836 Obermeitingen&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.806490</SimpleData>
+						<SimpleData name="hw_wgs84">48.137931</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">86836 Obermeitingen</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.806490,48.137931</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92690 Pressath&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.978201</SimpleData>
+						<SimpleData name="hw_wgs84">49.811110</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92690 Pressath</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.978201,49.811110</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>93077 Bad Abbach&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.bad-abbach.de/de/kultur-freizeit/kultur/freizeit/tiergehege/" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.032941</SimpleData>
+						<SimpleData name="hw_wgs84">48.929445</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">93077 Bad Abbach</SimpleData>
+						<SimpleData name="url">https://www.bad-abbach.de/de/kultur-freizeit/kultur/freizeit/tiergehege/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.032941,48.929445</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Faberhof&lt;/b&gt;&lt;/p&gt;Straßmühle 21 &lt;br/&gt;90602 Pyrbaum&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.faberhof.com/wald-wild-genuss-nuernberg-pyrbaum.html" target="_blank"&gt;Wildgehege Faberhof&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Faberhof</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.211778</SimpleData>
+						<SimpleData name="hw_wgs84">49.292401</SimpleData>
+						<SimpleData name="adresse_strasse">Straßmühle 21 </SimpleData>
+						<SimpleData name="adresse_ort">90602 Pyrbaum</SimpleData>
+						<SimpleData name="url">http://www.faberhof.com/wald-wild-genuss-nuernberg-pyrbaum.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.211778,49.292401</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>85435 Erding&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.ednetz.de/freizeit/stadtpark-erding.html" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.904775</SimpleData>
+						<SimpleData name="hw_wgs84">48.297710</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">85435 Erding</SimpleData>
+						<SimpleData name="url">https://www.ednetz.de/freizeit/stadtpark-erding.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.904775,48.297710</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Scheidlerhof&lt;/b&gt;&lt;/p&gt;Harlesberg 4 &lt;br/&gt;92637 Theisseil&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.scheidlerhof.de/scheidlerhof" target="_blank"&gt;Scheidlerhof&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Scheidlerhof</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.180994</SimpleData>
+						<SimpleData name="hw_wgs84">49.714822</SimpleData>
+						<SimpleData name="adresse_strasse">Harlesberg 4 </SimpleData>
+						<SimpleData name="adresse_ort">92637 Theisseil</SimpleData>
+						<SimpleData name="url">https://www.scheidlerhof.de/scheidlerhof</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.180994,49.714822</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Rotwildgehege Stadtwald Fürth&lt;/b&gt;&lt;/p&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.stadtwald.fuerth.de/wald-wild-erlebnispfad" target="_blank"&gt;Rotwildgehege Stadtwald Fürth&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Rotwildgehege Stadtwald Fürth</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.911351</SimpleData>
+						<SimpleData name="hw_wgs84">49.474935</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort"></SimpleData>
+						<SimpleData name="url">https://www.stadtwald.fuerth.de/wald-wild-erlebnispfad</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.911351,49.474935</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildschweingehege&lt;/b&gt;&lt;/p&gt;94556 Neuschönau&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm" target="_blank"&gt;Wildschweingehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildschweingehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.477445</SimpleData>
+						<SimpleData name="hw_wgs84">48.904507</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94556 Neuschönau</SimpleData>
+						<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.477445,48.904507</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>91555 Feuchtwangen&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.292437</SimpleData>
+						<SimpleData name="hw_wgs84">49.208356</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">91555 Feuchtwangen</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.292437,49.208356</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>95519 Vorbach, Oberpf&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.742361</SimpleData>
+						<SimpleData name="hw_wgs84">49.814407</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">95519 Vorbach, Oberpf</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.742361,49.814407</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Straußengehege Mitterhof&lt;/b&gt;&lt;/p&gt;Mitterhof 1 &lt;br/&gt;95652 Waldsassen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://straussenfarm-mitterhof.de/" target="_blank"&gt;Straußengehege Mitterhof&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Straußengehege Mitterhof</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.320165</SimpleData>
+						<SimpleData name="hw_wgs84">50.015472</SimpleData>
+						<SimpleData name="adresse_strasse">Mitterhof 1 </SimpleData>
+						<SimpleData name="adresse_ort">95652 Waldsassen</SimpleData>
+						<SimpleData name="url">https://straussenfarm-mitterhof.de/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.320165,50.015472</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>95695 Mähring, Oberpf&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.oberpfaelzerwald.de/radl-welt/details-content.php?guid=p_10054" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.536149</SimpleData>
+						<SimpleData name="hw_wgs84">49.894741</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">95695 Mähring, Oberpf</SimpleData>
+						<SimpleData name="url">https://www.oberpfaelzerwald.de/radl-welt/details-content.php?guid=p_10054</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.536149,49.894741</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Lamagehege Mitterhof&lt;/b&gt;&lt;/p&gt;95652 Waldsassen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://straussenfarm-mitterhof.de/" target="_blank"&gt;Lamagehege Mitterhof&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Lamagehege Mitterhof</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.319040</SimpleData>
+						<SimpleData name="hw_wgs84">50.016773</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">95652 Waldsassen</SimpleData>
+						<SimpleData name="url">https://straussenfarm-mitterhof.de/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.319040,50.016773</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Ganzleben&lt;/b&gt;&lt;/p&gt;95349 Thurnau&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Ganzleben</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.420296</SimpleData>
+						<SimpleData name="hw_wgs84">50.038781</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">95349 Thurnau</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.420296,50.038781</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Zum Howerer&lt;/b&gt;&lt;/p&gt;95671 Bärnau, Oberpf&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Zum Howerer</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.426071</SimpleData>
+						<SimpleData name="hw_wgs84">49.794125</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">95671 Bärnau, Oberpf</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.426071,49.794125</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Damwildgehege&lt;/b&gt;&lt;/p&gt;97491 Aidhausen&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Damwildgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.497820</SimpleData>
+						<SimpleData name="hw_wgs84">50.170098</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97491 Aidhausen</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.497820,50.170098</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description/>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.968021</SimpleData>
+						<SimpleData name="hw_wgs84">49.348818</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort"></SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.968021,49.348818</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description/>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.966788</SimpleData>
+						<SimpleData name="hw_wgs84">49.350766</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort"></SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.966788,49.350766</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description/>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.230238</SimpleData>
+						<SimpleData name="hw_wgs84">47.825781</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort"></SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.230238,47.825781</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>84028 Landshut, Isar&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.159523</SimpleData>
+						<SimpleData name="hw_wgs84">48.532534</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">84028 Landshut, Isar</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.159523,48.532534</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege an der Sommerrodelbahn&lt;/b&gt;&lt;/p&gt;91798 Höttingen, Mittelfr&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.fuerst-carl.de/de/erleben/sommerrodelbahn/" target="_blank"&gt;Wildgehege an der Sommerrodelbahn&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege an der Sommerrodelbahn</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.987636</SimpleData>
+						<SimpleData name="hw_wgs84">49.093595</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">91798 Höttingen, Mittelfr</SimpleData>
+						<SimpleData name="url">https://www.fuerst-carl.de/de/erleben/sommerrodelbahn/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.987636,49.093595</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildpferd- und Auerochsgehege&lt;/b&gt;&lt;/p&gt;94227 Lindberg, Kr Regen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm" target="_blank"&gt;Wildpferd- und Auerochsgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildpferd- und Auerochsgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.245337</SimpleData>
+						<SimpleData name="hw_wgs84">49.055271</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94227 Lindberg, Kr Regen</SimpleData>
+						<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.245337,49.055271</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Hirschgarten  &lt;br/&gt;80639 München&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.muenchen.de/sehenswuerdigkeiten/orte/120223.html" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.510252</SimpleData>
+						<SimpleData name="hw_wgs84">48.148769</SimpleData>
+						<SimpleData name="adresse_strasse">Hirschgarten  </SimpleData>
+						<SimpleData name="adresse_ort">80639 München</SimpleData>
+						<SimpleData name="url">https://www.muenchen.de/sehenswuerdigkeiten/orte/120223.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.510252,48.148769</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wisentgehege Donaumoos&lt;/b&gt;&lt;/p&gt;Kleinhohenried  &lt;br/&gt;86668 Karlshuld&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.wisentgehege-donaumoos.de" target="_blank"&gt;Wisentgehege Donaumoos&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wisentgehege Donaumoos</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.338388</SimpleData>
+						<SimpleData name="hw_wgs84">48.670468</SimpleData>
+						<SimpleData name="adresse_strasse">Kleinhohenried  </SimpleData>
+						<SimpleData name="adresse_ort">86668 Karlshuld</SimpleData>
+						<SimpleData name="url">https://www.wisentgehege-donaumoos.de</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.338388,48.670468</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege am Kurpark&lt;/b&gt;&lt;/p&gt;Eslarner Straße  &lt;br/&gt;92709 Moosbach b Vohenstrauß&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.moosbach.de/_kurparkgruberbach.htm" target="_blank"&gt;Wildgehege am Kurpark&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege am Kurpark</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.417694</SimpleData>
+						<SimpleData name="hw_wgs84">49.588131</SimpleData>
+						<SimpleData name="adresse_strasse">Eslarner Straße  </SimpleData>
+						<SimpleData name="adresse_ort">92709 Moosbach b Vohenstrauß</SimpleData>
+						<SimpleData name="url">https://www.moosbach.de/_kurparkgruberbach.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.417694,49.588131</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Büffelgehege&lt;/b&gt;&lt;/p&gt;Gaymoos  &lt;br/&gt;84562 Mettenheim, Kr Mühldorf a Inn&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.ovb-online.de/muehldorf/weide-naturparadies-12340005.html" target="_blank"&gt;Büffelgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Büffelgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.476688</SimpleData>
+						<SimpleData name="hw_wgs84">48.282159</SimpleData>
+						<SimpleData name="adresse_strasse">Gaymoos  </SimpleData>
+						<SimpleData name="adresse_ort">84562 Mettenheim, Kr Mühldorf a Inn</SimpleData>
+						<SimpleData name="url">https://www.ovb-online.de/muehldorf/weide-naturparadies-12340005.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.476688,48.282159</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wolfgehege&lt;/b&gt;&lt;/p&gt;94227 Lindberg, Kr Regen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm" target="_blank"&gt;Wolfgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wolfgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.244084</SimpleData>
+						<SimpleData name="hw_wgs84">49.059682</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94227 Lindberg, Kr Regen</SimpleData>
+						<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.244084,49.059682</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wisentgehege&lt;/b&gt;&lt;/p&gt;94556 Neuschönau&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm" target="_blank"&gt;Wisentgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wisentgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.489593</SimpleData>
+						<SimpleData name="hw_wgs84">48.897185</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94556 Neuschönau</SimpleData>
+						<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.489593,48.897185</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Rotwildgehege&lt;/b&gt;&lt;/p&gt;97491 Aidhausen&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Rotwildgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.496575</SimpleData>
+						<SimpleData name="hw_wgs84">50.170572</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97491 Aidhausen</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.496575,50.170572</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>95505 Immenreuth&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.836156</SimpleData>
+						<SimpleData name="hw_wgs84">49.919516</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">95505 Immenreuth</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.836156,49.919516</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Neuhütten&lt;/b&gt;&lt;/p&gt;Triebweg  &lt;br/&gt;97843 Neuhütten, Unterfr&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.main-spessart.de/aktuelles/termine--veranstaltungen/1..html?ev%5Bid%5D=11464" target="_blank"&gt;Wildgehege Neuhütten&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Neuhütten</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">9.424627</SimpleData>
+						<SimpleData name="hw_wgs84">49.994855</SimpleData>
+						<SimpleData name="adresse_strasse">Triebweg  </SimpleData>
+						<SimpleData name="adresse_ort">97843 Neuhütten, Unterfr</SimpleData>
+						<SimpleData name="url">https://www.main-spessart.de/aktuelles/termine--veranstaltungen/1..html?ev%5Bid%5D=11464</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>9.424627,49.994855</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>84028 Landshut, Isar&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.205027</SimpleData>
+						<SimpleData name="hw_wgs84">48.558404</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">84028 Landshut, Isar</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.205027,48.558404</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Damwildgehege Wörnitztal&lt;/b&gt;&lt;/p&gt;91555 Feuchtwangen&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Damwildgehege Wörnitztal</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.241924</SimpleData>
+						<SimpleData name="hw_wgs84">49.201731</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">91555 Feuchtwangen</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.241924,49.201731</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Auerbergstraße  &lt;br/&gt;86975 Bernbeuren&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.bergbauernhof-echtler.de/kinder/wildgehege-auerberg/" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.757668</SimpleData>
+						<SimpleData name="hw_wgs84">47.735897</SimpleData>
+						<SimpleData name="adresse_strasse">Auerbergstraße  </SimpleData>
+						<SimpleData name="adresse_ort">86975 Bernbeuren</SimpleData>
+						<SimpleData name="url">https://www.bergbauernhof-echtler.de/kinder/wildgehege-auerberg/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.757668,47.735897</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>85304 Ilmmünster&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.520750</SimpleData>
+						<SimpleData name="hw_wgs84">48.481768</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">85304 Ilmmünster</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.520750,48.481768</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92237 Sulzbach-Rosenberg&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.681560</SimpleData>
+						<SimpleData name="hw_wgs84">49.521017</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92237 Sulzbach-Rosenberg</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.681560,49.521017</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege&lt;/b&gt;&lt;/p&gt;94163 Saldenburg&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.saldenburg.de/seite/417599/wildgehegeweg.html" target="_blank"&gt;Wildgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.361261</SimpleData>
+						<SimpleData name="hw_wgs84">48.766130</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94163 Saldenburg</SimpleData>
+						<SimpleData name="url">https://www.saldenburg.de/seite/417599/wildgehegeweg.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.361261,48.766130</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildpark Guggenmos&lt;/b&gt;&lt;/p&gt;87782 Unteregg b Mindelheim&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildpark Guggenmos</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.504489</SimpleData>
+						<SimpleData name="hw_wgs84">47.942728</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">87782 Unteregg b Mindelheim</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.504489,47.942728</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Poppenreuth&lt;/b&gt;&lt;/p&gt;91126 Kammerstein&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://landratsamt-roth.eu/Portaldata/1/Resources/www.landratsamt_roth.de/freizeit_und_tourismus/download/dokumente/Freizeitfuehrer_2014.pdf" target="_blank"&gt;Wildgehege Poppenreuth&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Poppenreuth</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.963088</SimpleData>
+						<SimpleData name="hw_wgs84">49.285704</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">91126 Kammerstein</SimpleData>
+						<SimpleData name="url">http://landratsamt-roth.eu/Portaldata/1/Resources/www.landratsamt_roth.de/freizeit_und_tourismus/download/dokumente/Freizeitfuehrer_2014.pdf</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.963088,49.285704</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildpferd-Gehege Tennenlohe&lt;/b&gt;&lt;/p&gt;91058 Erlangen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildpferde-tennenlohe.de/" target="_blank"&gt;Wildpferd-Gehege Tennenlohe&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildpferd-Gehege Tennenlohe</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.057983</SimpleData>
+						<SimpleData name="hw_wgs84">49.559091</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">91058 Erlangen</SimpleData>
+						<SimpleData name="url">http://www.wildpferde-tennenlohe.de/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.057983,49.559091</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>82031 Grünwald, Kr München&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.aelf-ee.bayern.de/forstwirtschaft/wald/277256/index.php" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.527355</SimpleData>
+						<SimpleData name="hw_wgs84">48.025229</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">82031 Grünwald, Kr München</SimpleData>
+						<SimpleData name="url">https://www.aelf-ee.bayern.de/forstwirtschaft/wald/277256/index.php</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.527355,48.025229</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Sambachshof&lt;/b&gt;&lt;/p&gt;97631 Bad Königshofen i. Grabfeld&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Sambachshof</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.462581</SimpleData>
+						<SimpleData name="hw_wgs84">50.242816</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97631 Bad Königshofen i. Grabfeld</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.462581,50.242816</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Waldhaus 1 &lt;br/&gt;92289 Ursensollen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.naturparkhirschwald.de/de/naturerlebnisse/hirschwald.html" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.853504</SimpleData>
+						<SimpleData name="hw_wgs84">49.376455</SimpleData>
+						<SimpleData name="adresse_strasse">Waldhaus 1 </SimpleData>
+						<SimpleData name="adresse_ort">92289 Ursensollen</SimpleData>
+						<SimpleData name="url">https://www.naturparkhirschwald.de/de/naturerlebnisse/hirschwald.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.853504,49.376455</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92237 Sulzbach-Rosenberg&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.677768</SimpleData>
+						<SimpleData name="hw_wgs84">49.519405</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92237 Sulzbach-Rosenberg</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.677768,49.519405</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97516 Oberschwarzach, Unterfr&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.434720</SimpleData>
+						<SimpleData name="hw_wgs84">49.869236</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97516 Oberschwarzach, Unterfr</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.434720,49.869236</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97509 Kolitzheim&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.271499</SimpleData>
+						<SimpleData name="hw_wgs84">49.895895</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97509 Kolitzheim</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.271499,49.895895</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97514 Oberaurach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.602453</SimpleData>
+						<SimpleData name="hw_wgs84">49.954873</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97514 Oberaurach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.602453,49.954873</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92539 Schönsee&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.486653</SimpleData>
+						<SimpleData name="hw_wgs84">49.489674</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92539 Schönsee</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.486653,49.489674</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97762 Hammelburg&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">9.811506</SimpleData>
+						<SimpleData name="hw_wgs84">50.111777</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97762 Hammelburg</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>9.811506,50.111777</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>86911 Dießen am Ammersee&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.021929</SimpleData>
+						<SimpleData name="hw_wgs84">47.975847</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">86911 Dießen am Ammersee</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.021929,47.975847</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>96126 Maroldsweisach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.606490</SimpleData>
+						<SimpleData name="hw_wgs84">50.185564</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">96126 Maroldsweisach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.606490,50.185564</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Luchsgehege&lt;/b&gt;&lt;/p&gt;94227 Lindberg, Kr Regen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm" target="_blank"&gt;Luchsgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Luchsgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.241294</SimpleData>
+						<SimpleData name="hw_wgs84">49.060369</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94227 Lindberg, Kr Regen</SimpleData>
+						<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.241294,49.060369</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Elchgehege&lt;/b&gt;&lt;/p&gt;94556 Neuschönau&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm" target="_blank"&gt;Elchgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Elchgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.485228</SimpleData>
+						<SimpleData name="hw_wgs84">48.900253</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94556 Neuschönau</SimpleData>
+						<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.485228,48.900253</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92681 Erbendorf&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.fichtelgebirge.bayern/detail/id=5f802f493e91d003a390b647" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.040362</SimpleData>
+						<SimpleData name="hw_wgs84">49.895815</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92681 Erbendorf</SimpleData>
+						<SimpleData name="url">https://www.fichtelgebirge.bayern/detail/id=5f802f493e91d003a390b647</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.040362,49.895815</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97494 Bundorf&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.545583</SimpleData>
+						<SimpleData name="hw_wgs84">50.191670</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97494 Bundorf</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.545583,50.191670</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>86732 Oettingen i.Bay.&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.610590</SimpleData>
+						<SimpleData name="hw_wgs84">48.958658</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">86732 Oettingen i.Bay.</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.610590,48.958658</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>94209 Regen&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.159587</SimpleData>
+						<SimpleData name="hw_wgs84">48.969112</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94209 Regen</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.159587,48.969112</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>96154 Burgwindheim&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.610954</SimpleData>
+						<SimpleData name="hw_wgs84">49.828072</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">96154 Burgwindheim</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.610954,49.828072</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>96126 Ermershausen, Unterfr&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.641768</SimpleData>
+						<SimpleData name="hw_wgs84">50.213897</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">96126 Ermershausen, Unterfr</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.641768,50.213897</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97797 Wartmannsroth&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">9.781143</SimpleData>
+						<SimpleData name="hw_wgs84">50.196016</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97797 Wartmannsroth</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>9.781143,50.196016</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege Forellenhof&lt;/b&gt;&lt;/p&gt;97762 Hammelburg&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege Forellenhof</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">9.817133</SimpleData>
+						<SimpleData name="hw_wgs84">50.131749</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97762 Hammelburg</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>9.817133,50.131749</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97440 Werneck&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.074208</SimpleData>
+						<SimpleData name="hw_wgs84">49.967777</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97440 Werneck</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.074208,49.967777</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97478 Knetzgau&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.482452</SimpleData>
+						<SimpleData name="hw_wgs84">49.963215</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97478 Knetzgau</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.482452,49.963215</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>94269 Rinchnach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.230325</SimpleData>
+						<SimpleData name="hw_wgs84">48.960433</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94269 Rinchnach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.230325,48.960433</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>94258 Frauenau, Bayerischer Wald&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.285561</SimpleData>
+						<SimpleData name="hw_wgs84">48.983633</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94258 Frauenau, Bayerischer Wald</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.285561,48.983633</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92237 Sulzbach-Rosenberg&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.680827</SimpleData>
+						<SimpleData name="hw_wgs84">49.518740</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92237 Sulzbach-Rosenberg</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.680827,49.518740</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97514 Oberaurach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.648801</SimpleData>
+						<SimpleData name="hw_wgs84">49.933868</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97514 Oberaurach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.648801,49.933868</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>96160 Geiselwind&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.465719</SimpleData>
+						<SimpleData name="hw_wgs84">49.798608</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">96160 Geiselwind</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.465719,49.798608</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97514 Oberaurach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.653809</SimpleData>
+						<SimpleData name="hw_wgs84">49.918119</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97514 Oberaurach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.653809,49.918119</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>95100 Selb&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.146723</SimpleData>
+						<SimpleData name="hw_wgs84">50.195783</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">95100 Selb</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.146723,50.195783</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wolfgehege&lt;/b&gt;&lt;/p&gt;94556 Neuschönau&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm" target="_blank"&gt;Wolfgehege&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wolfgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.486892</SimpleData>
+						<SimpleData name="hw_wgs84">48.902825</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94556 Neuschönau</SimpleData>
+						<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_lusen/index.htm</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.486892,48.902825</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97516 Oberschwarzach, Unterfr&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.440098</SimpleData>
+						<SimpleData name="hw_wgs84">49.870393</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97516 Oberschwarzach, Unterfr</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.440098,49.870393</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>96157 Ebrach, Oberfr&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.baumwipfelpfadsteigerwald.de/" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.458093</SimpleData>
+						<SimpleData name="hw_wgs84">49.850532</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">96157 Ebrach, Oberfr</SimpleData>
+						<SimpleData name="url">https://www.baumwipfelpfadsteigerwald.de/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.458093,49.850532</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>94269 Rinchnach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.228575</SimpleData>
+						<SimpleData name="hw_wgs84">48.958968</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94269 Rinchnach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.228575,48.958968</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>94536 Eppenschlag&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.298281</SimpleData>
+						<SimpleData name="hw_wgs84">48.913992</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94536 Eppenschlag</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.298281,48.913992</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97799 Zeitlofs&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">9.763009</SimpleData>
+						<SimpleData name="hw_wgs84">50.236132</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97799 Zeitlofs</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>9.763009,50.236132</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Wildgehege&lt;/b&gt;&lt;/p&gt;97762 Hammelburg&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Wildgehege</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">9.922836</SimpleData>
+						<SimpleData name="hw_wgs84">50.046979</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97762 Hammelburg</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>9.922836,50.046979</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>92526 Oberviechtach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">12.441005</SimpleData>
+						<SimpleData name="hw_wgs84">49.463294</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">92526 Oberviechtach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>12.441005,49.463294</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>Alte Panzerstraße 15 &lt;br/&gt;97640 Oberstreu&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.birkighuette.de/bilder/" target="_blank"&gt;&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.258016</SimpleData>
+						<SimpleData name="hw_wgs84">50.416329</SimpleData>
+						<SimpleData name="adresse_strasse">Alte Panzerstraße 15 </SimpleData>
+						<SimpleData name="adresse_ort">97640 Oberstreu</SimpleData>
+						<SimpleData name="url">https://www.birkighuette.de/bilder/</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.258016,50.416329</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97440 Werneck&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.080575</SimpleData>
+						<SimpleData name="hw_wgs84">49.976883</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97440 Werneck</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.080575,49.976883</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97508 Grettstadt&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.359136</SimpleData>
+						<SimpleData name="hw_wgs84">50.007791</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97508 Grettstadt</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.359136,50.007791</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97503 Gädheim&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.381025</SimpleData>
+						<SimpleData name="hw_wgs84">50.030361</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97503 Gädheim</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.381025,50.030361</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>94536 Eppenschlag&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">13.287299</SimpleData>
+						<SimpleData name="hw_wgs84">48.912502</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">94536 Eppenschlag</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.287299,48.912502</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>&lt;p&gt;&lt;b&gt;Damwildgehege im Nürnberger Reichswald&lt;/b&gt;&lt;/p&gt;90427 Nürnberg, Mittelfr&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.baysf.de/de/wald-erkunden/ausflugsziele-tipps/das-damwildgehege-im-nuernberger-reichswald.html" target="_blank"&gt;Damwildgehege im Nürnberger Reichswald&lt;/a&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name">Damwildgehege im Nürnberger Reichswald</SimpleData>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">11.072471</SimpleData>
+						<SimpleData name="hw_wgs84">49.529921</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">90427 Nürnberg, Mittelfr</SimpleData>
+						<SimpleData name="url">https://www.baysf.de/de/wald-erkunden/ausflugsziele-tipps/das-damwildgehege-im-nuernberger-reichswald.html</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>11.072471,49.529921</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description>97514 Oberaurach&lt;br/&gt;</description>
+				<styleUrl>#Icon</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#wildgehege">
+						<SimpleData name="Name"/>
+						<SimpleData name="objektart">Wildgehege</SimpleData>
+						<SimpleData name="art"/>
+						<SimpleData name="rw_wgs84">10.600022</SimpleData>
+						<SimpleData name="hw_wgs84">49.955563</SimpleData>
+						<SimpleData name="adresse_strasse"></SimpleData>
+						<SimpleData name="adresse_ort">97514 Oberaurach</SimpleData>
+						<SimpleData name="url"/>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>10.600022,49.955563</coordinates>
+				</Point>
+			</Placemark>
+
+
+
+		</Folder>
+	</Document>
+</kml>

@@ -1,0 +1,24 @@
+{
+  "name": "arcgis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@arcgis/core": "^4.26.5",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/arcgis-js-api": "^4.26.0",
+    "rollup": "^3.20.2",
+    "rollup-plugin-copy": "^3.4.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  }
+}

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/kml/2.2         http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd         http://www.google.com/kml/ext/2.2         https://developers.google.com/kml/schema/kml22gx.xsd         http://www.w3.org/2005/Atom         http://schemas.opengis.net/kml/2.2.0/atom-author-link.xsd">
+<Document id="root_doc">
+<Schema name="safaripark_wildpark" id="safaripark_wildpark">
+	<SimpleField name="Name" type="string"> </SimpleField>
+	<SimpleField name="objektart" type="string"> </SimpleField>
+	<SimpleField name="art" type="string"> </SimpleField>
+	<SimpleField name="rw_wgs84" type="float"> </SimpleField>
+	<SimpleField name="hw_wgs84" type="float"> </SimpleField>
+	<SimpleField name="adresse_strasse" type="string"> </SimpleField>
+	<SimpleField name="adresse_ort" type="string"/>
+	<SimpleField name="url" type="string"> </SimpleField>
+</Schema>
+<Folder><name>Safaripark/ Wildpark</name>
+<Style id="Icon">
+      <IconStyle>
+        <color>ffffffff</color>
+        <Icon>
+          <href>http://www.geodaten.bayern.de/ba-data/Themen/icons/safaripark-pik.png</href>
+		</Icon>
+      </IconStyle>
+</Style>
+
+     <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tiergehege am Baggersee&lt;/b&gt;&lt;/p&gt;85049 Ingolstadt, Donau&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.zoo-infos.de/index.html?/zoos/189.html" target="_blank"&gt;Tiergehege am Baggersee&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Tiergehege am Baggersee</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.391837</SimpleData>
+		<SimpleData name="hw_wgs84">48.754383</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">85049 Ingolstadt, Donau</SimpleData>
+		<SimpleData name="url">http://www.zoo-infos.de/index.html?/zoos/189.html</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.391837,48.754383</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark an den Eichen&lt;/b&gt;&lt;/p&gt;97424 Schweinfurt&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.schweinfurt.de/leben-freizeit/wildpark/4593.Willkommen-im-Wildpark.html" target="_blank"&gt;Wildpark an den Eichen&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark an den Eichen</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">10.243914</SimpleData>
+		<SimpleData name="hw_wgs84">50.065128</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">97424 Schweinfurt</SimpleData>
+		<SimpleData name="url">https://www.schweinfurt.de/leben-freizeit/wildpark/4593.Willkommen-im-Wildpark.html</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>10.243914,50.065128</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Eslarn&lt;/b&gt;&lt;/p&gt;92693 Eslarn&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.eslarn.de" target="_blank"&gt;Wildpark Eslarn&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Eslarn</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.542079</SimpleData>
+		<SimpleData name="hw_wgs84">49.547371</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">92693 Eslarn</SimpleData>
+		<SimpleData name="url">http://www.eslarn.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.542079,49.547371</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Ortenburg&lt;/b&gt;&lt;/p&gt;94496 Ortenburg&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildpark-ortenburg.de/index.php/startseite" target="_blank"&gt;Wildpark Ortenburg&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Ortenburg</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.233094</SimpleData>
+		<SimpleData name="hw_wgs84">48.550777</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">94496 Ortenburg</SimpleData>
+		<SimpleData name="url">http://www.wildpark-ortenburg.de/index.php/startseite</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.233094,48.550777</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildgehege&lt;/b&gt;&lt;/p&gt;Hirschgarten  &lt;br/&gt;80639 München&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.muenchen.de/sehenswuerdigkeiten/orte/120223.html" target="_blank"&gt;Wildgehege&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildgehege</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.510039</SimpleData>
+		<SimpleData name="hw_wgs84">48.149088</SimpleData>
+		<SimpleData name="adresse_strasse">Hirschgarten  </SimpleData>
+		<SimpleData name="adresse_ort">80639 München</SimpleData>
+		<SimpleData name="url">http://www.muenchen.de/sehenswuerdigkeiten/orte/120223.html</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.510039,48.149088</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildfreizeitpark Oberreith&lt;/b&gt;&lt;/p&gt;Oberreith 6 &lt;br/&gt;83567 Unterreit b Wasserburg a Inn&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildpark-oberreith.de" target="_blank"&gt;Wildfreizeitpark Oberreith&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildfreizeitpark Oberreith</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.318717</SimpleData>
+		<SimpleData name="hw_wgs84">48.112242</SimpleData>
+		<SimpleData name="adresse_strasse">Oberreith 6 </SimpleData>
+		<SimpleData name="adresse_ort">83567 Unterreit b Wasserburg a Inn</SimpleData>
+		<SimpleData name="url">http://www.wildpark-oberreith.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.318717,48.112242</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildgarten&lt;/b&gt;&lt;/p&gt;Daberger Straße 33 &lt;br/&gt;93437 Furth im Wald&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildgarten-furth.de/" target="_blank"&gt;Wildgarten&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildgarten</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.860671</SimpleData>
+		<SimpleData name="hw_wgs84">49.314203</SimpleData>
+		<SimpleData name="adresse_strasse">Daberger Straße 33 </SimpleData>
+		<SimpleData name="adresse_ort">93437 Furth im Wald</SimpleData>
+		<SimpleData name="url">http://www.wildgarten-furth.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.860671,49.314203</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tierpark Sommerhausen&lt;/b&gt;&lt;/p&gt;Winterleite 1 &lt;br/&gt;97286 Sommerhausen, Main&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.tierparksommerhausen.de" target="_blank"&gt;Tierpark Sommerhausen&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Tierpark Sommerhausen</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">10.039327</SimpleData>
+		<SimpleData name="hw_wgs84">49.704770</SimpleData>
+		<SimpleData name="adresse_strasse">Winterleite 1 </SimpleData>
+		<SimpleData name="adresse_ort">97286 Sommerhausen, Main</SimpleData>
+		<SimpleData name="url">http://www.tierparksommerhausen.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>10.039327,49.704770</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Hundshaupten&lt;/b&gt;&lt;/p&gt;Hundshaupten 62 &lt;br/&gt;91349 Egloffstein&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.wildpark-hundshaupten.de/" target="_blank"&gt;Wildpark Hundshaupten&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Hundshaupten</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.229499</SimpleData>
+		<SimpleData name="hw_wgs84">49.718510</SimpleData>
+		<SimpleData name="adresse_strasse">Hundshaupten 62 </SimpleData>
+		<SimpleData name="adresse_ort">91349 Egloffstein</SimpleData>
+		<SimpleData name="url">https://www.wildpark-hundshaupten.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.229499,49.718510</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Erholungspark Am Steinbruchsee&lt;/b&gt;&lt;/p&gt;Steinbruchweg 9 &lt;br/&gt;93437 Furth im Wald&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.steinbruchsee.de/html/wildgehege.html" target="_blank"&gt;Erholungspark Am Steinbruchsee&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Erholungspark Am Steinbruchsee</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.864963</SimpleData>
+		<SimpleData name="hw_wgs84">49.277625</SimpleData>
+		<SimpleData name="adresse_strasse">Steinbruchweg 9 </SimpleData>
+		<SimpleData name="adresse_ort">93437 Furth im Wald</SimpleData>
+		<SimpleData name="url">http://www.steinbruchsee.de/html/wildgehege.html</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.864963,49.277625</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Naturpark Höllohe&lt;/b&gt;&lt;/p&gt;Höllohe 1 &lt;br/&gt;93158 Teublitz&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildpark-hoellohe.de/" target="_blank"&gt;Naturpark Höllohe&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Naturpark Höllohe</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.088333</SimpleData>
+		<SimpleData name="hw_wgs84">49.234091</SimpleData>
+		<SimpleData name="adresse_strasse">Höllohe 1 </SimpleData>
+		<SimpleData name="adresse_ort">93158 Teublitz</SimpleData>
+		<SimpleData name="url">http://www.wildpark-hoellohe.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.088333,49.234091</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildgehege&lt;/b&gt;&lt;/p&gt;94163 Saldenburg&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.saldenburg.de/freizeit/wanderurlaub/wandern/wildgehegeweg.html" target="_blank"&gt;Wildgehege&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildgehege</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.361299</SimpleData>
+		<SimpleData name="hw_wgs84">48.766102</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">94163 Saldenburg</SimpleData>
+		<SimpleData name="url">http://www.saldenburg.de/freizeit/wanderurlaub/wandern/wildgehegeweg.html</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.361299,48.766102</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Reit- und Wildpark Weil&lt;/b&gt;&lt;/p&gt;Saamfeldstraße 40 &lt;br/&gt;86947 Weil, Kr Landsberg a Lech&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.reitpark-weil.de/#Startseite" target="_blank"&gt;Reit- und Wildpark Weil&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Reit- und Wildpark Weil</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">10.934128</SimpleData>
+		<SimpleData name="hw_wgs84">48.121934</SimpleData>
+		<SimpleData name="adresse_strasse">Saamfeldstraße 40 </SimpleData>
+		<SimpleData name="adresse_ort">86947 Weil, Kr Landsberg a Lech</SimpleData>
+		<SimpleData name="url">http://www.reitpark-weil.de/#Startseite</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>10.934128,48.121934</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Waldhaus Mehlmeisel&lt;/b&gt;&lt;/p&gt;Waldhausstraße 100 &lt;br/&gt;95694 Mehlmeisel&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.waldhaus-mehlmeisel.de/" target="_blank"&gt;Wildpark Waldhaus Mehlmeisel&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Waldhaus Mehlmeisel</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.839228</SimpleData>
+		<SimpleData name="hw_wgs84">49.962523</SimpleData>
+		<SimpleData name="adresse_strasse">Waldhausstraße 100 </SimpleData>
+		<SimpleData name="adresse_ort">95694 Mehlmeisel</SimpleData>
+		<SimpleData name="url">http://www.waldhaus-mehlmeisel.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.839228,49.962523</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Pössinger Au&lt;/b&gt;&lt;/p&gt;86899 Landsberg am Lech&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.landsberg.de/tourismus/freizeit-erlebnis/wildpark-poessinger-au/" target="_blank"&gt;Wildpark Pössinger Au&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Pössinger Au</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">10.874798</SimpleData>
+		<SimpleData name="hw_wgs84">48.036577</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">86899 Landsberg am Lech</SimpleData>
+		<SimpleData name="url">https://www.landsberg.de/tourismus/freizeit-erlebnis/wildpark-poessinger-au/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>10.874798,48.036577</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Haibach&lt;/b&gt;&lt;/p&gt;63808 Haibach, Unterfr&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.haibach.de/index.php?id=201" target="_blank"&gt;Wildpark Haibach&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Haibach</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">9.195503</SimpleData>
+		<SimpleData name="hw_wgs84">49.972910</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">63808 Haibach, Unterfr</SimpleData>
+		<SimpleData name="url">https://www.haibach.de/index.php?id=201</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>9.195503,49.972910</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Schloß Tambach&lt;/b&gt;&lt;/p&gt;Schloßallee 1 &lt;br/&gt;96479 Weitramsdorf&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildpark-tambach.de" target="_blank"&gt;Wildpark Schloß Tambach&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Schloß Tambach</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">10.863333</SimpleData>
+		<SimpleData name="hw_wgs84">50.230801</SimpleData>
+		<SimpleData name="adresse_strasse">Schloßallee 1 </SimpleData>
+		<SimpleData name="adresse_ort">96479 Weitramsdorf</SimpleData>
+		<SimpleData name="url">http://www.wildpark-tambach.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>10.863333,50.230801</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Klaushof&lt;/b&gt;&lt;/p&gt;Klaushofstraße  &lt;br/&gt;97688 Bad Kissingen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildpark-klaushof.de/" target="_blank"&gt;Wildpark Klaushof&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Klaushof</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">10.043458</SimpleData>
+		<SimpleData name="hw_wgs84">50.222593</SimpleData>
+		<SimpleData name="adresse_strasse">Klaushofstraße  </SimpleData>
+		<SimpleData name="adresse_ort">97688 Bad Kissingen</SimpleData>
+		<SimpleData name="url">http://www.wildpark-klaushof.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>10.043458,50.222593</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>Schönerting 22 &lt;br/&gt;94474 Vilshofen an der Donau&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://lunapark-alpakas.de/" target="_blank"&gt;&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name"/>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.112361</SimpleData>
+		<SimpleData name="hw_wgs84">48.608544</SimpleData>
+		<SimpleData name="adresse_strasse">Schönerting 22 </SimpleData>
+		<SimpleData name="adresse_ort">94474 Vilshofen an der Donau</SimpleData>
+		<SimpleData name="url">http://lunapark-alpakas.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.112361,48.608544</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tierpark Gleitsbachtal&lt;/b&gt;&lt;/p&gt;Im Kreuth  &lt;br/&gt;92699 Irchenrieth&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.oberpfaelzerwald.de/tierpark-gleitsbachtal" target="_blank"&gt;Tierpark Gleitsbachtal&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Tierpark Gleitsbachtal</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.213999</SimpleData>
+		<SimpleData name="hw_wgs84">49.633217</SimpleData>
+		<SimpleData name="adresse_strasse">Im Kreuth  </SimpleData>
+		<SimpleData name="adresse_ort">92699 Irchenrieth</SimpleData>
+		<SimpleData name="url">https://www.oberpfaelzerwald.de/tierpark-gleitsbachtal</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.213999,49.633217</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tier-Freigelände Ludwigsthal&lt;/b&gt;&lt;/p&gt;94227 Lindberg, Kr Regen&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm" target="_blank"&gt;Tier-Freigelände Ludwigsthal&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Tier-Freigelände Ludwigsthal</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.242758</SimpleData>
+		<SimpleData name="hw_wgs84">49.056500</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">94227 Lindberg, Kr Regen</SimpleData>
+		<SimpleData name="url">https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.242758,49.056500</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Hufeisen&lt;/b&gt;&lt;/p&gt;Hufeisen-Waldhaus 1 &lt;br/&gt;91257 Pegnitz&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildgehege-hufeisen.de/" target="_blank"&gt;Wildpark Hufeisen&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Hufeisen</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.489081</SimpleData>
+		<SimpleData name="hw_wgs84">49.700689</SimpleData>
+		<SimpleData name="adresse_strasse">Hufeisen-Waldhaus 1 </SimpleData>
+		<SimpleData name="adresse_ort">91257 Pegnitz</SimpleData>
+		<SimpleData name="url">http://www.wildgehege-hufeisen.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.489081,49.700689</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildpark Poing&lt;/b&gt;&lt;/p&gt;Osterfeldweg 20 &lt;br/&gt;85586 Poing b München&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.wildpark-poing.de" target="_blank"&gt;Wildpark Poing&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildpark Poing</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.831864</SimpleData>
+		<SimpleData name="hw_wgs84">48.173899</SimpleData>
+		<SimpleData name="adresse_strasse">Osterfeldweg 20 </SimpleData>
+		<SimpleData name="adresse_ort">85586 Poing b München</SimpleData>
+		<SimpleData name="url">http://www.wildpark-poing.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.831864,48.173899</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tierfreigelände Nationalparkzentrum Lusen&lt;/b&gt;&lt;/p&gt;94556 Neuschönau&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.neuschoenau.de/de/nationalpark/tierfreigelaende/tierfreigelaende.html" target="_blank"&gt;Tierfreigelände Nationalparkzentrum Lusen&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Tierfreigelände Nationalparkzentrum Lusen</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.489795</SimpleData>
+		<SimpleData name="hw_wgs84">48.896997</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort">94556 Neuschönau</SimpleData>
+		<SimpleData name="url">http://www.neuschoenau.de/de/nationalpark/tierfreigelaende/tierfreigelaende.html</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.489795,48.896997</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Wildgehege am Kurpark&lt;/b&gt;&lt;/p&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Wildgehege am Kurpark</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.417684</SimpleData>
+		<SimpleData name="hw_wgs84">49.588185</SimpleData>
+		<SimpleData name="adresse_strasse">  </SimpleData>
+		<SimpleData name="adresse_ort"> </SimpleData>
+		<SimpleData name="url"/>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.417684,49.588185</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;BergTierPark Blindham&lt;/b&gt;&lt;/p&gt;Blindham 3 &lt;br/&gt;85653 Aying&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.bergtierpark.de/tierpark/rundgang/" target="_blank"&gt;BergTierPark Blindham&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">BergTierPark Blindham</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.813957</SimpleData>
+		<SimpleData name="hw_wgs84">47.928462</SimpleData>
+		<SimpleData name="adresse_strasse">Blindham 3 </SimpleData>
+		<SimpleData name="adresse_ort">85653 Aying</SimpleData>
+		<SimpleData name="url">https://www.bergtierpark.de/tierpark/rundgang/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.813957,47.928462</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Gnadenhof für Bären&lt;/b&gt;&lt;/p&gt;Am Bärenpark 7 &lt;br/&gt;94072 Bad Füssing&lt;br/&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#safaripark_wildpark">
+		<SimpleData name="Name">Gnadenhof für Bären</SimpleData>
+		<SimpleData name="objektart">Safaripark/ Wildpark</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.257728</SimpleData>
+		<SimpleData name="hw_wgs84">48.325465</SimpleData>
+		<SimpleData name="adresse_strasse">Am Bärenpark 7 </SimpleData>
+		<SimpleData name="adresse_ort">94072 Bad Füssing</SimpleData>
+		<SimpleData name="url"/>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.257728,48.325465</coordinates></Point>
+</Placemark>
+     
+    
+  
+</Folder>
+</Document> 
+</kml>

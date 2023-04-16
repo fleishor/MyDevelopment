@@ -1,0 +1,626 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.391837,
+          48.754383
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Tiergehege am Baggersee</b></p>85049 Ingolstadt, Donau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.zoo-infos.de/index.html?/zoos/189.html\" target=\"_blank\">Tiergehege am Baggersee</a>",
+        "Name": "Tiergehege am Baggersee",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "11.391837",
+        "hw_wgs84": "48.754383",
+        "adresse_strasse": "  ",
+        "adresse_ort": "85049 Ingolstadt, Donau",
+        "url": "http://www.zoo-infos.de/index.html?/zoos/189.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.243914,
+          50.065128
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark an den Eichen</b></p>97424 Schweinfurt<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.schweinfurt.de/leben-freizeit/wildpark/4593.Willkommen-im-Wildpark.html\" target=\"_blank\">Wildpark an den Eichen</a>",
+        "Name": "Wildpark an den Eichen",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "10.243914",
+        "hw_wgs84": "50.065128",
+        "adresse_strasse": "  ",
+        "adresse_ort": "97424 Schweinfurt",
+        "url": "https://www.schweinfurt.de/leben-freizeit/wildpark/4593.Willkommen-im-Wildpark.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.542079,
+          49.547371
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Eslarn</b></p>92693 Eslarn<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.eslarn.de\" target=\"_blank\">Wildpark Eslarn</a>",
+        "Name": "Wildpark Eslarn",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "12.542079",
+        "hw_wgs84": "49.547371",
+        "adresse_strasse": "  ",
+        "adresse_ort": "92693 Eslarn",
+        "url": "http://www.eslarn.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.233094,
+          48.550777
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Ortenburg</b></p>94496 Ortenburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildpark-ortenburg.de/index.php/startseite\" target=\"_blank\">Wildpark Ortenburg</a>",
+        "Name": "Wildpark Ortenburg",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "13.233094",
+        "hw_wgs84": "48.550777",
+        "adresse_strasse": "  ",
+        "adresse_ort": "94496 Ortenburg",
+        "url": "http://www.wildpark-ortenburg.de/index.php/startseite"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.510039,
+          48.149088
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildgehege</b></p>Hirschgarten  <br/>80639 München<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.muenchen.de/sehenswuerdigkeiten/orte/120223.html\" target=\"_blank\">Wildgehege</a>",
+        "Name": "Wildgehege",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "11.510039",
+        "hw_wgs84": "48.149088",
+        "adresse_strasse": "Hirschgarten  ",
+        "adresse_ort": "80639 München",
+        "url": "http://www.muenchen.de/sehenswuerdigkeiten/orte/120223.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.318717,
+          48.112242
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildfreizeitpark Oberreith</b></p>Oberreith 6 <br/>83567 Unterreit b Wasserburg a Inn<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildpark-oberreith.de\" target=\"_blank\">Wildfreizeitpark Oberreith</a>",
+        "Name": "Wildfreizeitpark Oberreith",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "12.318717",
+        "hw_wgs84": "48.112242",
+        "adresse_strasse": "Oberreith 6 ",
+        "adresse_ort": "83567 Unterreit b Wasserburg a Inn",
+        "url": "http://www.wildpark-oberreith.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.860671,
+          49.314203
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildgarten</b></p>Daberger Straße 33 <br/>93437 Furth im Wald<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildgarten-furth.de/\" target=\"_blank\">Wildgarten</a>",
+        "Name": "Wildgarten",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "12.860671",
+        "hw_wgs84": "49.314203",
+        "adresse_strasse": "Daberger Straße 33 ",
+        "adresse_ort": "93437 Furth im Wald",
+        "url": "http://www.wildgarten-furth.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.039327,
+          49.70477
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Tierpark Sommerhausen</b></p>Winterleite 1 <br/>97286 Sommerhausen, Main<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.tierparksommerhausen.de\" target=\"_blank\">Tierpark Sommerhausen</a>",
+        "Name": "Tierpark Sommerhausen",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "10.039327",
+        "hw_wgs84": "49.704770",
+        "adresse_strasse": "Winterleite 1 ",
+        "adresse_ort": "97286 Sommerhausen, Main",
+        "url": "http://www.tierparksommerhausen.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.229499,
+          49.71851
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Hundshaupten</b></p>Hundshaupten 62 <br/>91349 Egloffstein<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.wildpark-hundshaupten.de/\" target=\"_blank\">Wildpark Hundshaupten</a>",
+        "Name": "Wildpark Hundshaupten",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "11.229499",
+        "hw_wgs84": "49.718510",
+        "adresse_strasse": "Hundshaupten 62 ",
+        "adresse_ort": "91349 Egloffstein",
+        "url": "https://www.wildpark-hundshaupten.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.864963,
+          49.277625
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Erholungspark Am Steinbruchsee</b></p>Steinbruchweg 9 <br/>93437 Furth im Wald<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.steinbruchsee.de/html/wildgehege.html\" target=\"_blank\">Erholungspark Am Steinbruchsee</a>",
+        "Name": "Erholungspark Am Steinbruchsee",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "12.864963",
+        "hw_wgs84": "49.277625",
+        "adresse_strasse": "Steinbruchweg 9 ",
+        "adresse_ort": "93437 Furth im Wald",
+        "url": "http://www.steinbruchsee.de/html/wildgehege.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.088333,
+          49.234091
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Naturpark Höllohe</b></p>Höllohe 1 <br/>93158 Teublitz<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildpark-hoellohe.de/\" target=\"_blank\">Naturpark Höllohe</a>",
+        "Name": "Naturpark Höllohe",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "12.088333",
+        "hw_wgs84": "49.234091",
+        "adresse_strasse": "Höllohe 1 ",
+        "adresse_ort": "93158 Teublitz",
+        "url": "http://www.wildpark-hoellohe.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.361299,
+          48.766102
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildgehege</b></p>94163 Saldenburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.saldenburg.de/freizeit/wanderurlaub/wandern/wildgehegeweg.html\" target=\"_blank\">Wildgehege</a>",
+        "Name": "Wildgehege",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "13.361299",
+        "hw_wgs84": "48.766102",
+        "adresse_strasse": "  ",
+        "adresse_ort": "94163 Saldenburg",
+        "url": "http://www.saldenburg.de/freizeit/wanderurlaub/wandern/wildgehegeweg.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.934128,
+          48.121934
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Reit- und Wildpark Weil</b></p>Saamfeldstraße 40 <br/>86947 Weil, Kr Landsberg a Lech<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.reitpark-weil.de/#Startseite\" target=\"_blank\">Reit- und Wildpark Weil</a>",
+        "Name": "Reit- und Wildpark Weil",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "10.934128",
+        "hw_wgs84": "48.121934",
+        "adresse_strasse": "Saamfeldstraße 40 ",
+        "adresse_ort": "86947 Weil, Kr Landsberg a Lech",
+        "url": "http://www.reitpark-weil.de/#Startseite"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.839228,
+          49.962523
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Waldhaus Mehlmeisel</b></p>Waldhausstraße 100 <br/>95694 Mehlmeisel<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.waldhaus-mehlmeisel.de/\" target=\"_blank\">Wildpark Waldhaus Mehlmeisel</a>",
+        "Name": "Wildpark Waldhaus Mehlmeisel",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "11.839228",
+        "hw_wgs84": "49.962523",
+        "adresse_strasse": "Waldhausstraße 100 ",
+        "adresse_ort": "95694 Mehlmeisel",
+        "url": "http://www.waldhaus-mehlmeisel.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.874798,
+          48.036577
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Pössinger Au</b></p>86899 Landsberg am Lech<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.landsberg.de/tourismus/freizeit-erlebnis/wildpark-poessinger-au/\" target=\"_blank\">Wildpark Pössinger Au</a>",
+        "Name": "Wildpark Pössinger Au",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "10.874798",
+        "hw_wgs84": "48.036577",
+        "adresse_strasse": "  ",
+        "adresse_ort": "86899 Landsberg am Lech",
+        "url": "https://www.landsberg.de/tourismus/freizeit-erlebnis/wildpark-poessinger-au/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.195503,
+          49.97291
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Haibach</b></p>63808 Haibach, Unterfr<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.haibach.de/index.php?id=201\" target=\"_blank\">Wildpark Haibach</a>",
+        "Name": "Wildpark Haibach",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "9.195503",
+        "hw_wgs84": "49.972910",
+        "adresse_strasse": "  ",
+        "adresse_ort": "63808 Haibach, Unterfr",
+        "url": "https://www.haibach.de/index.php?id=201"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.863333,
+          50.230801
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Schloß Tambach</b></p>Schloßallee 1 <br/>96479 Weitramsdorf<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildpark-tambach.de\" target=\"_blank\">Wildpark Schloß Tambach</a>",
+        "Name": "Wildpark Schloß Tambach",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "10.863333",
+        "hw_wgs84": "50.230801",
+        "adresse_strasse": "Schloßallee 1 ",
+        "adresse_ort": "96479 Weitramsdorf",
+        "url": "http://www.wildpark-tambach.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.043458,
+          50.222593
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Klaushof</b></p>Klaushofstraße  <br/>97688 Bad Kissingen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildpark-klaushof.de/\" target=\"_blank\">Wildpark Klaushof</a>",
+        "Name": "Wildpark Klaushof",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "10.043458",
+        "hw_wgs84": "50.222593",
+        "adresse_strasse": "Klaushofstraße  ",
+        "adresse_ort": "97688 Bad Kissingen",
+        "url": "http://www.wildpark-klaushof.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.112361,
+          48.608544
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "Schönerting 22 <br/>94474 Vilshofen an der Donau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://lunapark-alpakas.de/\" target=\"_blank\"></a>",
+        "Name": "",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "13.112361",
+        "hw_wgs84": "48.608544",
+        "adresse_strasse": "Schönerting 22 ",
+        "adresse_ort": "94474 Vilshofen an der Donau",
+        "url": "http://lunapark-alpakas.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.213999,
+          49.633217
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Tierpark Gleitsbachtal</b></p>Im Kreuth  <br/>92699 Irchenrieth<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.oberpfaelzerwald.de/tierpark-gleitsbachtal\" target=\"_blank\">Tierpark Gleitsbachtal</a>",
+        "Name": "Tierpark Gleitsbachtal",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "12.213999",
+        "hw_wgs84": "49.633217",
+        "adresse_strasse": "Im Kreuth  ",
+        "adresse_ort": "92699 Irchenrieth",
+        "url": "https://www.oberpfaelzerwald.de/tierpark-gleitsbachtal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.242758,
+          49.0565
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Tier-Freigelände Ludwigsthal</b></p>94227 Lindberg, Kr Regen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm\" target=\"_blank\">Tier-Freigelände Ludwigsthal</a>",
+        "Name": "Tier-Freigelände Ludwigsthal",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "13.242758",
+        "hw_wgs84": "49.056500",
+        "adresse_strasse": "  ",
+        "adresse_ort": "94227 Lindberg, Kr Regen",
+        "url": "https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/npz_falkenstein/index.htm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.489081,
+          49.700689
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Hufeisen</b></p>Hufeisen-Waldhaus 1 <br/>91257 Pegnitz<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildgehege-hufeisen.de/\" target=\"_blank\">Wildpark Hufeisen</a>",
+        "Name": "Wildpark Hufeisen",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "11.489081",
+        "hw_wgs84": "49.700689",
+        "adresse_strasse": "Hufeisen-Waldhaus 1 ",
+        "adresse_ort": "91257 Pegnitz",
+        "url": "http://www.wildgehege-hufeisen.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.831864,
+          48.173899
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildpark Poing</b></p>Osterfeldweg 20 <br/>85586 Poing b München<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wildpark-poing.de\" target=\"_blank\">Wildpark Poing</a>",
+        "Name": "Wildpark Poing",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "11.831864",
+        "hw_wgs84": "48.173899",
+        "adresse_strasse": "Osterfeldweg 20 ",
+        "adresse_ort": "85586 Poing b München",
+        "url": "http://www.wildpark-poing.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.489795,
+          48.896997
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Tierfreigelände Nationalparkzentrum Lusen</b></p>94556 Neuschönau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.neuschoenau.de/de/nationalpark/tierfreigelaende/tierfreigelaende.html\" target=\"_blank\">Tierfreigelände Nationalparkzentrum Lusen</a>",
+        "Name": "Tierfreigelände Nationalparkzentrum Lusen",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "13.489795",
+        "hw_wgs84": "48.896997",
+        "adresse_strasse": "  ",
+        "adresse_ort": "94556 Neuschönau",
+        "url": "http://www.neuschoenau.de/de/nationalpark/tierfreigelaende/tierfreigelaende.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.417684,
+          49.588185
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Wildgehege am Kurpark</b></p>",
+        "Name": "Wildgehege am Kurpark",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "12.417684",
+        "hw_wgs84": "49.588185",
+        "adresse_strasse": "  ",
+        "adresse_ort": " ",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.813957,
+          47.928462
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>BergTierPark Blindham</b></p>Blindham 3 <br/>85653 Aying<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.bergtierpark.de/tierpark/rundgang/\" target=\"_blank\">BergTierPark Blindham</a>",
+        "Name": "BergTierPark Blindham",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "11.813957",
+        "hw_wgs84": "47.928462",
+        "adresse_strasse": "Blindham 3 ",
+        "adresse_ort": "85653 Aying",
+        "url": "https://www.bergtierpark.de/tierpark/rundgang/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.257728,
+          48.325465
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "511eb176",
+        "description": "<p><b>Gnadenhof für Bären</b></p>Am Bärenpark 7 <br/>94072 Bad Füssing<br/>",
+        "Name": "Gnadenhof für Bären",
+        "objektart": "Safaripark/ Wildpark",
+        "art": "",
+        "rw_wgs84": "13.257728",
+        "hw_wgs84": "48.325465",
+        "adresse_strasse": "Am Bärenpark 7 ",
+        "adresse_ort": "94072 Bad Füssing",
+        "url": ""
+      }
+    }
+  ]
+}

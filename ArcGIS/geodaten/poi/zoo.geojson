@@ -1,0 +1,212 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.251471,
+          48.563499
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Vogelpark Irgenöd</b></p>Irgenöd 3 <br/>94496 Ortenburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.vogelpark-irgenoed.de/index.php/startseite\" target=\"_blank\">Vogelpark Irgenöd</a>",
+        "Name": "Vogelpark Irgenöd",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "13.251471",
+        "hw_wgs84": "48.563499",
+        "adresse_strasse": "Irgenöd 3 ",
+        "adresse_ort": "94496 Ortenburg",
+        "url": "http://www.vogelpark-irgenoed.de/index.php/startseite"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.91576,
+          48.348823
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Zoo Augsburg</b></p>Brehmplatz 1 <br/>86161 Augsburg, Bay<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.zoo-augsburg.de\" target=\"_blank\">Zoo Augsburg</a>",
+        "Name": "Zoo Augsburg",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "10.915760",
+        "hw_wgs84": "48.348823",
+        "adresse_strasse": "Brehmplatz 1 ",
+        "adresse_ort": "86161 Augsburg, Bay",
+        "url": "http://www.zoo-augsburg.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.556026,
+          48.173754
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Sea Life</b></p>Willi-Daume-Platz 1 <br/>80809 München<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www2.visitsealife.com/de/\" target=\"_blank\">Sea Life</a>",
+        "Name": "Sea Life",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "11.556026",
+        "hw_wgs84": "48.173754",
+        "adresse_strasse": "Willi-Daume-Platz 1 ",
+        "adresse_ort": "80809 München",
+        "url": "https://www2.visitsealife.com/de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.53677,
+          48.883299
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Tiergarten Straubing</b></p>Am Tiergarten 3 <br/>94315 Straubing<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.tiergarten-straubing.de/\" target=\"_blank\">Tiergarten Straubing</a>",
+        "Name": "Tiergarten Straubing",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "12.536770",
+        "hw_wgs84": "48.883299",
+        "adresse_strasse": "Am Tiergarten 3 ",
+        "adresse_ort": "94315 Straubing",
+        "url": "http://www.tiergarten-straubing.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.087766,
+          49.169845
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Bayerwald-Tierpark Lohberg</b></p>Schwarzenbacher Straße 1 a<br/>93470 Lohberg b Lam, Oberpf<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.bayerwald-tierpark.de/\" target=\"_blank\">Bayerwald-Tierpark Lohberg</a>",
+        "Name": "Bayerwald-Tierpark Lohberg",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "13.087766",
+        "hw_wgs84": "49.169845",
+        "adresse_strasse": "Schwarzenbacher Straße 1 a",
+        "adresse_ort": "93470 Lohberg b Lam, Oberpf",
+        "url": "https://www.bayerwald-tierpark.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.924705,
+          50.331182
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Zoo Hof</b></p>Alte Plauener Straße 40 <br/>95028 Hof, Saale<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.zoo-hof.de\" target=\"_blank\">Zoo Hof</a>",
+        "Name": "Zoo Hof",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "11.924705",
+        "hw_wgs84": "50.331182",
+        "adresse_strasse": "Alte Plauener Straße 40 ",
+        "adresse_ort": "95028 Hof, Saale",
+        "url": "http://www.zoo-hof.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.571677,
+          49.930904
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Tierpark Röhrensee</b></p>Pottensteiner Straße  <br/>95447 Bayreuth<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.tierpark-roehrensee.de/\" target=\"_blank\">Tierpark Röhrensee</a>",
+        "Name": "Tierpark Röhrensee",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "11.571677",
+        "hw_wgs84": "49.930904",
+        "adresse_strasse": "Pottensteiner Straße  ",
+        "adresse_ort": "95447 Bayreuth",
+        "url": "https://www.tierpark-roehrensee.de/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.554285,
+          48.096456
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Tierpark Hellabrunn</b></p>Tierparkstraße 30 <br/>81543 München<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.zoo-munich.de\" target=\"_blank\">Tierpark Hellabrunn</a>",
+        "Name": "Tierpark Hellabrunn",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "11.554285",
+        "hw_wgs84": "48.096456",
+        "adresse_strasse": "Tierparkstraße 30 ",
+        "adresse_ort": "81543 München",
+        "url": "http://www.zoo-munich.de"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.144217,
+          49.447821
+        ]
+      },
+      "properties": {
+        "styleUrl": "#Icon",
+        "styleHash": "-77d2f68",
+        "description": "<p><b>Tiergarten Nürnberg</b></p>Am Tiergarten 30 <br/>90480 Nürnberg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.tiergarten.nuernberg.de\" target=\"_blank\">Tiergarten Nürnberg</a>",
+        "Name": "Tiergarten Nürnberg",
+        "objektart": "Zoo",
+        "art": "",
+        "rw_wgs84": "11.144217",
+        "hw_wgs84": "49.447821",
+        "adresse_strasse": "Am Tiergarten 30 ",
+        "adresse_ort": "90480 Nürnberg",
+        "url": "http://www.tiergarten.nuernberg.de"
+      }
+    }
+  ]
+}

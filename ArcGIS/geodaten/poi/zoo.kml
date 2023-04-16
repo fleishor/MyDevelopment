@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/kml/2.2         http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd         http://www.google.com/kml/ext/2.2         https://developers.google.com/kml/schema/kml22gx.xsd         http://www.w3.org/2005/Atom         http://schemas.opengis.net/kml/2.2.0/atom-author-link.xsd">
+<Document id="root_doc">
+<Schema name="zoo" id="zoo">
+	<SimpleField name="Name" type="string"> </SimpleField>
+	<SimpleField name="objektart" type="string"> </SimpleField>
+	<SimpleField name="art" type="string"> </SimpleField>
+	<SimpleField name="rw_wgs84" type="float"> </SimpleField>
+	<SimpleField name="hw_wgs84" type="float"> </SimpleField>
+	<SimpleField name="adresse_strasse" type="string"> </SimpleField>
+	<SimpleField name="adresse_ort" type="string"/>
+	<SimpleField name="url" type="string"> </SimpleField>
+</Schema>
+<Folder><name>Zoo</name>
+<Style id="Icon">
+      <IconStyle>
+        <color>ffffffff</color>
+        <Icon>
+          <href>http://www.geodaten.bayern.de/ba-data/Themen/icons/tiergaerten-pik.png</href>
+		</Icon>
+      </IconStyle>
+</Style>
+
+     <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Vogelpark Irgenöd&lt;/b&gt;&lt;/p&gt;Irgenöd 3 &lt;br/&gt;94496 Ortenburg&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.vogelpark-irgenoed.de/index.php/startseite" target="_blank"&gt;Vogelpark Irgenöd&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Vogelpark Irgenöd</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.251471</SimpleData>
+		<SimpleData name="hw_wgs84">48.563499</SimpleData>
+		<SimpleData name="adresse_strasse">Irgenöd 3 </SimpleData>
+		<SimpleData name="adresse_ort">94496 Ortenburg</SimpleData>
+		<SimpleData name="url">http://www.vogelpark-irgenoed.de/index.php/startseite</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.251471,48.563499</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Zoo Augsburg&lt;/b&gt;&lt;/p&gt;Brehmplatz 1 &lt;br/&gt;86161 Augsburg, Bay&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.zoo-augsburg.de" target="_blank"&gt;Zoo Augsburg&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Zoo Augsburg</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">10.915760</SimpleData>
+		<SimpleData name="hw_wgs84">48.348823</SimpleData>
+		<SimpleData name="adresse_strasse">Brehmplatz 1 </SimpleData>
+		<SimpleData name="adresse_ort">86161 Augsburg, Bay</SimpleData>
+		<SimpleData name="url">http://www.zoo-augsburg.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>10.915760,48.348823</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Sea Life&lt;/b&gt;&lt;/p&gt;Willi-Daume-Platz 1 &lt;br/&gt;80809 München&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www2.visitsealife.com/de/" target="_blank"&gt;Sea Life&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Sea Life</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.556026</SimpleData>
+		<SimpleData name="hw_wgs84">48.173754</SimpleData>
+		<SimpleData name="adresse_strasse">Willi-Daume-Platz 1 </SimpleData>
+		<SimpleData name="adresse_ort">80809 München</SimpleData>
+		<SimpleData name="url">https://www2.visitsealife.com/de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.556026,48.173754</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tiergarten Straubing&lt;/b&gt;&lt;/p&gt;Am Tiergarten 3 &lt;br/&gt;94315 Straubing&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.tiergarten-straubing.de/" target="_blank"&gt;Tiergarten Straubing&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Tiergarten Straubing</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">12.536770</SimpleData>
+		<SimpleData name="hw_wgs84">48.883299</SimpleData>
+		<SimpleData name="adresse_strasse">Am Tiergarten 3 </SimpleData>
+		<SimpleData name="adresse_ort">94315 Straubing</SimpleData>
+		<SimpleData name="url">http://www.tiergarten-straubing.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>12.536770,48.883299</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Bayerwald-Tierpark Lohberg&lt;/b&gt;&lt;/p&gt;Schwarzenbacher Straße 1 a&lt;br/&gt;93470 Lohberg b Lam, Oberpf&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.bayerwald-tierpark.de/" target="_blank"&gt;Bayerwald-Tierpark Lohberg&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Bayerwald-Tierpark Lohberg</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">13.087766</SimpleData>
+		<SimpleData name="hw_wgs84">49.169845</SimpleData>
+		<SimpleData name="adresse_strasse">Schwarzenbacher Straße 1 a</SimpleData>
+		<SimpleData name="adresse_ort">93470 Lohberg b Lam, Oberpf</SimpleData>
+		<SimpleData name="url">https://www.bayerwald-tierpark.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>13.087766,49.169845</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Zoo Hof&lt;/b&gt;&lt;/p&gt;Alte Plauener Straße 40 &lt;br/&gt;95028 Hof, Saale&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.zoo-hof.de" target="_blank"&gt;Zoo Hof&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Zoo Hof</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.924705</SimpleData>
+		<SimpleData name="hw_wgs84">50.331182</SimpleData>
+		<SimpleData name="adresse_strasse">Alte Plauener Straße 40 </SimpleData>
+		<SimpleData name="adresse_ort">95028 Hof, Saale</SimpleData>
+		<SimpleData name="url">http://www.zoo-hof.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.924705,50.331182</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tierpark Röhrensee&lt;/b&gt;&lt;/p&gt;Pottensteiner Straße  &lt;br/&gt;95447 Bayreuth&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="https://www.tierpark-roehrensee.de/" target="_blank"&gt;Tierpark Röhrensee&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Tierpark Röhrensee</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.571677</SimpleData>
+		<SimpleData name="hw_wgs84">49.930904</SimpleData>
+		<SimpleData name="adresse_strasse">Pottensteiner Straße  </SimpleData>
+		<SimpleData name="adresse_ort">95447 Bayreuth</SimpleData>
+		<SimpleData name="url">https://www.tierpark-roehrensee.de/</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.571677,49.930904</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tierpark Hellabrunn&lt;/b&gt;&lt;/p&gt;Tierparkstraße 30 &lt;br/&gt;81543 München&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.zoo-munich.de" target="_blank"&gt;Tierpark Hellabrunn&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Tierpark Hellabrunn</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.554285</SimpleData>
+		<SimpleData name="hw_wgs84">48.096456</SimpleData>
+		<SimpleData name="adresse_strasse">Tierparkstraße 30 </SimpleData>
+		<SimpleData name="adresse_ort">81543 München</SimpleData>
+		<SimpleData name="url">http://www.zoo-munich.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.554285,48.096456</coordinates></Point>
+</Placemark>
+    <Placemark>
+	<description>&lt;p&gt;&lt;b&gt;Tiergarten Nürnberg&lt;/b&gt;&lt;/p&gt;Am Tiergarten 30 &lt;br/&gt;90480 Nürnberg&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Weitere Informationen finden Sie unter:&lt;/b&gt;&lt;br/&gt;&lt;a href="http://www.tiergarten.nuernberg.de" target="_blank"&gt;Tiergarten Nürnberg&lt;/a&gt;</description>
+	<styleUrl>#Icon</styleUrl>
+	<ExtendedData>
+	<SchemaData schemaUrl="#zoo">
+		<SimpleData name="Name">Tiergarten Nürnberg</SimpleData>
+		<SimpleData name="objektart">Zoo</SimpleData>
+		<SimpleData name="art"/>
+		<SimpleData name="rw_wgs84">11.144217</SimpleData>
+		<SimpleData name="hw_wgs84">49.447821</SimpleData>
+		<SimpleData name="adresse_strasse">Am Tiergarten 30 </SimpleData>
+		<SimpleData name="adresse_ort">90480 Nürnberg</SimpleData>
+		<SimpleData name="url">http://www.tiergarten.nuernberg.de</SimpleData>
+	</SchemaData>
+	</ExtendedData>      
+    <Point><coordinates>11.144217,49.447821</coordinates></Point>
+</Placemark>
+     
+    
+  
+</Folder>
+</Document> 
+</kml>
