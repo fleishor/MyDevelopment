@@ -58,7 +58,7 @@ expressApp.post(grafanaRoute, (request, response) => {
    if (mqttClientConnected) {
       const mqttPrefix = "webhook2mqtt";
       const mqttWebHook = "Grafana";
-      const mqttAlertName = grafanaAlert.commonLabels.alertname;
+      const mqttAlertName = grafanaAlert.commonLabels.MyAlertRuleName;
       const topic = "/" + mqttPrefix + "/" + mqttWebHook + "/" + mqttAlertName;
       const mqttPayload = JSON.stringify({
          topic: topic,
@@ -66,7 +66,7 @@ expressApp.post(grafanaRoute, (request, response) => {
          mqttWebHook: mqttWebHook,
          mqttAlertName: mqttAlertName,
          path: request.path,
-         payload: request.body,
+         webhookBody: request.body,
       });
 
       logger.info("Publish to MQTT with topic " + topic, { topic: topic, payload: mqttPayload });
