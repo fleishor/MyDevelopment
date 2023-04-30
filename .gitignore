@@ -6,4 +6,4 @@ dist
 desktop.ini
 storage
 __pycache__
-
+apikeys.json
