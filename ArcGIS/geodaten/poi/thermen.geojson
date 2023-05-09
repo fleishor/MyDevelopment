@@ -11,8 +11,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Badepark Inzell</b></p>Erlebnisbad<br/>Schwimmbadstraße 12 <br/>83334 Inzell<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.badepark-inzell.de/index.php\" target=\"_blank\">Badepark Inzell</a>",
         "Name": "Badepark Inzell",
         "objektart": "Erlebnisbad",
@@ -34,8 +32,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Freizeitbad Juramare</b></p>Erlebnisbad<br/>Bahnhofplatz 16 <br/>91710 Gunzenhausen am Altmühlsee<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.swg-gun.de/index.php/swg/Baeder/Freizeitbad-Juramare\" target=\"_blank\">Freizeitbad Juramare</a>",
         "Name": "Freizeitbad Juramare",
         "objektart": "Erlebnisbad",
@@ -57,8 +53,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Freizeitbad Atlantis</b></p>Erlebnisbad<br/>Würzburger Straße 35 <br/>91074 Herzogenaurach<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.atlantis-bad.de/index.html\" target=\"_blank\">Freizeitbad Atlantis</a>",
         "Name": "Freizeitbad Atlantis",
         "objektart": "Erlebnisbad",
@@ -80,8 +74,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Erlebnisbad Haßfurt</b></p>Erlebnisbad<br/>Großer Anger 33 <br/>97437 Haßfurt<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.stwhas.de/freizeitzentrum-hassfurt/erlebnisbad/\" target=\"_blank\">Erlebnisbad Haßfurt</a>",
         "Name": "Erlebnisbad Haßfurt",
         "objektart": "Erlebnisbad",
@@ -103,8 +95,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>FrankenLagune</b></p>Erlebnisbad<br/>Georg-Kügel-Ring 6 <br/>96114 Hirschaid<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.frankenlagune.de/\" target=\"_blank\">FrankenLagune</a>",
         "Name": "FrankenLagune",
         "objektart": "Erlebnisbad",
@@ -126,8 +116,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Lohengrin Therme Bayreuth</b></p>Kurbad, Heilbad<br/>Kurpromenade 5 <br/>95448 Bayreuth<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.lohengrin-therme.de/\" target=\"_blank\">Lohengrin Therme Bayreuth</a>",
         "Name": "Lohengrin Therme Bayreuth",
         "objektart": "Erlebnisbad",
@@ -149,8 +137,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Novamare</b></p>Erlebnisbad<br/>Altendettelsauer Straße 11 <br/>91564 Neuendettelsau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.novamare.de/\" target=\"_blank\">Novamare</a>",
         "Name": "Novamare",
         "objektart": "Erlebnisbad",
@@ -172,8 +158,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Thermalbad Fürthermare</b></p>Erlebnisbad<br/>Scherbsgraben 15 <br/>90766 Fürth, Bay<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.fuerthermare.de/\" target=\"_blank\">Thermalbad Fürthermare</a>",
         "Name": "Thermalbad Fürthermare",
         "objektart": "Erlebnisbad",
@@ -195,8 +179,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>peb</b></p>Erlebnisbad<br/>Messestraße 7 <br/>94036 Passau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.stadtwerke-passau.de/erlebnisbad\" target=\"_blank\">peb</a>",
         "Name": "peb",
         "objektart": "Erlebnisbad",
@@ -218,8 +200,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Titania-Therme</b></p>Erlebnisbad<br/>Birkenallee 1 <br/>86356 Neusäß<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.titania-neusaess.de/\" target=\"_blank\">Titania-Therme</a>",
         "Name": "Titania-Therme",
         "objektart": "Erlebnisbad",
@@ -241,8 +221,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>HofBad</b></p>Erlebnisbad<br/>Oberer Anger 4 <br/>95028 Hof, Saale<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.stadtwerke-hof.de/baeder/hofbad.html\" target=\"_blank\">HofBad</a>",
         "Name": "HofBad",
         "objektart": "Erlebnisbad",
@@ -264,8 +242,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Kurhaus Bad Bocklet</b></p>Kurbad, Heilbad<br/>Kurhausstraße 2 <br/>97708 Bad Bocklet<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.kurhaus-bad-bocklet.de/schwimmbad/\" target=\"_blank\">Kurhaus Bad Bocklet</a>",
         "Name": "Kurhaus Bad Bocklet",
         "objektart": "Erlebnisbad",
@@ -287,8 +263,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Vita Alpina</b></p>Erlebnisbad<br/>Brander Straße 1 <br/>83324 Ruhpolding<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.vita-alpina.de/\" target=\"_blank\">Vita Alpina</a>",
         "Name": "Vita Alpina",
         "objektart": "Erlebnisbad",
@@ -310,8 +284,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Fackelmann Therme</b></p>Erlebnisbad<br/>Badstraße 16 <br/>91217 Hersbruck<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.fackelmanntherme.de/\" target=\"_blank\">Fackelmann Therme</a>",
         "Name": "Fackelmann Therme",
         "objektart": "Erlebnisbad",
@@ -333,8 +305,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Berle</b></p>Erlebnisbad<br/>Am Festplatz 4 <br/>92334 Berching<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.berching.de/poi/erlebnisbad_berle-76/\" target=\"_blank\">Berle</a>",
         "Name": "Berle",
         "objektart": "Erlebnisbad",
@@ -356,8 +326,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>elypso</b></p>Erlebnisbad<br/>Sandnerhofweg 4 <br/>94469 Deggendorf<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.elypso.de\" target=\"_blank\">elypso</a>",
         "Name": "elypso",
         "objektart": "Erlebnisbad",
@@ -379,8 +347,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Triamare</b></p>Erlebnisbad<br/>Mühlbacher Straße 15 <br/>97616 Bad Neustadt a.d.Saale<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.triamare.de/\" target=\"_blank\">Triamare</a>",
         "Name": "Triamare",
         "objektart": "Erlebnisbad",
@@ -402,8 +368,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Rigi Rutsch´n</b></p>Erlebnisbad<br/>Pestalozzistraße 8 <br/>82380 Peißenberg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.rigirutschn.de/\" target=\"_blank\">Rigi Rutsch´n</a>",
         "Name": "Rigi Rutsch´n",
         "objektart": "Erlebnisbad",
@@ -425,8 +389,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Elsavamar</b></p>Erlebnisbad<br/>Dammsfeldstraße 13 <br/>63820 Elsenfeld<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.elsavamar.de/\" target=\"_blank\">Elsavamar</a>",
         "Name": "Elsavamar",
         "objektart": "Erlebnisbad",
@@ -448,8 +410,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Parkbad</b></p>Erlebnisbad<br/>Ludwig-Thoma-Platz 1 <br/>86633 Neuburg a.d.Donau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.stw-nd.de/home/neuburger_baeder/hallenbad/\" target=\"_blank\">Parkbad</a>",
         "Name": "Parkbad",
         "objektart": "Erlebnisbad",
@@ -471,8 +431,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Aquaria Coburg</b></p>Erlebnisbad<br/>Rosenauer Straße 32 <br/>96450 Coburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.aquaria-coburg.de/\" target=\"_blank\">Aquaria Coburg</a>",
         "Name": "Aquaria Coburg",
         "objektart": "Erlebnisbad",
@@ -494,8 +452,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Freizeitbad CamboMare</b></p>Erlebnisbad<br/>Aybühlweg 58 <br/>87439 Kempten (Allgäu)<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.cambomare.de/\" target=\"_blank\">Freizeitbad CamboMare</a>",
         "Name": "Freizeitbad CamboMare",
         "objektart": "Erlebnisbad",
@@ -517,8 +473,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>ThermeNatur Bad Rodach</b></p>Kurbad, Heilbad<br/>Thermalbadstraße 18 <br/>96476 Bad Rodach<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.therme-natur.de/\" target=\"_blank\">ThermeNatur Bad Rodach</a>",
         "Name": "ThermeNatur Bad Rodach",
         "objektart": "Erlebnisbad",
@@ -540,8 +494,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Alpspitz-Wellenbad</b></p>Erlebnisbad<br/>Klammstraße 47 <br/>82467 Garmisch-Partenkirchen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.gw-gap.de/alpspitz-wellenbad\" target=\"_blank\">Alpspitz-Wellenbad</a>",
         "Name": "Alpspitz-Wellenbad",
         "objektart": "Erlebnisbad",
@@ -563,8 +515,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Bambados</b></p>Erlebnisbad<br/>Pödeldorfer Straße 175 <br/>96050 Bamberg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.stadtwerke-bamberg.de/baeder/bambados/\" target=\"_blank\">Bambados</a>",
         "Name": "Bambados",
         "objektart": "Erlebnisbad",
@@ -586,8 +536,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Therme Bad Steben</b></p>Kurbad, Heilbad<br/>Badstraße 31 <br/>95138 Bad Steben<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.therme-bad-steben.de/startseite.html\" target=\"_blank\">Therme Bad Steben</a>",
         "Name": "Therme Bad Steben",
         "objektart": "Erlebnisbad",
@@ -609,8 +557,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Juramar</b></p>Erlebnisbad<br/>Am Kurzentrum 4 <br/>91278 Pottenstein<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.juramar.info/\" target=\"_blank\">Juramar</a>",
         "Name": "Juramar",
         "objektart": "Erlebnisbad",
@@ -632,8 +578,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Obermain Therme</b></p>Kurbad, Heilbad<br/>Am Kurpark 1 <br/>96231 Bad Staffelstein<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.obermaintherme.de/\" target=\"_blank\">Obermain Therme</a>",
         "Name": "Obermain Therme",
         "objektart": "Erlebnisbad",
@@ -655,8 +599,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>WONNEMAR Sonthofen</b></p>Erlebnisbad<br/>Stadionweg 5 <br/>87527 Sonthofen, Oberallgäu<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.wonnemar.de/sonthofen/\" target=\"_blank\">WONNEMAR Sonthofen</a>",
         "Name": "WONNEMAR Sonthofen",
         "objektart": "Erlebnisbad",
@@ -678,8 +620,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Aquaria Erlebnisbad</b></p>Erlebnisbad<br/>Alpenstraße 5 <br/>87534 Oberstaufen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://aquaria.de/\" target=\"_blank\">Aquaria Erlebnisbad</a>",
         "Name": "Aquaria Erlebnisbad",
         "objektart": "Erlebnisbad",
@@ -701,8 +641,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>KissSalis Therme</b></p>Kurbad, Heilbad<br/>Heiligenfelder Allee 16 <br/>97688 Bad Kissingen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.kisssalis.de/\" target=\"_blank\">KissSalis Therme</a>",
         "Name": "KissSalis Therme",
         "objektart": "Erlebnisbad",
@@ -724,8 +662,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Therme Sinnflut</b></p>Erlebnisbad<br/>Gänsrain 2 <br/>97769 Bad Brückenau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.stw-brk.de/de/Therme/Therme-Sinnflut_132919.html\" target=\"_blank\">Therme Sinnflut</a>",
         "Name": "Therme Sinnflut",
         "objektart": "Erlebnisbad",
@@ -747,8 +683,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Osserbad Lam</b></p>Erlebnisbad<br/>Ginglmühler Weg 25 <br/>93462 Lam, Oberpf<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.lamer-winkel.bayern/de/lamer-winkel/aktivurlaub/wasserspass/osserbad\" target=\"_blank\">Osserbad Lam</a>",
         "Name": "Osserbad Lam",
         "objektart": "Erlebnisbad",
@@ -770,8 +704,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Isarwelle</b></p>Erlebnisbad<br/>Goethestraße 22 a<br/>83661 Lenggries<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.lenggries.de/sommer/familienbad-isarwelle-1\" target=\"_blank\">Isarwelle</a>",
         "Name": "Isarwelle",
         "objektart": "Erlebnisbad",
@@ -793,8 +725,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Rupertus Therme</b></p>Kurbad, Heilbad<br/>Friedrich-Ebert-Allee 21 <br/>83435 Bad Reichenhall<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.rupertustherme.de/de/therme/\" target=\"_blank\">Rupertus Therme</a>",
         "Name": "Rupertus Therme",
         "objektart": "Erlebnisbad",
@@ -816,8 +746,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Freizeitbad Cham</b></p>Erlebnisbad<br/>Badstraße 4 <br/>93413 Cham, Oberpf<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.cham.de/Kultur-Freizeit/Freizeit/B%C3%A4der-Wellness/Freizeitbad\" target=\"_blank\">Freizeitbad Cham</a>",
         "Name": "Freizeitbad Cham",
         "objektart": "Erlebnisbad",
@@ -839,8 +767,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>monte mare Schliersee</b></p>Erlebnisbad<br/>Perfallstraße 4 <br/>83727 Schliersee<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.monte-mare.de/de/schliersee_q_a-2652.html\" target=\"_blank\">monte mare Schliersee</a>",
         "Name": "monte mare Schliersee",
         "objektart": "Erlebnisbad",
@@ -862,8 +788,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Wellenhallenbad Aquawell</b></p>Erlebnisbad<br/>Adolf-Haack-Straße 7 <br/>95233 Helmbrechts, Oberfr<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.aquawell.info/index.php\" target=\"_blank\">Wellenhallenbad Aquawell</a>",
         "Name": "Wellenhallenbad Aquawell",
         "objektart": "Erlebnisbad",
@@ -885,8 +809,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Rottal Terme</b></p>Kurbad, Heilbad<br/>Prof.-Drexel-Straße 25 <br/>84364 Bad Birnbach, Rottal<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.badbirnbach.de/index.php?menu_id=40\" target=\"_blank\">Rottal Terme</a>",
         "Name": "Rottal Terme",
         "objektart": "Erlebnisbad",
@@ -908,8 +830,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Königsbad</b></p>Erlebnisbad<br/>Käsröthe 6 <br/>91301 Forchheim, Oberfr<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.koenigsbad-forchheim.de/hallenbad\" target=\"_blank\">Königsbad</a>",
         "Name": "Königsbad",
         "objektart": "Erlebnisbad",
@@ -931,8 +851,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Westbad</b></p>Erlebnisbad<br/>Weinbergerstraße 11 <br/>81241 München<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.swm.de/privatkunden/m-baeder/schwimmen/hallenbaeder/westbad.html\" target=\"_blank\">Westbad</a>",
         "Name": "Westbad",
         "objektart": "Erlebnisbad",
@@ -954,8 +872,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Johannesbad Therme</b></p>Kurbad, Heilbad<br/>Johannesstraße 2 <br/>94072 Bad Füssing<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.johannesbad-therme.de/\" target=\"_blank\">Johannesbad Therme</a>",
         "Name": "Johannesbad Therme",
         "objektart": "Erlebnisbad",
@@ -977,8 +893,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>aquariUSH</b></p>Erlebnisbad<br/>Hartmut-Hermann-Weg 2 <br/>85716 Unterschleißheim<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.aquariush.de/\" target=\"_blank\">aquariUSH</a>",
         "Name": "aquariUSH",
         "objektart": "Erlebnisbad",
@@ -1000,8 +914,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>AQUAFit</b></p>Erlebnisbad<br/>Dr.-Matthias-Lechner-Straße 4 <br/>93449 Waldmünchen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.erlebnisbad-aquafit.de\" target=\"_blank\">AQUAFit</a>",
         "Name": "AQUAFit",
         "objektart": "Erlebnisbad",
@@ -1023,8 +935,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>PRIENAVERA</b></p>Erlebnisbad<br/>Seestraße 120 <br/>83209 Prien a. Chiemsee<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.prienavera.de/de/kontakt-anfahrt/\" target=\"_blank\">PRIENAVERA</a>",
         "Name": "PRIENAVERA",
         "objektart": "Erlebnisbad",
@@ -1046,8 +956,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Europa Therme</b></p>Kurbad, Heilbad<br/>Kurallee 23 <br/>94072 Bad Füssing<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.europatherme.de/\" target=\"_blank\">Europa Therme</a>",
         "Name": "Europa Therme",
         "objektart": "Erlebnisbad",
@@ -1069,8 +977,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Badylon</b></p>Erlebnisbad<br/>Aumühlweg 9 <br/>83395 Freilassing<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.badylon.de/startseite\" target=\"_blank\">Badylon</a>",
         "Name": "Badylon",
         "objektart": "Erlebnisbad",
@@ -1092,8 +998,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Bulmare</b></p>Erlebnisbad<br/>Im Naabtalpark 44 <br/>93133 Burglengenfeld<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.bulmare.de/\" target=\"_blank\">Bulmare</a>",
         "Name": "Bulmare",
         "objektart": "Erlebnisbad",
@@ -1115,8 +1019,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Kaiser-Therme</b></p>Kurbad, Heilbad<br/>Kurallee 4 <br/>93077 Bad Abbach<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.kaiser-therme.de/\" target=\"_blank\">Kaiser-Therme</a>",
         "Name": "Kaiser-Therme",
         "objektart": "Erlebnisbad",
@@ -1138,8 +1040,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Natur-Therme Bedernau</b></p>Kurbad, Heilbad<br/>Hohenschlauer Straße 25 <br/>87739 Breitenbrunn, Schwab<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.naturtherme-bedernau.de/\" target=\"_blank\">Natur-Therme Bedernau</a>",
         "Name": "Natur-Therme Bedernau",
         "objektart": "Erlebnisbad",
@@ -1161,8 +1061,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Altmühltherme</b></p>Erlebnisbad<br/>Bürgermeister-Döbler-Allee 12 <br/>91757 Treuchtlingen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.altmuehltherme.de/\" target=\"_blank\">Altmühltherme</a>",
         "Name": "Altmühltherme",
         "objektart": "Erlebnisbad",
@@ -1184,8 +1082,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Caprima</b></p>Erlebnisbad<br/>Stadionstraße 44 <br/>84130 Dingolfing<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.caprima.de/\" target=\"_blank\">Caprima</a>",
         "Name": "Caprima",
         "objektart": "Erlebnisbad",
@@ -1207,8 +1103,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Karoli-Badepark Waldkirchen</b></p>Erlebnisbad<br/>VdK-Heim-Straße 1 <br/>94065 Waldkirchen, Niederbay<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://urlaub-in-waldkirchen.de/badepark/freibad/\" target=\"_blank\">Karoli-Badepark Waldkirchen</a>",
         "Name": "Karoli-Badepark Waldkirchen",
         "objektart": "Erlebnisbad",
@@ -1230,8 +1124,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Weidener Thermenwelt</b></p>Erlebnisbad<br/>Raiffeisenstraße 7 <br/>92637 Weiden i.d.OPf.<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://weidener-thermenwelt.de/\" target=\"_blank\">Weidener Thermenwelt</a>",
         "Name": "Weidener Thermenwelt",
         "objektart": "Erlebnisbad",
@@ -1253,8 +1145,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Königliche Kristall-Therme</b></p>Kurbad, Heilbad<br/>Am Ehberg 16 <br/>87645 Schwangau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://kristalltherme-schwangau.de/\" target=\"_blank\">Königliche Kristall-Therme</a>",
         "Name": "Königliche Kristall-Therme",
         "objektart": "Erlebnisbad",
@@ -1276,8 +1166,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Nautilla</b></p>Erlebnisbad<br/>Gottfried-Hart-Straße 6 <br/>89257 Illertissen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.nautilla.com/\" target=\"_blank\">Nautilla</a>",
         "Name": "Nautilla",
         "objektart": "Erlebnisbad",
@@ -1299,8 +1187,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Franken Therme</b></p>Erlebnisbad<br/>Am Kurzentrum 1 <br/>97631 Bad Königshofen i. Grabfeld<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.frankentherme.de/\" target=\"_blank\">Franken Therme</a>",
         "Name": "Franken Therme",
         "objektart": "Erlebnisbad",
@@ -1322,8 +1208,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>THERME Bad Wörishofen</b></p>Erlebnisbad<br/>Thermenallee 1 <br/>86825 Bad Wörishofen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.therme-badwoerishofen.de/\" target=\"_blank\">THERME Bad Wörishofen</a>",
         "Name": "THERME Bad Wörishofen",
         "objektart": "Erlebnisbad",
@@ -1345,8 +1229,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Alpspitz-Bade-Center</b></p>Erlebnisbad<br/>Badeseeweg 11 <br/>87484 Nesselwang<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.abc-nesselwang.de/\" target=\"_blank\">Alpspitz-Bade-Center</a>",
         "Name": "Alpspitz-Bade-Center",
         "objektart": "Erlebnisbad",
@@ -1368,8 +1250,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Jod-Schwefelbad Bad Wiessee</b></p>Kurbad, Heilbad<br/>Wilhelminastraße 4 <br/>83707 Bad Wiessee<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.jodschwefelbad.de/\" target=\"_blank\">Jod-Schwefelbad Bad Wiessee</a>",
         "Name": "Jod-Schwefelbad Bad Wiessee",
         "objektart": "Erlebnisbad",
@@ -1391,8 +1271,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Therme 1 Bad Füssing</b></p>Kurbad, Heilbad<br/>Kurallee 1 <br/>94072 Bad Füssing<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.badfuessing.com/de/unser-heilwasser/therme-eins\" target=\"_blank\">Therme 1 Bad Füssing</a>",
         "Name": "Therme 1 Bad Füssing",
         "objektart": "Erlebnisbad",
@@ -1414,8 +1292,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Aquella Ansbach</b></p>Erlebnisbad<br/>Am Stadion 2 <br/>91522 Ansbach, Mittelfr<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.myaquella.de/\" target=\"_blank\">Aquella Ansbach</a>",
         "Name": "Aquella Ansbach",
         "objektart": "Erlebnisbad",
@@ -1437,8 +1313,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Therme Obernsees</b></p>Erlebnisbad<br/>An der Therme 1 <br/>95490 Mistelgau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.therme-obernsees.de/\" target=\"_blank\">Therme Obernsees</a>",
         "Name": "Therme Obernsees",
         "objektart": "Erlebnisbad",
@@ -1460,8 +1334,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Geomaris</b></p>Erlebnisbad<br/>Dingolshäuser Straße 2 <br/>97447 Gerolzhofen<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.geomaris.de/\" target=\"_blank\">Geomaris</a>",
         "Name": "Geomaris",
         "objektart": "Erlebnisbad",
@@ -1483,8 +1355,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Limes-Therme</b></p>Kurbad, Heilbad<br/>Am Brunnenforum 1 <br/>93333 Neustadt a.d.Donau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.limes-therme.de/\" target=\"_blank\">Limes-Therme</a>",
         "Name": "Limes-Therme",
         "objektart": "Erlebnisbad",
@@ -1506,8 +1376,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Wohlfühl-Therme</b></p>Kurbad, Heilbad<br/>Thermalbadstraße 4 <br/>94086 Bad Griesbach i.Rottal<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.wohlfuehltherme.de/\" target=\"_blank\">Wohlfühl-Therme</a>",
         "Name": "Wohlfühl-Therme",
         "objektart": "Erlebnisbad",
@@ -1529,8 +1397,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>ALEXBAD</b></p>Kurbad, Heilbad<br/>Markgrafenstraße 28 <br/>95680 Bad Alexandersbad<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://badalexandersbad.de/alexbad/\" target=\"_blank\">ALEXBAD</a>",
         "Name": "ALEXBAD",
         "objektart": "Erlebnisbad",
@@ -1552,8 +1418,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Erlebnisbad WellenBerg</b></p>Erlebnisbad<br/>Himmelreich 52 <br/>82487 Oberammergau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.wellenberg-oberammergau.de/\" target=\"_blank\">Erlebnisbad WellenBerg</a>",
         "Name": "Erlebnisbad WellenBerg",
         "objektart": "Erlebnisbad",
@@ -1575,8 +1439,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Erlebnisschwimmbad fresch</b></p>Erlebnisbad<br/>Rabenweg 20 <br/>85356 Freising, Oberbay<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.fresch-freising.de/de/Home/Startseite/\" target=\"_blank\">Erlebnisschwimmbad fresch</a>",
         "Name": "Erlebnisschwimmbad fresch",
         "objektart": "Erlebnisbad",
@@ -1598,8 +1460,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Franken-Therme</b></p>Erlebnisbad<br/>Erkenbrechtallee 10 <br/>91438 Bad Windsheim<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://franken-therme.net/\" target=\"_blank\">Franken-Therme</a>",
         "Name": "Franken-Therme",
         "objektart": "Erlebnisbad",
@@ -1621,8 +1481,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Chiemgau Thermen</b></p>Kurbad, Heilbad<br/>Ströbinger Straße 18 <br/>83093 Bad Endorf, Oberbay<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.chiemgau-thermen.de/\" target=\"_blank\">Chiemgau Thermen</a>",
         "Name": "Chiemgau Thermen",
         "objektart": "Erlebnisbad",
@@ -1644,8 +1502,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Aqua-Marin</b></p>Erlebnisbad<br/>Martin-Ludwig-Straße 15 <br/>85080 Gaimersheim<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.gaimersheim.de/index.php?id=340\" target=\"_blank\">Aqua-Marin</a>",
         "Name": "Aqua-Marin",
         "objektart": "Erlebnisbad",
@@ -1667,8 +1523,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Badria</b></p>Erlebnisbad<br/>Alkorstraße 14 <br/>83512 Wasserburg a. Inn<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.badria.de/\" target=\"_blank\">Badria</a>",
         "Name": "Badria",
         "objektart": "Erlebnisbad",
@@ -1690,8 +1544,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Therme Lindau</b></p>Erlebnisbad<br/>Eichwaldstraße 18 <br/>88131 Lindau (Bodensee)<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.therme-lindau.com/\" target=\"_blank\">Therme Lindau</a>",
         "Name": "Therme Lindau",
         "objektart": "Erlebnisbad",
@@ -1713,8 +1565,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Bademehr Familienbad</b></p>Erlebnisbad<br/>Wildenheider Straße 11 <br/>96465 Neustadt b. Coburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.bademehr.de/familienbad\" target=\"_blank\">Bademehr Familienbad</a>",
         "Name": "Bademehr Familienbad",
         "objektart": "Erlebnisbad",
@@ -1736,8 +1586,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Kristall trimini</b></p>Erlebnisbad<br/>Seeweg 2 <br/>82431 Kochel a. See<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://kristall-trimini.de/\" target=\"_blank\">Kristall trimini</a>",
         "Name": "Kristall trimini",
         "objektart": "Erlebnisbad",
@@ -1759,8 +1607,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Therme Erding</b></p>Erlebnisbad<br/>Thermenallee 1 <br/>85435 Erding<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.therme-erding.de/\" target=\"_blank\">Therme Erding</a>",
         "Name": "Therme Erding",
         "objektart": "Erlebnisbad",
@@ -1782,8 +1628,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Erlebnis- und Familienbad Fischen</b></p>Erlebnisbad<br/>Mühlenstraße 26 <br/>87538 Fischen i. Allgäu<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.hoernerdoerfer.de/erlebnis-und-familienbad-fischen\" target=\"_blank\">Erlebnis- und Familienbad Fischen</a>",
         "Name": "Erlebnis- und Familienbad Fischen",
         "objektart": "Erlebnisbad",
@@ -1805,8 +1649,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Prinz-Luitpold-Bad</b></p>Kurbad, Heilbad<br/>Andreas-Gross-Straße 7 <br/>87541 Bad Hindelang<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.luitpoldbad.de/de\" target=\"_blank\">Prinz-Luitpold-Bad</a>",
         "Name": "Prinz-Luitpold-Bad",
         "objektart": "Erlebnisbad",
@@ -1828,8 +1670,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Zwieseler Erholungsbad</b></p>Erlebnisbad<br/>Badstraße 4 <br/>94227 Zwiesel<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://erholungsbad.zwiesel.de/zwieseler-erholungsbad-im-bayerischen-wald.html\" target=\"_blank\">Zwieseler Erholungsbad</a>",
         "Name": "Zwieseler Erholungsbad",
         "objektart": "Erlebnisbad",
@@ -1851,8 +1691,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Therme Bad Aibling</b></p>Kurbad, Heilbad<br/>Lindenstraße 32 <br/>83043 Bad Aibling<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.therme-bad-aibling.de/2007/pages/index.php\" target=\"_blank\">Therme Bad Aibling</a>",
         "Name": "Therme Bad Aibling",
         "objektart": "Erlebnisbad",
@@ -1874,8 +1712,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>ERGOMAR</b></p>Erlebnisbad<br/>Industriestraße 7 <br/>84030 Ergolding<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.ergomar-ergolding.de/\" target=\"_blank\">ERGOMAR</a>",
         "Name": "ERGOMAR",
         "objektart": "Erlebnisbad",
@@ -1897,8 +1733,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Donaubad</b></p>Erlebnisbad<br/>Wiblinger Straße 55 <br/>89231 Neu-Ulm<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.donaubad.de/\" target=\"_blank\">Donaubad</a>",
         "Name": "Donaubad",
         "objektart": "Erlebnisbad",
@@ -1920,8 +1754,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>CabrioSol</b></p>Erlebnisbad<br/>Badstraße 4 <br/>91257 Pegnitz<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://cabriosol-pegnitz.de/\" target=\"_blank\">CabrioSol</a>",
         "Name": "CabrioSol",
         "objektart": "Erlebnisbad",
@@ -1943,8 +1775,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Rother Lagune</b></p>Erlebnisbad<br/>Rother Kuppe 2 <br/>97647 Hausen, Rhön<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.rhoen-park-hotel.de/wellness/erlebnisbad-rother-lagune/\" target=\"_blank\">Rother Lagune</a>",
         "Name": "Rother Lagune",
         "objektart": "Erlebnisbad",
@@ -1966,8 +1796,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Kurfürstenbad</b></p>Erlebnisbad<br/>Kurfürstenring 2 <br/>92224 Amberg, Oberpf<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.kurfuerstenbad-amberg.de/freizeitbad.html\" target=\"_blank\">Kurfürstenbad</a>",
         "Name": "Kurfürstenbad",
         "objektart": "Erlebnisbad",
@@ -1989,8 +1817,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Plantsch</b></p>Erlebnisbad<br/>Lechuferstraße 6 <br/>86956 Schongau<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.plantsch.de/\" target=\"_blank\">Plantsch</a>",
         "Name": "Plantsch",
         "objektart": "Erlebnisbad",
@@ -2012,8 +1838,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>AquaRiese</b></p>Erlebnisbad<br/>Seestraße 3 <br/>96231 Bad Staffelstein<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.aquariese.de/index.php?navid=1\" target=\"_blank\">AquaRiese</a>",
         "Name": "AquaRiese",
         "objektart": "Erlebnisbad",
@@ -2035,8 +1859,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Crana Mare</b></p>Erlebnisbad<br/>Gottfried-Neukam-Straße 25 <br/>96317 Kronach, Oberfr<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.crana-mare.de/\" target=\"_blank\">Crana Mare</a>",
         "Name": "Crana Mare",
         "objektart": "Erlebnisbad",
@@ -2058,8 +1880,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Sibyllenbad</b></p>Kurbad, Heilbad<br/>Kurallee 1 <br/>95698 Bad Neualbenreuth<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.sibyllenbad.de/\" target=\"_blank\">Sibyllenbad</a>",
         "Name": "Sibyllenbad",
         "objektart": "Erlebnisbad",
@@ -2081,8 +1901,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Kristall Palm Beach</b></p>Erlebnisbad<br/>Albertus-Magnus-Straße 29 <br/>90547 Stein, Mittelfr<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.palm-beach.de/\" target=\"_blank\">Kristall Palm Beach</a>",
         "Name": "Kristall Palm Beach",
         "objektart": "Erlebnisbad",
@@ -2104,8 +1922,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Siebenquell</b></p>Kurbad, Heilbad<br/>Thermenallee 1 <br/>95163 Weißenstadt<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.siebenquell.com\" target=\"_blank\">Siebenquell</a>",
         "Name": "Siebenquell",
         "objektart": "Erlebnisbad",
@@ -2127,8 +1943,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Watzmann Therme</b></p>Erlebnisbad<br/>Bergwerkstraße 54 <br/>83471 Berchtesgaden<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.watzmann-therme.de/\" target=\"_blank\">Watzmann Therme</a>",
         "Name": "Watzmann Therme",
         "objektart": "Erlebnisbad",
@@ -2150,8 +1964,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Aquacur Badewelt Bad Kötzting</b></p>Erlebnisbad<br/>Bgm.-Seidl-Platz 1 <br/>93444 Bad Kötzting<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.aqacur.de/aqacur-badewelt-bad-koetzting.html\" target=\"_blank\">Aquacur Badewelt Bad Kötzting</a>",
         "Name": "Aquacur Badewelt Bad Kötzting",
         "objektart": "Erlebnisbad",
@@ -2173,8 +1985,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Sonnen-Therme</b></p>Erlebnisbad<br/>Mühlbergstraße 5 <br/>94535 Eging a.See<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://sonnen-therme.de/\" target=\"_blank\">Sonnen-Therme</a>",
         "Name": "Sonnen-Therme",
         "objektart": "Erlebnisbad",
@@ -2196,8 +2006,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Keldorado</b></p>Erlebnisbad<br/>Rennweg 60 <br/>93309 Kelheim<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.keldorado-kelheim.de/\" target=\"_blank\">Keldorado</a>",
         "Name": "Keldorado",
         "objektart": "Erlebnisbad",
@@ -2219,8 +2027,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Nautiland</b></p>Erlebnisbad<br/>Nigglweg 9 <br/>97082 Würzburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.wvv.de/baeder/nautiland/wuerzburg.html\" target=\"_blank\">Nautiland</a>",
         "Name": "Nautiland",
         "objektart": "Erlebnisbad",
@@ -2242,8 +2048,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-68d23fe7",
         "description": "<p><b>Westbad</b></p>Erlebnisbad<br/>Messerschmittstraße 4 <br/>93049 Regensburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://westbad.de/\" target=\"_blank\">Westbad</a>",
         "Name": "Westbad",
         "objektart": "Erlebnisbad",

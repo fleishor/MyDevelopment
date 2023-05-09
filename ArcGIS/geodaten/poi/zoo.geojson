@@ -11,8 +11,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Vogelpark Irgenöd</b></p>Irgenöd 3 <br/>94496 Ortenburg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.vogelpark-irgenoed.de/index.php/startseite\" target=\"_blank\">Vogelpark Irgenöd</a>",
         "Name": "Vogelpark Irgenöd",
         "objektart": "Zoo",
@@ -34,8 +32,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Zoo Augsburg</b></p>Brehmplatz 1 <br/>86161 Augsburg, Bay<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.zoo-augsburg.de\" target=\"_blank\">Zoo Augsburg</a>",
         "Name": "Zoo Augsburg",
         "objektart": "Zoo",
@@ -57,8 +53,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Sea Life</b></p>Willi-Daume-Platz 1 <br/>80809 München<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www2.visitsealife.com/de/\" target=\"_blank\">Sea Life</a>",
         "Name": "Sea Life",
         "objektart": "Zoo",
@@ -80,8 +74,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Tiergarten Straubing</b></p>Am Tiergarten 3 <br/>94315 Straubing<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.tiergarten-straubing.de/\" target=\"_blank\">Tiergarten Straubing</a>",
         "Name": "Tiergarten Straubing",
         "objektart": "Zoo",
@@ -103,8 +95,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Bayerwald-Tierpark Lohberg</b></p>Schwarzenbacher Straße 1 a<br/>93470 Lohberg b Lam, Oberpf<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.bayerwald-tierpark.de/\" target=\"_blank\">Bayerwald-Tierpark Lohberg</a>",
         "Name": "Bayerwald-Tierpark Lohberg",
         "objektart": "Zoo",
@@ -126,8 +116,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Zoo Hof</b></p>Alte Plauener Straße 40 <br/>95028 Hof, Saale<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.zoo-hof.de\" target=\"_blank\">Zoo Hof</a>",
         "Name": "Zoo Hof",
         "objektart": "Zoo",
@@ -149,8 +137,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Tierpark Röhrensee</b></p>Pottensteiner Straße  <br/>95447 Bayreuth<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"https://www.tierpark-roehrensee.de/\" target=\"_blank\">Tierpark Röhrensee</a>",
         "Name": "Tierpark Röhrensee",
         "objektart": "Zoo",
@@ -172,8 +158,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Tierpark Hellabrunn</b></p>Tierparkstraße 30 <br/>81543 München<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.zoo-munich.de\" target=\"_blank\">Tierpark Hellabrunn</a>",
         "Name": "Tierpark Hellabrunn",
         "objektart": "Zoo",
@@ -195,8 +179,6 @@
         ]
       },
       "properties": {
-        "styleUrl": "#Icon",
-        "styleHash": "-77d2f68",
         "description": "<p><b>Tiergarten Nürnberg</b></p>Am Tiergarten 30 <br/>90480 Nürnberg<br/><br/><b>Weitere Informationen finden Sie unter:</b><br/><a href=\"http://www.tiergarten.nuernberg.de\" target=\"_blank\">Tiergarten Nürnberg</a>",
         "Name": "Tiergarten Nürnberg",
         "objektart": "Zoo",

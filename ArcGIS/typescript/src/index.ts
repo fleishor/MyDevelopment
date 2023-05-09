@@ -6,39 +6,56 @@ import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 import PictureMarkerSymbol from "@arcgis/core/symbols/PictureMarkerSymbol";
 import SimpleRenderer from "@arcgis/core/renderers/SimpleRenderer";
 import LabelClass from "@arcgis/core/layers/support/LabelClass";
+import LayerList from "@arcgis/core/widgets/LayerList";
 
 esriConfig.apiKey = "__MyApiKey__";
 
-function AddSchwimmbadFeatureLayer(map: Map) {
+class FeatureDescription {
+   readonly symbolUrl: string;
+   readonly featureUrl: string;
+
+   constructor(featureUrl: string, symbolUrl: string) {
+      this.symbolUrl = symbolUrl;
+      this.featureUrl = featureUrl;
+   }
+}
+
+function AddFeatureLayer(map: Map, featureDescription: FeatureDescription) {
    const symbolProperties: PictureMarkerSymbol = new PictureMarkerSymbol({
-      url: "http://static.arcgis.com/images/Symbols/Basic/RedStickpin.png",
+      url: featureDescription.symbolUrl,
       width: 18,
       height: 18,
    });
 
-   const rendererPropSchwimmbad: SimpleRenderer = new SimpleRenderer({
-      label: "RendererPropSchwimmbad",
+   const rendererProp: SimpleRenderer = new SimpleRenderer({
+      label: "RendererProp",
       symbol: symbolProperties,
    });
 
-   const labelClassSchwimmbad: LabelClass = new LabelClass({
+   const labelClass: LabelClass = new LabelClass({
       symbol: {
          type: "text",
          color: "red",
       },
       labelPlacement: "above-center",
       labelExpressionInfo: {
-         expression: "$feature.NAME",
+         expression: "$feature.Name",
       },
    });
 
-   const featureLayerSchwimmbad = new FeatureLayer({
-      url: "https://services2.arcgis.com/r6szgV4JEJMilxsc/arcgis/rest/services/schwimmbad/FeatureServer/0",
+   const popup = {
+      "title": "{name}",
+      "content": "{description}"
+   }
+
+   const featureLayer = new FeatureLayer({
+      url: featureDescription.featureUrl,
       apiKey: "__PoiApiKey__",
-      renderer: rendererPropSchwimmbad,
-      labelingInfo: [labelClassSchwimmbad],
+      renderer: rendererProp,
+      labelingInfo: [labelClass],
+      popupTemplate: popup
    });
-   map.add(featureLayerSchwimmbad, 0);
+   map.add(featureLayer, 0);
 }
 
 function main() {
@@ -59,7 +76,29 @@ function main() {
    });
    view.ui.add(basemapToggle, "bottom-right");
 
-   AddSchwimmbadFeatureLayer(map);
+   const layerList = new LayerList({
+      view: view
+   });
+   view.ui.add(layerList, {
+      position: "top-left"
+    });
+
+   AddFeatureLayer(
+      map,
+      new FeatureDescription(
+         "https://services2.arcgis.com/r6szgV4JEJMilxsc/arcgis/rest/services/hallenbad/FeatureServer/0",
+         "http://static.arcgis.com/images/Symbols/Basic/RedStickpin.png",
+      )
+   );
+
+   AddFeatureLayer(
+      map,
+      new FeatureDescription(
+         "https://services2.arcgis.com/r6szgV4JEJMilxsc/arcgis/rest/services/safaripark/FeatureServer/0",
+         "http://static.arcgis.com/images/Symbols/Basic/GreenStickpin.png",
+      )
+   );
+
 }
 
 main();

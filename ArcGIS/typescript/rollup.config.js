@@ -16,6 +16,13 @@ export default {
    plugins: [
       resolve(),
       commonjs(),
+      replace({
+         preventAssignment: true,
+         values: {
+            __MyApiKey__: apiKeys.MyApiKey,
+            __PoiApiKey__: apiKeys.PoiApiKey
+         },
+      }),
       typescript(),
       copy({
          targets: [
@@ -23,13 +30,6 @@ export default {
             { src: "node_modules/@arcgis/core/assets/", dest: "dist/" },
          ],
          copyOnce: true,
-      }),
-      replace({
-         preventAssignment: true,
-         values: {
-            __MyApiKey__: apiKeys.MyApiKey,
-            __PoiApiKey__: apiKeys.PoiApiKey
-         },
       }),
    ],
    preserveEntrySignatures: true,
