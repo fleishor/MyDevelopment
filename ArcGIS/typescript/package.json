@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@arcgis/core": "^4.26.5",
-    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-typescript": "^11.1.0",
@@ -20,5 +20,8 @@
     "rollup-plugin-copy": "^3.4.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "npm": "^9.8.1"
   }
 }

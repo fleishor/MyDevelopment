@@ -1,7 +1,8 @@
 import esriConfig from "@arcgis/core/config";
 import Map from "@arcgis/core/Map";
 import MapView from "@arcgis/core/views/MapView";
-import BasemapToggle from "@arcgis/core/widgets/BasemapToggle";
+import BasemapGallery from "@arcgis/core/widgets/BasemapGallery";
+import Basemap from "@arcgis/core/Basemap";
 import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 import PictureMarkerSymbol from "@arcgis/core/symbols/PictureMarkerSymbol";
 import SimpleRenderer from "@arcgis/core/renderers/SimpleRenderer";
@@ -70,11 +71,11 @@ function main() {
       container: "viewDiv", // Div element
    });
 
-   const basemapToggle = new BasemapToggle({
+   let basemapGallery = new BasemapGallery({
       view: view,
-      nextBasemap: "arcgis-imagery",
-   });
-   view.ui.add(basemapToggle, "bottom-right");
+      source: [Basemap.fromId("arcgis-navigation"), Basemap.fromId("arcgis-imagery"), Basemap.fromId("arcgis-topographic")] 
+    });
+    view.ui.add(basemapGallery, "bottom-right");
 
    const layerList = new LayerList({
       view: view
