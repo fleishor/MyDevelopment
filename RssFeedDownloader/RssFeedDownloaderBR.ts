@@ -1,18 +1,18 @@
+// curl -o  "Podcast.xml" "https://feeds.br.de/radiowissen/feed.xml"
+
 import { URL } from "url";
 import { XMLParser, X2jOptionsOptional } from "fast-xml-parser";
 import { readFileSync } from "fs";
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
+const startDate = new Date("2023-11-23");
 
 function GetFileName(parsedUrl: URL): string {
    const urlFileName = parsedUrl.pathname;
    const urlParts = urlFileName.split("/");
-   const downloadFileName = urlParts[urlParts.length - 1];
-
-   const fileNameParts = downloadFileName.split("-");
-   const fileName = fileNameParts[1] + "_" +fileNameParts[2] + "-" +fileNameParts[3] + "-" +fileNameParts[4];
-
-   return fileName + ".mp3";
+   const downloadFileName = urlParts[urlParts.length - 2];
+    
+   return downloadFileName + ".mp3";
 }
 
 function GetPodCastName(parsedUrl: URL): string {
@@ -46,7 +46,6 @@ const options: X2jOptionsOptional = {
 
 const parser = new XMLParser(options);
 const json = parser.parse(xmlFile);
-const startDate = new Date("2020-01-01");
 
 for (const item of json.rss.channel.item) {
   

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node RssFeedDownloaderARD.ts"
+    "RssFeedDownloaderBR": "ts-node RssFeedDownloaderBR.ts",
+    "RssFeedDownloaderARD": "ts-node RssFeedDownloaderARD.ts"
   },
   "author": "",
   "license": "ISC",

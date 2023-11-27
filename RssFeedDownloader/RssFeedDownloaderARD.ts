@@ -1,10 +1,11 @@
-// curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=95814094"
+// curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=12810141"
 
 import { URL } from "url";
 import { XMLParser, X2jOptionsOptional } from "fast-xml-parser";
 import { readFileSync } from "fs";
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
+const startDate = new Date("2020-01-01");
 
 function GetFileName(parsedUrl: URL): string {
    const urlParts = parsedUrl.pathname.split("/");
@@ -50,7 +51,6 @@ const options: X2jOptionsOptional = {
 
 const parser = new XMLParser(options);
 const json = parser.parse(xmlFile);
-const startDate = new Date("2020-01-01");
 
 for (const item of json.rss.channel.item) {
   
