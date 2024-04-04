@@ -39,7 +39,7 @@ function DownloadKatholischDe(element: any, enclosureUrl: UrlWithStringQuery, ca
    let downloadFileName = GetFileName(canonicalUrl) + ".mp3";
    downloadFileName = downloadFileName.substring(downloadFileName.indexOf("-") + 1);
    const timestamp = GetTimeStamp(element.actionTimestamp);
-   console.log("c:\\tools\\wget -O " + timestamp + downloadFileName + " " + element.enclosure[0].href);
+   console.log("wget -O ./download/" + timestamp + downloadFileName + " " + element.enclosure[0].href);
 }
 
 function DownloadBrDe(element: any, enclosureUrl: UrlWithStringQuery, canonicalUrl: UrlWithStringQuery) {
@@ -47,7 +47,7 @@ function DownloadBrDe(element: any, enclosureUrl: UrlWithStringQuery, canonicalU
    let podCastName = GetPodCastName(canonicalUrl);
 
    const timestamp = GetTimeStamp(element.actionTimestamp);
-   console.log("c:\\tools\\wget -O " + timestamp + podCastName + "_" + downloadFileName + " " + element.enclosure[0].href);
+   console.log("wget -O ./download/" + timestamp + podCastName + "_" + downloadFileName + " " + element.enclosure[0].href);
 }
 
 try {
