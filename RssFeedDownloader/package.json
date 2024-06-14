@@ -6,7 +6,8 @@
   "scripts": {
     "ArdAudiothekDownloader": "ts-node ArdAudiothekDownloader.ts",
     "RssFeedDownloaderBR": "ts-node RssFeedDownloaderBR.ts",
-    "RssFeedDownloaderARD": "ts-node RssFeedDownloaderARD.ts"
+    "RssFeedDownloaderARD": "ts-node RssFeedDownloaderARD.ts",
+    "RssFeedDownloaderKatholisch": "ts-node RssFeedDownloaderKatholisch.ts"
   },
   "author": "",
   "license": "ISC",

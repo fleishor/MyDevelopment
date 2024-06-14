@@ -7,3 +7,5 @@ desktop.ini
 storage
 __pycache__
 ArcGIS/typescript/apikeys.json
+RssFeedDownloader/Podcast.xml
+RssFeedDownloader/download.sh
