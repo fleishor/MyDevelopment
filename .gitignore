@@ -9,3 +9,4 @@ __pycache__
 ArcGIS/typescript/apikeys.json
 RssFeedDownloader/Podcast.xml
 RssFeedDownloader/download.sh
+fritzbox2telegraf/.env

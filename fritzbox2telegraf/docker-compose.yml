@@ -1,0 +1,25 @@
+version: "3.5"
+
+services:
+  fritzbox:
+    image: fritzbox:20240621
+    container_name: fritzbox
+    user: 1005:995
+    environment:
+      - ROUTER_ADDRESS=192.168.178.1
+      - ROUTER_USERNAME=telegraf
+      - ROUTER_PASSWORD=${ROUTER_PASSWORD}
+      - BUERO_ADDRESS=192.168.178.2
+      - BUERO_USERNAME=telegraf
+      - BUERO_PASSWORD=${BUERO_PASSWORD}
+      - TELEGRAF_HOSTNAME=telegraf
+      - TELEGRAF_PORT=8094
+    restart: always
+    networks:
+        - smarthome
+        
+networks:
+    smarthome:
+        external: true
+        name: "smarthome"
+
