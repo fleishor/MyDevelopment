@@ -1,38 +1,67 @@
-import express from "express";
+import axios, { AxiosResponse } from "axios";
 
-const app = express();
-const port = 3000; // Port, auf dem der Server lauscht
+const authorizationToken = ""
 
-// Ihre Anwendungsdetails
-const client_id = "7644df9664bc4713b9a1d8ddc6e251cc";
-const redirect_uri = "https://api.save.tv/v3/docs/index.html";
-const response_type = "token";
+const getRecordingsUrl = "https://api.save.tv/v3/records" +
+                        "?adFreeAvailable=true" +
+                        "&fields=telecast.episode" +
+                        "&fields=telecast.title" +
+                        "&fields=telecast.subtitle" +
+                        "&limit=100" +
+                        "&recordFormats=6" +
+                        "&recordStates=3" +
+                        "&sort=title" +
+                        "&sort=subtitle";
 
-app.get("/authorize", (req, res) => {
-   // Erstellen Sie die Autorisierungs-URL
-   const authUrl = `https://auth.save.tv/auth?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}`;
+const getDownloadUrlTemplate = "https://api.save.tv/v3/records/${telecastId}/downloads/6?adFree=true";
 
-   // Öffnen Sie die Autorisierungs-URL im Standardbrowser des Benutzers
-   res.writeHead(302, { location: authUrl });
-   res.end();
+async function downloadRecordings(url: string): Promise<AxiosResponse> {
+    const response = await axios.get(url, {
+        headers: {
+            "Authorization": `${authorizationToken}`
+        }        
+    });
 
-});
+    return response;
+}
 
-app.get("/callback", (req, res) => {
-   // Extrahieren Sie das Zugriffstoken aus der URL
-   const accessToken = req.query.access_token;
+async function downloadUrl(url: string): Promise<AxiosResponse> {
+    const response = await axios.get(url, {
+        headers: {
+            "Authorization": `${authorizationToken}`
+        }        
+    });
 
-   if (!accessToken) {
-      res.send("Fehler beim Abrufen des Zugriffstokens. Bitte versuchen Sie es erneut.");
-      return;
-   }
+    return response;
+}
 
-   // Verwenden Sie das Zugriffstoken, um API-Anfragen zu stellen
-   // ...
+async function main()
+{
+    const recordings = await downloadRecordings(getRecordingsUrl);
+    if (recordings.status != 200) {
+        console.error(`Download failed; Status: ${recordings.status} - ${recordings.statusText}`);
+        process.exit(1);
+    }
 
-   res.send("Anmeldung erfolgreich!");
-});
+    for (const recording of recordings.data) {
+        const telecast = recording.telecast;
 
-app.listen(port, () => {
-   console.log(`Server läuft auf http://localhost:${port}`);
-});
+        const getDownloadUrl = getDownloadUrlTemplate.replace("${telecastId}", telecast.id);
+        const downloadUrls = await downloadUrl(getDownloadUrl);
+        if (downloadUrls.status != 200) {
+            console.error(`Download failed; Status: ${downloadUrls.status} - ${downloadUrls.statusText}`);
+            process.exit(1);
+        }
+
+        telecast.downloadUrl = downloadUrls.data.downloadUrl;
+        telecast.fileName = telecast.title + "_" +
+                            telecast.episode + "_" +
+                            telecast.subTitle + "_" +
+                            telecast.id + ".mp4";
+        telecast.fileName = telecast.fileName.replace(/ /g, "_").replace(/-/g, "_");
+
+        console.log("wget -O ./download/" + telecast.fileName + " " + telecast.downloadUrl);
+    }
+}
+
+main();
