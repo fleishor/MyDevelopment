@@ -1,8 +1,8 @@
-﻿using MediatR;
-
-namespace Library.Interfaces
+﻿namespace Road.BusinessLayer.Interfaces.Query
 {
-    internal interface IQueryHandler<in TQueryArguments, TQueryResult> :
+    using MediatR;
+
+    public interface IQueryHandler<in TQueryArguments, TQueryResult> :
         IRequestHandler<TQueryArguments, TQueryResult>
         where TQueryArguments : IQuery<IQueryResult>, IRequest<TQueryResult>
     {

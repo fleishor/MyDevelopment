@@ -1,0 +1,21 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- Common ruleset shared by all projects -->
+    <CodeAnalysisRuleset>$(MSBuildThisFileDirectory)Mediatr.ruleset</CodeAnalysisRuleset>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Add reference to StyleCop analyzers to all projects  -->
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.*" Condition="'$(DisableAdditionalAnalyzers)' != 'True'" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)StyleCop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="9.*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

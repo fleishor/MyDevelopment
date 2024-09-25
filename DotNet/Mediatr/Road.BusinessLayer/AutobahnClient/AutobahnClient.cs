@@ -21,7 +21,7 @@ namespace Bund.API.Autobahn.Client
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
-    public partial class AutobahnClientApi : BaseRequestBuilder
+    public partial class AutobahnClient : BaseRequestBuilder
     {
         /// <summary>The details property</summary>
         public global::Bund.API.Autobahn.Client.Details.DetailsRequestBuilder Details
@@ -41,10 +41,10 @@ namespace Bund.API.Autobahn.Client
             }
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::Bund.API.Autobahn.Client.AutobahnClientApi"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Bund.API.Autobahn.Client.AutobahnClient"/> and sets the default values.
         /// </summary>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public AutobahnClientApi(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())
+        public AutobahnClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())
         {
             ApiClientBuilder.RegisterDefaultSerializer<JsonSerializationWriterFactory>();
             ApiClientBuilder.RegisterDefaultSerializer<TextSerializationWriterFactory>();
