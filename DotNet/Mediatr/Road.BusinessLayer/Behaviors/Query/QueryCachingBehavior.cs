@@ -24,7 +24,7 @@ public class QueryCachingBehavior<TQuery, TQueryResult>(
         }
         else
         {
-            response = await GetResponseAndAddToCache(request, next);
+            response = await this.GetResponseAndAddToCache(request, next);
             logger.LogInformation("Added to cache; CacheKey: \"{CacheKey}\"", request.CacheKey);
         }
 

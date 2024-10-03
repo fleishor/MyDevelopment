@@ -6,6 +6,6 @@ public class RoadWarningsQueryValidator : AbstractValidator<RoadWarningsQuery>
 {
     public RoadWarningsQueryValidator()
     {
-        RuleFor(x => x.RoadId).NotEmpty().MaximumLength(4);
+        this.RuleFor(x => x.RoadId).NotEmpty().MaximumLength(4);
     }
 }
