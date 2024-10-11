@@ -27,6 +27,9 @@ public static class Program
         // Required by ClientInfo enricher
         builder.Services.AddHttpContextAccessor();
 
+        // Add Cookie Authorization
+        builder.Services.AddAuthentication("cookie").AddCookie("cookie");
+
         // Add HttpLogging, but may cause performance issues
         builder.Services.AddHttpLogging(options =>
         {
@@ -90,6 +93,7 @@ public static class Program
             app.UseSwaggerUI();
         }
 
+        app.UseAuthentication();
         app.UseAuthorization();
         app.UseStaticFiles();
 
