@@ -11,13 +11,13 @@ namespace JWTBased
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Load JwtOptions from appsettings.json
             builder.Services.ConfigureOptions<JwtConfigureOptions>();
-
             var jwtOptions = builder.Configuration.GetSection("JwtOptions").Get<JwtOptions>();
 
             builder.Services.AddHttpContextAccessor();
 
-            // Add Cookie Authorization
+            // Add JwtBearer Authorization
             builder.Services.AddAuthentication(cfg => {
                 cfg.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 cfg.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -77,7 +77,6 @@ namespace JWTBased
                         Array.Empty<string>()
                     }
                 });
-
             });
 
             var app = builder.Build();

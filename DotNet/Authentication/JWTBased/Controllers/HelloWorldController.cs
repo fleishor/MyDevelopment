@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CookieBased.Controllers
+namespace JWTBased.Controllers
 {
     [ApiController]
     [Route("[controller]")]
