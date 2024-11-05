@@ -7,13 +7,15 @@ const getRecordingsUrl = "https://api.save.tv/v3/records" +
                         "&fields=telecast.episode" +
                         "&fields=telecast.title" +
                         "&fields=telecast.subtitle" +
+                        "&fields=formats.recordformat.id" + 
                         "&limit=100" +
+                        "&recordFormats=5" +
                         "&recordFormats=6" +
                         "&recordStates=3" +
                         "&sort=title" +
                         "&sort=subtitle";
 
-const getDownloadUrlTemplate = "https://api.save.tv/v3/records/${telecastId}/downloads/6?adFree=true";
+const getDownloadUrlTemplate = "https://api.save.tv/v3/records/${telecastId}/downloads/${recordFormatId}?adFree=true";
 
 async function downloadRecordings(url: string): Promise<AxiosResponse> {
     const response = await axios.get(url, {
@@ -45,8 +47,9 @@ async function main()
 
     for (const recording of recordings.data) {
         const telecast = recording.telecast;
+        const recordFormatId = recording.formats[0].recordFormat.id;
 
-        const getDownloadUrl = getDownloadUrlTemplate.replace("${telecastId}", telecast.id);
+        const getDownloadUrl = getDownloadUrlTemplate.replace("${telecastId}", telecast.id).replace("${recordFormatId}", recordFormatId);
         const downloadUrls = await downloadUrl(getDownloadUrl);
         if (downloadUrls.status != 200) {
             console.error(`Download failed; Status: ${downloadUrls.status} - ${downloadUrls.statusText}`);
