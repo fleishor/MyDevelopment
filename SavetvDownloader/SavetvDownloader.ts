@@ -1,6 +1,15 @@
 import axios, { AxiosResponse } from "axios";
+import dotenv from "dotenv";
 
-const authorizationToken = ""
+dotenv.config();
+
+const authorizationToken = process.env.AUTHORIZATION_TOKEN;
+
+if (!authorizationToken)
+{
+    console.error("No authorizationToken set")
+    process.exit(1);
+}
 
 const getRecordingsUrl = "https://api.save.tv/v3/records" +
                         "?adFreeAvailable=true" +
@@ -57,13 +66,22 @@ async function main()
         }
 
         telecast.downloadUrl = downloadUrls.data.downloadUrl;
-        telecast.fileName = telecast.title + "_" +
+        telecast.fileName = telecast.title + "/" +
                             telecast.episode + "_" +
                             telecast.subTitle + "_" +
                             telecast.id + ".mp4";
-        telecast.fileName = telecast.fileName.replace(/ /g, "_").replace(/-/g, "_");
 
-        console.log("wget -O ./download/" + telecast.fileName + " " + telecast.downloadUrl);
+        if (!telecast.episode && !telecast.subTitle)
+        {
+            telecast.fileName = telecast.title + "_" + telecast.id + ".mp4";
+        }
+
+        telecast.fileName = telecast.fileName.replace(/ /g, "_")
+                                             .replace(/-/g, "_")
+                                             .replace(/\?/g, "_")
+                                             .replace(/:/g, "_");
+
+        console.log("curl " +telecast.downloadUrl + " --create-dirs --output ./download/" + telecast.fileName );
     }
 }
 

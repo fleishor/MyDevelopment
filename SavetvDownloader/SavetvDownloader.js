@@ -4,7 +4,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
-const authorizationToken = "";
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
+const authorizationToken = process.env.AUTHORIZATION_TOKEN;
+if (!authorizationToken) {
+    console.error("No authorizationToken set");
+    process.exit(1);
+}
 const getRecordingsUrl = "https://api.save.tv/v3/records" +
     "?adFreeAvailable=true" +
     "&fields=telecast.episode" +
@@ -55,7 +61,7 @@ async function main() {
             telecast.subTitle + "_" +
             telecast.id + ".mp4";
         telecast.fileName = telecast.fileName.replace(/ /g, "_").replace(/-/g, "_");
-        console.log("wget -O ./download/" + telecast.fileName + " " + telecast.downloadUrl);
+        console.log("curl " + telecast.downloadUrl + " --create-dirs --output ./download/" + telecast.fileName);
     }
 }
 main();
