@@ -7,7 +7,7 @@ import { XMLParser, X2jOptionsOptional } from "fast-xml-parser";
 import { readFileSync } from "fs";
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
-const startDate = new Date("2024-04-01");
+const startDate = new Date("2024-06-01");
 
 function GetFileName(parsedUrl: URL): string {
    const urlFileName = parsedUrl.pathname;
@@ -61,5 +61,6 @@ for (const item of json.rss.channel.item) {
    const pubDateStr = GetTimeStamp(pubDate);
    const podCastName = GetPodCastName(url);
 
-   console.log("wget -O ./downloads/" + pubDateStr + "_" + podCastName + "_" + podFileName + " " + downloadUrl);
+   console.log("echo ./download/" + podCastName + "/" + pubDateStr + "_" + podCastName + "_" + podFileName);
+   console.log("curl --location " + downloadUrl + " --create-dirs --output ./download/" + podCastName + "/" + pubDateStr + "_" + podCastName + "_" + podFileName);
 }

@@ -21,6 +21,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "quicktype": "^23.0.170"
