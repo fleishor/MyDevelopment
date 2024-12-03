@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jsonpath": "^0.2.4",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.52.0",
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "graphql": "^16.8.1",
-    "graphql-request": "^6.1.0"
+    "graphql-request": "^6.1.0",
+    "quicktype": "^23.0.170"
   }
 }
