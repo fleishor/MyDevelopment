@@ -1,9 +1,12 @@
 import { gql, GraphQLClient, Variables } from "graphql-request";
 import { GetBookmarksByLoginId } from "./getBookmarksByLoginId";
 import { GetMultipleEpisodes } from "./getMultipleEpisodes";
+import * as dotenv  from "dotenv";
 
-const loginId = "";
-const bearerToken = "";
+dotenv.config();
+
+const loginId = process.env.LOGIN_ID;
+const bearerToken = process.env.AUTHORIZATION_TOKEN;
 
 const endpoint = "https://api.ardaudiothek.de/graphql";
 
@@ -81,7 +84,7 @@ function GetTimeStamp(pubDate: Date): string {
 function GetFileName(parsedUrl: URL): string {
    const urlFileName = parsedUrl.pathname;
    const urlParts = urlFileName.split("/");
-   const downloadFileName = urlParts[urlParts.length - 2];
+   const downloadFileName = urlParts[urlParts.length - 1];
     
    return downloadFileName + ".mp3";
 }
@@ -95,8 +98,17 @@ async function getMultipleEpisodes(bookmarkIds: unknown) {
             const downloadUrl = audio.audios[0].downloadUrl;
             const url = new URL(downloadUrl);
             const podFileName = GetFileName(url);
-            const pubDateStr = GetTimeStamp(audio.publishDate);
+            const pubDateStr = GetTimeStamp(new Date(audio.publishDate));
             const podCastName = audio.programSet.title;
+
+            let downloadFileName = podCastName + "/" + pubDateStr + "_" + podFileName;
+            downloadFileName = downloadFileName.replace(/ /g, "_")
+                                               .replace(/-/g, "_")
+                                               .replace(/\?/g, "_")
+                                               .replace(/&/g, "_")
+                                               .replace(/:/g, "_");
+            console.log("echo ./downloads/" + podCastName + "/" + pubDateStr + "_" + podFileName);
+            console.log("curl --location " + downloadUrl + " --create-dirs --output ./download/" + downloadFileName);
          }
       }
    } catch (error) {

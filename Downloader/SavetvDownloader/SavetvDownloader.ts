@@ -79,6 +79,7 @@ async function main()
         telecast.fileName = telecast.fileName.replace(/ /g, "_")
                                              .replace(/-/g, "_")
                                              .replace(/\?/g, "_")
+                                             .replace(/&/g, "_")
                                              .replace(/:/g, "_");
 
         console.log("curl " +telecast.downloadUrl + " --create-dirs --output ./download/" + telecast.fileName );
