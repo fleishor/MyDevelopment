@@ -1,0 +1,14 @@
+[Unit]
+Description=Gateway between Sem6000 and MQTT
+After=network-online.target
+
+[Service]
+ExecStart=/bin/bash /home/voltcraft2mqtt/voltcraft2mqtt.sh
+WorkingDirectory=/home/voltcraft2mqtt
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=voltcraft2mqtt
+
+[Install]
+WantedBy=multi-user.target
