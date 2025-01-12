@@ -1,0 +1,61 @@
+# Add switch to Home Assistant
+- switch:
+      unique_id: sem6000_openmediavault_switch
+      name: "MQTT-OpenMediaVault Switch"
+      # state_topic: state of sem6000; power on/off
+      state_topic: "sem6000/openmediavault/switch/state"
+      # command_topic: switch sem600 to on/off
+      command_topic: "sem6000/openmediavault/switch/set"
+      # availability_topic: is sem6000 device available
+      availability:
+        - topic: "sem6000/openmediavault/available"
+      optimistic: false
+      qos: 0
+      retain: true
+# Add sensors for SEM6000 to Home Assistant
+# Each of the senor values must have a name and a unique_id
+- sensor:
+    - name: "MQTT-OpenMediaVault PowerSwitch"
+      unique_id: sem6000_openmediavault_powerswitch_on_off
+      # state_topic: sensor values of sem6000; here we use a JSON payload
+      state_topic: "sem6000/openmediavault/sensor/values"
+      value_template: "{{ value_json.PowerSwitch }}"
+      unit_of_measurement: ""
+      availability:
+        - topic: "sem6000/openmediavault/available"
+    - name: "MQTT-OpenMediaVault PowerInMilliWatt"
+      unique_id: sem6000_openmediavault_power_in_milli_watt
+      device_class: power
+      # state_topic: sensor values of sem6000; here we use a JSON payload
+      state_topic: "sem6000/openmediavault/sensor/values"
+      value_template: "{{ value_json.PowerInMilliWatt }}"
+      unit_of_measurement: "mW"
+      availability:
+        - topic: "sem6000/openmediavault/available"
+    - name: "MQTT-OpenMediaVault VotageinVolt"
+      unique_id: sem6000_openmediavault_voltage_in_volt
+      device_class: voltage
+      # state_topic: sensor values of sem6000; here we use a JSON payload
+      state_topic: "sem6000/openmediavault/sensor/values"
+      value_template: "{{ value_json.VoltageInVolt }}"
+      unit_of_measurement: "V"
+      availability:
+        - topic: "sem6000/openmediavault/available"
+    - name: "MQTT-OpenMediaVault CurrentInMilliAmpere"
+      unique_id: sem6000_openmediavault_current_in_milli_ampere
+      device_class: current
+      # state_topic: sensor values of sem6000; here we use a JSON payload
+      state_topic: "sem6000/openmediavault/sensor/values"
+      value_template: "{{ value_json.CurrentInMilliAmpere }}"
+      unit_of_measurement: "mA"
+      availability:
+        - topic: "sem6000/openmediavault/available"
+    - name: "MQTT-OpenMediaVault ConsumptionInKiloWattPerHour"
+      unique_id: sem6000_openmediavault_consumption_in_kw_per_hour
+      device_class: energy
+      # state_topic: sensor values of sem6000; here we use a JSON payload
+      state_topic: "sem6000/openmediavault/sensor/values"
+      value_template: "{{ value_json.ConsumptionInKiloWattPerHour }}"
+      unit_of_measurement: "Wh"
+      availability:
+        - topic: "sem6000/openmediavault/available"
