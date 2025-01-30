@@ -93,6 +93,8 @@ def sendSem6000SensorValuesToHa(mqttClient: mqttClientModule):
 
        payload = {}
 
+       setDeviceInHaAsAvailable(mqttClient)
+
        logger.info(response)
        if response.is_power_active:
               setPowerStateInHaToOn(mqttClient)
