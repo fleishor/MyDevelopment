@@ -6,14 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("[controller]")]
-public class AuthenticationController(
-    IHttpContextAccessor ctx,
-    ILogger<AuthenticationController> logger) : ControllerBase
+public class AuthenticationController(IHttpContextAccessor ctx) : ControllerBase
 {
     [HttpGet("SignIn")]
-    public async Task<string> SignIn(CancellationToken cancellationToken)
+    public async Task<string> SignIn()
     {
-        var claims = new List<Claim>() { new Claim("user", "fleishor") };
+        var claims = new List<Claim>() { new("user", "fleishor") };
         var identity = new ClaimsIdentity(claims, "cookie");
         var user = new ClaimsPrincipal(identity);
         if (ctx.HttpContext != null)
@@ -25,7 +23,7 @@ public class AuthenticationController(
     }
 
     [HttpGet("GetIdentity")]
-    public string GetIdentity(CancellationToken cancellationToken)
+    public string? GetIdentity()
     {
         if (ctx.HttpContext != null)
         {
@@ -34,5 +32,4 @@ public class AuthenticationController(
 
         return string.Empty;
     }
-
 }
