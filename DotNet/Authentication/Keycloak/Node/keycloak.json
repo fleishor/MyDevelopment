@@ -1,0 +1,10 @@
+{
+  "realm": "fleishor",
+  "auth-server-url": "http://docker.fritz.box:8081/auth/",
+  "ssl-required": "none",
+  "resource": "BaseDataApp",
+  "credentials": {
+    "secret": "MvYCXMtWwYoM5yxnX4kCmc7UroTCepTe"
+  },
+  "confidential-port": 0
+}
