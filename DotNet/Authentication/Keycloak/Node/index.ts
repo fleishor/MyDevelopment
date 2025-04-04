@@ -1,18 +1,18 @@
 // src/index.ts
 import express from "express";
+import { Request, Response } from "express";
 import session from "express-session";
 import { jwtDecode } from "jwt-decode";
-import { MemoryStore } from 'express-session';
-import KeycloakConnect from 'keycloak-connect';
-import morgan from "morgan";
+import { MemoryStore } from "express-session";
+import KeycloakConnect from "keycloak-connect";
 
-declare module 'express-session' {
+declare module "express-session" {
    interface SessionData {
       "keycloak-token": any;
    }
  }
 
- KeycloakConnect.prototype.redirectToLogin = function(req: any) {
+KeycloakConnect.prototype.redirectToLogin = function(req: any) {
    const apiReqMatcher = /\/api\//i;
    return !apiReqMatcher.test(req.originalUrl || req.url);
    };
@@ -22,17 +22,14 @@ const port = 3001;
 const memoryStore = new MemoryStore();
 const keycloak = new KeycloakConnect({ 
       store: memoryStore, 
-      scope : "phone"
-   }, './keycloak.json');
+      scope : ""
+   }, "./keycloak.json");
 
-
-// Middleware für Logging hinzufügen
-app.use(morgan(":status :method :url Redirected to: :res[location]"));
 
 // Session-Management konfigurieren
 app.use(
    session({
-      secret: "thisShouldBeLongAndSecret",
+      secret: "ExpressSessionSecret",
       resave: false,
       saveUninitialized: true,
       store: memoryStore,
@@ -49,7 +46,8 @@ app.get("/", (req, res) => {
 
 // Anzeigen von Session-Informationen
 app.get("/showSessionInfo",(req, res) => {
-   var response = generateSessionInfoHtml(req);
+   var response = generateUrlLinks();
+   response += generateSessionInfoHtml(req);
    res.send(response);
 });
 
@@ -57,34 +55,32 @@ app.get("/showSessionInfo",(req, res) => {
 app.get("/login", keycloak.protect(), (req, res) => {
    const iss = req.query.iss;
    if (iss) {
-      var response = generateSessionInfoHtml(req);
+      var response = generateUrlLinks();
+      response += generateSessionInfoHtml(req);
       res.send(response);
-   } else {
-      res.send("This is a path is protected by Keycloak.");
    }
 });
  
 // Logout-Endpunkt
-app.post('/logout', (req, res) => {
+app.post("/logout", (req, res) => {
   req.session.destroy((err) => {
     if (err) {
-      return res.status(500).send('Failed to logout.');
+      return res.status(500).send("Failed to logout.");
     }
-    var response = generateSessionInfoHtml(req);
+    var response = generateUrlLinks();
+    response += generateSessionInfoHtml(req);
     res.send(response);
-   });
+ });
 });
 
 // Gesicherte Route mit Bearer-Token-Authentifizierung
-app.get("/api/secure", keycloak.protect(), (req, res) => {
+app.get("/api/rolebased/secure", keycloak.protect("BaseDataAppManager"), (req, res) => {
    res.send("This is a path is protected by Keycloak.");
 });
 
 app.listen(port, () => {
    console.log(`Server is running at http://localhost:${port}`);
 });
-
-import { Request } from "express";
 
 function generateSessionInfoHtml(req: Request) {
    var response = "";
@@ -102,19 +98,47 @@ function generateSessionInfoHtml(req: Request) {
       response += JSON.stringify(keycloakToken, null, 4);
       response += "</pre>";
 
-      response += "<h1>Id token</h1>";
       var idToken = keycloakToken["id_token"];
       var idTokenDecoded = jwtDecode(idToken);
+
+      var accessToken = keycloakToken["access_token"];
+      var accessTokenDecoded = jwtDecode(accessToken);
+      
+      response += "<h1>Times</h1>";
+      var idTokenExpire = idTokenDecoded.exp 
+                              ? new Date(idTokenDecoded.exp * 1000).toISOString() 
+                              : "undefined";
+      var idTokenIssuedAt = idTokenDecoded.iat 
+                              ? new Date(idTokenDecoded.iat * 1000).toISOString() 
+                              : "undefined";
+      response += "<pre>";
+      response += "ID Token issued at: " + idTokenIssuedAt + "\n";
+      response += "ID Token expires at: " + idTokenExpire + "\n";
+      response += "</pre>";
+
+      response += "<h1>Id token</h1>";
       response += "<pre>";
       response += JSON.stringify(idTokenDecoded, null, 4);
       response += "</pre>";
 
       response += "<h1>Access token</h1>";
-      var accessToken = keycloakToken["access_token"];
-      var accessTokenDecoded = jwtDecode(accessToken);
       response += "<pre>";
       response += JSON.stringify(accessTokenDecoded, null, 4);
       response += "</pre>";
    }
+   return response;
+}
+
+function generateUrlLinks() {
+   var response = "";
+   response += "<h1>URLs</h1>";
+   response += "<pre>";
+   response += "<a href='/'>Home</a>\n";
+   response += "<a href='/showSessionInfo'>Show Session Info</a>\n"; 
+   response += "<a href='/login'>Login</a>\n";
+   response += "<a href='/logout'>Logout</a>\n";
+   response += "<a href='/api/rolebased/secure'>Role-based Secured API</a>\n";
+   response += "</pre>";
+
    return response;
 }
