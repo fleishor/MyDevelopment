@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -9,16 +9,16 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
-    <PackageReference Include="MediatR" Version="12.4.1" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.2" />
-    <PackageReference Include="Microsoft.Kiota.Abstractions" Version="1.17.1" />
-    <PackageReference Include="Microsoft.Kiota.Http.HttpClientLibrary" Version="1.17.1" />
-    <PackageReference Include="Microsoft.Kiota.Serialization.Form" Version="1.17.1" />
-    <PackageReference Include="Microsoft.Kiota.Serialization.Json" Version="1.17.1" />
-    <PackageReference Include="Microsoft.Kiota.Serialization.Multipart" Version="1.17.1" />
-    <PackageReference Include="Microsoft.Kiota.Serialization.Text" Version="1.17.1" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Kiota.Abstractions" Version="1.17.2" />
+    <PackageReference Include="Microsoft.Kiota.Http.HttpClientLibrary" Version="1.17.2" />
+    <PackageReference Include="Microsoft.Kiota.Serialization.Form" Version="1.17.2" />
+    <PackageReference Include="Microsoft.Kiota.Serialization.Json" Version="1.17.2" />
+    <PackageReference Include="Microsoft.Kiota.Serialization.Multipart" Version="1.17.2" />
+    <PackageReference Include="Microsoft.Kiota.Serialization.Text" Version="1.17.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Update="SonarAnalyzer.CSharp" Version="10.6.0.109712">
+    <PackageReference Update="SonarAnalyzer.CSharp" Version="10.8.0.113526">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
