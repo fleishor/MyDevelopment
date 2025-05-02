@@ -1,3 +1,6 @@
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
+
 namespace Road.API;
 
 using FluentValidation;
@@ -23,6 +26,15 @@ public static class Program
                 // necessary for Serilog.LogRequestResponse
                 .AddJsonDestructuringPolicies();
         });
+
+        builder.Services.AddOpenTelemetry()
+            .ConfigureResource(resource => resource.AddService("Road.API"))
+            .WithTracing(tracing =>
+            {
+                tracing.AddHttpClientInstrumentation()
+                       .AddAspNetCoreInstrumentation();
+                tracing.AddOtlpExporter();
+            });
 
         // Required by ClientInfo enricher
         builder.Services.AddHttpContextAccessor();
@@ -87,11 +99,8 @@ public static class Program
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+        app.UseSwagger();
+        app.UseSwaggerUI();
 
         app.UseAuthentication();
         app.UseAuthorization();
