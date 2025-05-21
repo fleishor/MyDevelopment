@@ -1,8 +1,9 @@
 {
-  "name": "rssfeeddownloader",
+  "name": "downloader",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "scripts": {
     "ArdAudiothekDownloader": "ts-node ArdAudiothekDownloader.ts",
     "DownloaderBR": "ts-node DownloaderBR.ts",

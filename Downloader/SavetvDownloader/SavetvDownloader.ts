@@ -78,6 +78,7 @@ async function main()
 
         telecast.fileName = telecast.fileName.replace(/ /g, "_")
                                              .replace(/-/g, "_")
+                                             .replace(/'/g, "")
                                              .replace(/\?/g, "_")
                                              .replace(/&/g, "_")
                                              .replace(/:/g, "_");

@@ -7,7 +7,7 @@ import { XMLParser, X2jOptions } from "fast-xml-parser";
 import { readFileSync } from "fs";
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
-const startDate = new Date("2024-11-01");
+const startDate = new Date("2025-03-29");
 
 function GetFileName(parsedUrl: URL): string {
    const urlFileName = parsedUrl.pathname;

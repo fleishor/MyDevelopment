@@ -1,6 +1,6 @@
 import { gql, GraphQLClient, Variables } from "graphql-request";
-import { GetBookmarksByLoginId } from "./getBookmarksByLoginId";
-import { GetMultipleEpisodes } from "./getMultipleEpisodes";
+import { GetBookmarksByLoginId } from "./getBookmarksByLoginId.js";
+import { GetMultipleEpisodes } from "./getMultipleEpisodes.js";
 import * as dotenv  from "dotenv";
 
 dotenv.config();
