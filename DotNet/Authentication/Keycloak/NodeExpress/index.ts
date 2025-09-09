@@ -30,6 +30,8 @@ const keycloak = new KeycloakConnect(
    "./keycloak.json"
 );
 
+
+
 // Session-Management konfigurieren
 app.use(
    session({

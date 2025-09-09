@@ -1,6 +1,3 @@
-using OpenTelemetry.Resources;
-using OpenTelemetry.Trace;
-
 namespace Road.API;
 
 using FluentValidation;
@@ -26,15 +23,6 @@ public static class Program
                 // necessary for Serilog.LogRequestResponse
                 .AddJsonDestructuringPolicies();
         });
-
-        builder.Services.AddOpenTelemetry()
-            .ConfigureResource(resource => resource.AddService("Road.API"))
-            .WithTracing(tracing =>
-            {
-                tracing.AddHttpClientInstrumentation()
-                       .AddAspNetCoreInstrumentation();
-                tracing.AddOtlpExporter();
-            });
 
         // Required by ClientInfo enricher
         builder.Services.AddHttpContextAccessor();
@@ -88,6 +76,7 @@ public static class Program
 
             // Attach the Kiota handlers to the http client, this is to enable all the Kiota features.
             .AttachKiotaHandlers()
+            // Activates Serilog logging of requests and responses for this HttpClient
             .LogRequestResponse();
 
         // Register the Autobahn client
@@ -108,10 +97,6 @@ public static class Program
 
         // Log also ASP.Net request to Serilog
         app.UseSerilogRequestLogging();
-
-        // Log also HTTP to Serilog, static files are excluded because it called after UseStaticFiles()
-        // But may cause performance issues
-        app.UseHttpLogging();
 
         app.MapControllers();
 
