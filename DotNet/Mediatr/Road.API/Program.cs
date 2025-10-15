@@ -33,7 +33,10 @@ public static class Program
         // Add HttpLogging, but may cause performance issues
         builder.Services.AddHttpLogging(options =>
         {
-            options.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders | HttpLoggingFields.ResponsePropertiesAndHeaders;
+            options.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders
+                                    | HttpLoggingFields.ResponsePropertiesAndHeaders
+                                    | HttpLoggingFields.RequestBody
+                                    | HttpLoggingFields.ResponseBody;
             options.RequestHeaders.Add("x-correlation-id");
             options.CombineLogs = false;
         });
@@ -95,8 +98,11 @@ public static class Program
         app.UseAuthorization();
         app.UseStaticFiles();
 
+        // Enable Microsoft Http request logging
+        app.UseHttpLogging();
+
         // Log also ASP.Net request to Serilog
-        app.UseSerilogRequestLogging();
+        // app.UseSerilogRequestLogging();
 
         app.MapControllers();
 
