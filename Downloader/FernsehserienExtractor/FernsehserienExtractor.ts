@@ -30,8 +30,6 @@ class SerieConfig {
 
 const baseUrl = "https://www.fernsehserien.de";
 
-const episodeDetailsArray: EpisodeDetails[] = [];
-
 axiosRetry(axios, {
    retries: 3,
    retryDelay: (retryCount) => {
@@ -85,6 +83,7 @@ async function main() {
       const $episoden = cheerio.load(response.data);
 
       const episodes = $episoden('[data-event-category="liste-episoden"]');
+      const episodeDetailsArray: EpisodeDetails[] = [];
 
       for (const episode of episodes) {
          const children = $episoden(episode).children();
@@ -108,7 +107,6 @@ async function main() {
 
       await saveEpisodeDetailsToFile(serieFileName, episodeDetailsArray);
    }
-
 }
 
 (async function () {

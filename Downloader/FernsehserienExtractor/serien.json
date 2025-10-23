@@ -1,5 +1,9 @@
 [
   {
+    "serienUrl": "/die-rosenheim-cops",
+    "serieFileName": "Die_Rosenheim_Cops.json"
+  },
+  {
     "serienUrl": "/um-himmels-willen",
     "serieFileName": "Um_Himmels_Willen.json"
   },
