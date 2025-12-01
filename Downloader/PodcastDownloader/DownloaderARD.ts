@@ -2,19 +2,19 @@
 // radioSpitzen: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5962920"
 
 import { URL } from "url";
-import { XMLParser, X2jOptions } from "fast-xml-parser";
+import { XMLParser } from "fast-xml-parser";
 import { readFileSync } from "fs";
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
-const startDate = new Date("2025-03-29");
+const startDate = new Date("2025-10-23");
 
 function GetFileName(parsedUrl: URL): string {
    const urlParts = parsedUrl.pathname.split("/");
    let fileName = "";
 
    for (let i = 0; i < urlParts.length; i++) {
-      if (urlParts[i] === "episode") {
-         fileName = urlParts[i + 2];
+      if (urlParts[i] === "feed") {
+         fileName = urlParts[i + 1];
       }
    }
 
@@ -26,7 +26,7 @@ function GetPodCastName(parsedUrl: URL): string {
    let podCastName = "";
 
    for (let i = 0; i < urlParts.length; i++) {
-      if (urlParts[i] === "episode") {
+      if (urlParts[i] === "sendung") {
          podCastName = urlParts[i + 1];
       }
    }
@@ -45,23 +45,23 @@ function GetTimeStamp(pubDate: Date): string {
    return timestamp;
 }
 
-const options: X2jOptions = {
+const options = {
    ignoreAttributes: false,
    attributeNamePrefix: "_",
 };
 
 const parser = new XMLParser(options);
 const json = parser.parse(xmlFile);
+const url: URL = new URL(json.rss.channel.link);
+const podCastName = GetPodCastName(url);
 
 for (const item of json.rss.channel.item) {
-  
-   const url: URL = new URL(item.guid);
+   const url: URL = new URL(item.enclosure._url);
    const downloadUrl: string = item.enclosure._url;
    const pubDate: Date = new Date(item.pubDate);
 
    if (pubDate < startDate) continue;
 
-   const podCastName = GetPodCastName(url);
    const podFileName = GetFileName(url);
    const pubDateStr = GetTimeStamp(pubDate);
 

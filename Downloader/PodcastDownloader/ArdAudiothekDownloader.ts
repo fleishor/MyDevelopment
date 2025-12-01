@@ -1,7 +1,69 @@
-import { gql, GraphQLClient, Variables } from "graphql-request";
-import { GetBookmarksByLoginId } from "./getBookmarksByLoginId.js";
-import { GetMultipleEpisodes } from "./getMultipleEpisodes.js";
+import { gql, GraphQLClient } from "graphql-request";
 import * as dotenv  from "dotenv";
+
+export interface GetBookmarksByLoginId {
+    allEndUsers: AllEndUsers;
+}
+
+export interface AllEndUsers {
+    count: number;
+    nodes: AllEndUsersNode[];
+}
+
+export interface AllEndUsersNode {
+    id:             string;
+    syncSuccessful: boolean;
+    bookmarks:      Bookmarks;
+}
+
+export interface Bookmarks {
+    id:      string;
+    entries: Entries;
+}
+
+export interface Entries {
+    nodes: EntriesNode[];
+}
+
+export interface EntriesNode {
+    bookmarkedAt: Date;
+    item:         Item;
+}
+
+export interface Item {
+    id:     string;
+    coreId: string;
+    title:  string;
+    programSetId: number;
+
+}
+
+export interface GetMultipleEpisodes {
+    itemsByIds: ItemsByIDS;
+}
+
+export interface ItemsByIDS {
+    nodes: Node[];
+}
+
+export interface Node {
+    id:          string;
+    title:       string;
+    publishDate: Date;
+    summary:     string;
+    programSet:  ProgramSet;
+    audios:      Audio[];
+}
+
+export interface Audio {
+    downloadUrl: string;
+}
+
+export interface ProgramSet {
+    id:    string;
+    title: string;
+}
+
 
 dotenv.config();
 
@@ -22,7 +84,7 @@ const graphQLClient = new GraphQLClient(endpoint, {
 });
 
 const getBookmarksByLoginIdQuery = gql`
-   query GetBookmarksByLoginId($loginId: String!, $count: Int = 1000) {
+   query GetBookmarksByLoginId($loginId: String!, $count: Int = 9000) {
       allEndUsers(filter: { loginId: { eq: $loginId } }) {
          count
          nodes {
@@ -30,12 +92,14 @@ const getBookmarksByLoginIdQuery = gql`
             syncSuccessful
             bookmarks {
                id
-               entries(first: $count, orderBy: BOOKMARKEDAT_DESC) {
+               entries(first: $count, orderBy: CREATEDAT_ASC) {
                   nodes {
                      bookmarkedAt
                      item {
                         id
                         coreId
+                        title
+                        programSetId
                      }
                   }
                }
@@ -45,7 +109,7 @@ const getBookmarksByLoginIdQuery = gql`
    }
 `;
 
-const getBookmarksByLoginIdVariables: Variables = {
+const getBookmarksByLoginIdVariables = {
    loginId: loginId,
    count: 2000,
 };
@@ -86,7 +150,7 @@ function GetFileName(parsedUrl: URL): string {
    const urlParts = urlFileName.split("/");
    const downloadFileName = urlParts[urlParts.length - 1];
     
-   return downloadFileName + ".mp3";
+   return downloadFileName;
 }
 
 async function getMultipleEpisodes(bookmarkIds: unknown) {
@@ -96,6 +160,11 @@ async function getMultipleEpisodes(bookmarkIds: unknown) {
       if (items) {
          for (const audio of items.itemsByIds.nodes) {
             const downloadUrl = audio.audios[0].downloadUrl;
+            if (!downloadUrl)
+            {
+               console.error(audio.title + "hat keine Download URL");
+               continue;
+            }
             const url = new URL(downloadUrl);
             const podFileName = GetFileName(url);
             const pubDateStr = GetTimeStamp(new Date(audio.publishDate));
@@ -120,7 +189,10 @@ async function getIdsFromBookmarks(bookmarks: GetBookmarksByLoginId) {
    const bookmarkNodes = bookmarks.allEndUsers.nodes[0].bookmarks.entries.nodes;
    const bookmarkIds = [];
    for (const bookmarkNode of bookmarkNodes) {
-      bookmarkIds.push(bookmarkNode.item.id);
+      if (bookmarkNode.item.programSetId ==  61704588)
+      {
+         bookmarkIds.push(bookmarkNode.item.id);
+      }
    }
    await getMultipleEpisodes(bookmarkIds);
 }

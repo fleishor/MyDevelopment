@@ -2,11 +2,11 @@
 // curl -o  "Podcast.xml" "https://podcast.katholisch.de/1/1-tagessegen.xml"
 
 import { URL } from "url";
-import { XMLParser, X2jOptions } from "fast-xml-parser";
+import { XMLParser } from "fast-xml-parser";
 import { readFileSync } from "fs";
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
-const startDate = new Date("2025-03-29");
+const startDate = new Date("2025-10-23");
 
 function GetFileName(parsedUrl: URL): string {
    const urlFileName = parsedUrl.pathname;
@@ -26,7 +26,7 @@ function GetTimeStamp(pubDate: Date): string {
    return timestamp;
 }
 
-const options: X2jOptions = {
+const options = {
    ignoreAttributes: false,
    attributeNamePrefix: "_",
 };
