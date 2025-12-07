@@ -1,0 +1,35 @@
+{
+  "name": "plaintypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@tsconfig/node24": "^24.0.3",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "prettier": "^3.7.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
