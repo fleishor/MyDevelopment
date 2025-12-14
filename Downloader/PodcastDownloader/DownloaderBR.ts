@@ -2,9 +2,28 @@
 // curl -o  "Podcast.xml" "https://feeds.br.de/evangelische-morgenfeier/feed.xml"
 // curl -o  "Podcast.xml" "https://feeds.br.de/katholische-morgenfeier/feed.xml"
 
-import { URL } from "url";
 import { XMLParser } from "fast-xml-parser";
 import { readFileSync } from "fs";
+import { URL } from "url";
+
+interface PodcastChannel {
+   item: PodcastItem[];
+}
+
+// Define the expected structure of the parsed XML
+interface PodcastItem {
+   enclosure: {
+      _url: string;
+   };
+   link: string;
+   pubDate: string;
+}
+
+interface PodcastRSS {
+   rss: {
+      channel: PodcastChannel;
+   };
+}
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
 const startDate = new Date("2025-10-23");
@@ -31,23 +50,23 @@ function GetPodCastName(parsedUrl: URL): string {
 }
 
 function GetTimeStamp(pubDate: Date): string {
-   const year = ("0" + pubDate.getFullYear()).slice(-2);
-   const month = ("0" + (pubDate.getMonth() + 1)).slice(-2);
-   const day = ("0" + pubDate.getDate()).slice(-2);
-   const hour = ("0" + pubDate.getHours()).slice(-2);
-   const minute = ("0" + pubDate.getMinutes()).slice(-2);
+   const year = ("0" + pubDate.getFullYear().toString()).slice(-2);
+   const month = ("0" + (pubDate.getMonth() + 1).toString()).slice(-2);
+   const day = ("0" + pubDate.getDate().toString()).slice(-2);
+   const hour = ("0" + pubDate.getHours().toString()).slice(-2);
+   const minute = ("0" + pubDate.getMinutes().toString()).slice(-2);
    const timestamp = year + month + day + "_" + hour + minute;
 
    return timestamp;
 }
 
 const options = {
-   ignoreAttributes: false,
    attributeNamePrefix: "_",
+   ignoreAttributes: false,
 };
 
 const parser = new XMLParser(options);
-const json = parser.parse(xmlFile);
+const json: PodcastRSS = parser.parse(xmlFile) as PodcastRSS;
 
 for (const item of json.rss.channel.item) {
   

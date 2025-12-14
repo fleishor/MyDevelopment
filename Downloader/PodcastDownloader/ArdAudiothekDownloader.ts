@@ -1,69 +1,68 @@
-import { gql, GraphQLClient } from "graphql-request";
 import * as dotenv  from "dotenv";
+import { gql, GraphQLClient } from "graphql-request";
 
-export interface GetBookmarksByLoginId {
-    allEndUsers: AllEndUsers;
-}
-
-export interface AllEndUsers {
+interface AllEndUsers {
     count: number;
     nodes: AllEndUsersNode[];
 }
 
-export interface AllEndUsersNode {
+interface AllEndUsersNode {
+    bookmarks:      Bookmarks;
     id:             string;
     syncSuccessful: boolean;
-    bookmarks:      Bookmarks;
 }
 
-export interface Bookmarks {
-    id:      string;
+interface Audio {
+    downloadUrl: string;
+}
+
+interface Bookmarks {
     entries: Entries;
+    id:      string;
 }
 
-export interface Entries {
+interface Entries {
     nodes: EntriesNode[];
 }
 
-export interface EntriesNode {
+interface EntriesNode {
     bookmarkedAt: Date;
     item:         Item;
 }
 
-export interface Item {
-    id:     string;
-    coreId: string;
-    title:  string;
-    programSetId: number;
-
+interface GetBookmarksByLoginId {
+    allEndUsers: AllEndUsers;
 }
 
-export interface GetMultipleEpisodes {
+interface GetMultipleEpisodes {
     itemsByIds: ItemsByIDS;
 }
 
-export interface ItemsByIDS {
+interface Item {
+    coreId: string;
+    id:     string;
+    programSetId: number;
+    title:  string;
+
+}
+
+interface ItemsByIDS {
     nodes: Node[];
 }
 
-export interface Node {
+interface Node {
+    audios:      Audio[];
     id:          string;
-    title:       string;
+    programSet:  ProgramSet;
     publishDate: Date;
     summary:     string;
-    programSet:  ProgramSet;
-    audios:      Audio[];
+    title:       string;
 }
 
-export interface Audio {
-    downloadUrl: string;
-}
-
-export interface ProgramSet {
+interface ProgramSet {
     id:    string;
     title: string;
 }
-
 
 dotenv.config();
 
@@ -73,14 +72,14 @@ const bearerToken = process.env.AUTHORIZATION_TOKEN;
 const endpoint = "https://api.ardaudiothek.de/graphql";
 
 const graphQLClient = new GraphQLClient(endpoint, {
-   method: "GET",
+   headers: {
+      Authorization: "Bearer " + (bearerToken ?? ""),
+   },
    jsonSerializer: {
       parse: JSON.parse,
       stringify: JSON.stringify,
    },
-   headers: {
-      Authorization: "Bearer " + bearerToken,
-   },
+   method: "GET",
 });
 
 const getBookmarksByLoginIdQuery = gql`
@@ -110,8 +109,8 @@ const getBookmarksByLoginIdQuery = gql`
 `;
 
 const getBookmarksByLoginIdVariables = {
-   loginId: loginId,
    count: 2000,
+   loginId: loginId,
 };
 
 const multipleEpisodesQuery = gql`
@@ -134,15 +133,13 @@ const multipleEpisodesQuery = gql`
    }
 `;
 
-function GetTimeStamp(pubDate: Date): string {
-   const year = ("0" + pubDate.getFullYear()).slice(-2);
-   const month = ("0" + (pubDate.getMonth() + 1)).slice(-2);
-   const day = ("0" + pubDate.getDate()).slice(-2);
-   const hour = ("0" + pubDate.getHours()).slice(-2);
-   const minute = ("0" + pubDate.getMinutes()).slice(-2);
-   const timestamp = year + month + day + "_" + hour + minute;
-
-   return timestamp;
+async function getBookmarksByLoginId() {
+   try {
+      const data = await graphQLClient.request<GetBookmarksByLoginId>(getBookmarksByLoginIdQuery, getBookmarksByLoginIdVariables);
+      await getIdsFromBookmarks(data);
+   } catch (error) {
+      console.error("Error in main function response:", error);
+   }
 }
 
 function GetFileName(parsedUrl: URL): string {
@@ -151,38 +148,6 @@ function GetFileName(parsedUrl: URL): string {
    const downloadFileName = urlParts[urlParts.length - 1];
     
    return downloadFileName;
-}
-
-async function getMultipleEpisodes(bookmarkIds: unknown) {
-   try {
-      const multipleEpisodesVariables = { ids: bookmarkIds };
-      const items = await graphQLClient.request<GetMultipleEpisodes>(multipleEpisodesQuery, multipleEpisodesVariables);
-      if (items) {
-         for (const audio of items.itemsByIds.nodes) {
-            const downloadUrl = audio.audios[0].downloadUrl;
-            if (!downloadUrl)
-            {
-               console.error(audio.title + "hat keine Download URL");
-               continue;
-            }
-            const url = new URL(downloadUrl);
-            const podFileName = GetFileName(url);
-            const pubDateStr = GetTimeStamp(new Date(audio.publishDate));
-            const podCastName = audio.programSet.title;
-
-            let downloadFileName = podCastName + "/" + pubDateStr + "_" + podFileName;
-            downloadFileName = downloadFileName.replace(/ /g, "_")
-                                               .replace(/-/g, "_")
-                                               .replace(/\?/g, "_")
-                                               .replace(/&/g, "_")
-                                               .replace(/:/g, "_");
-            console.log("echo ./downloads/" + podCastName + "/" + pubDateStr + "_" + podFileName);
-            console.log("curl --location " + downloadUrl + " --create-dirs --output ./download/" + downloadFileName);
-         }
-      }
-   } catch (error) {
-      console.error("Error in main function response:", error);
-   }
 }
 
 async function getIdsFromBookmarks(bookmarks: GetBookmarksByLoginId) {
@@ -197,19 +162,49 @@ async function getIdsFromBookmarks(bookmarks: GetBookmarksByLoginId) {
    await getMultipleEpisodes(bookmarkIds);
 }
 
-async function getBookmarksByLoginId() {
+async function getMultipleEpisodes(bookmarkIds: unknown) {
    try {
-      const data = await graphQLClient.request<GetBookmarksByLoginId>(getBookmarksByLoginIdQuery, getBookmarksByLoginIdVariables);
-      if (data) {
-         await getIdsFromBookmarks(data);
+      const multipleEpisodesVariables = { ids: bookmarkIds };
+      const items = await graphQLClient.request<GetMultipleEpisodes>(multipleEpisodesQuery, multipleEpisodesVariables);
+      for (const audio of items.itemsByIds.nodes) {
+         const downloadUrl = audio.audios[0].downloadUrl;
+         if (!downloadUrl)
+         {
+            console.error(audio.title + "hat keine Download URL");
+            continue;
+         }
+         const url = new URL(downloadUrl);
+         const podFileName = GetFileName(url);
+         const pubDateStr = GetTimeStamp(new Date(audio.publishDate));
+         const podCastName = audio.programSet.title;
+
+         let downloadFileName = podCastName + "/" + pubDateStr + "_" + podFileName;
+         downloadFileName = downloadFileName.replace(/ /g, "_")
+                                            .replace(/-/g, "_")
+                                            .replace(/\?/g, "_")
+                                            .replace(/&/g, "_")
+                                            .replace(/:/g, "_");
+         console.log("echo ./downloads/" + podCastName + "/" + pubDateStr + "_" + podFileName);
+         console.log("curl --location " + downloadUrl + " --create-dirs --output ./download/" + downloadFileName);
       }
    } catch (error) {
       console.error("Error in main function response:", error);
    }
 }
 
+function GetTimeStamp(pubDate: Date): string {
+   const year = ("0" + pubDate.getFullYear().toString()).slice(-2);
+   const month = ("0" + String(pubDate.getMonth() + 1)).slice(-2);
+   const day = ("0" + pubDate.getDate().toString()).slice(-2);
+   const hour = ("0" + pubDate.getHours().toString()).slice(-2);
+   const minute = ("0" + pubDate.getMinutes().toString()).slice(-2);
+   const timestamp = year + month + day + "_" + hour + minute;
+
+   return timestamp;
+}
+
 async function main() {
    await getBookmarksByLoginId();
 }
 
-main();
+void main();

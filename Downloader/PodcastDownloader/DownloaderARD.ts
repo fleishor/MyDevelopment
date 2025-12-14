@@ -1,9 +1,21 @@
 // Ende der Welt: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5915996"
 // radioSpitzen: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5962920"
 
-import { URL } from "url";
 import { XMLParser } from "fast-xml-parser";
 import { readFileSync } from "fs";
+import { URL } from "url";
+
+interface PodcastJson {
+   rss: {
+      channel: {
+         item: {
+            enclosure: { _url: string };
+            pubDate: string;
+         }[];
+         link: string;
+      };
+   };
+}
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
 const startDate = new Date("2025-10-23");
@@ -35,23 +47,24 @@ function GetPodCastName(parsedUrl: URL): string {
 }
 
 function GetTimeStamp(pubDate: Date): string {
-   const year = ("0" + pubDate.getFullYear()).slice(-2);
-   const month = ("0" + (pubDate.getMonth() + 1)).slice(-2);
-   const day = ("0" + pubDate.getDate()).slice(-2);
-   const hour = ("0" + pubDate.getHours()).slice(-2);
-   const minute = ("0" + pubDate.getMinutes()).slice(-2);
+   const year = ("0" + pubDate.getFullYear().toString()).slice(-2);
+   const month = ("0" + (pubDate.getMonth() + 1).toString()).slice(-2);
+   const day = ("0" + pubDate.getDate().toString()).slice(-2);
+   const hour = ("0" + pubDate.getHours().toString()).slice(-2);
+   const minute = ("0" + pubDate.getMinutes().toString()).slice(-2);
    const timestamp = year + month + day + "_" + hour + minute;
 
    return timestamp;
 }
 
 const options = {
-   ignoreAttributes: false,
    attributeNamePrefix: "_",
+   ignoreAttributes: false,
 };
 
 const parser = new XMLParser(options);
-const json = parser.parse(xmlFile);
+
+const json = parser.parse(xmlFile) as PodcastJson;
 const url: URL = new URL(json.rss.channel.link);
 const podCastName = GetPodCastName(url);
 
