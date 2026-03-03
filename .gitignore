@@ -13,3 +13,4 @@ fritzbox2telegraf/.env
 /DotNet/Mediatr/Road.API/logs
 download/
 download.sh
+/AI/.env
