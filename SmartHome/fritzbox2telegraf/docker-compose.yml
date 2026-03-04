@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   fritzbox:
-    image: fritzbox:20240621
+    image: fritzbox:20241209
     container_name: fritzbox
     user: 1005:995
     environment:

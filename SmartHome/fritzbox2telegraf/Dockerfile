@@ -14,6 +14,7 @@ WORKDIR /home/fritzbox
 
 RUN pip3 install fritzconnection ping3 --break-system-packages
 COPY --chown=fritzbox:fritzbox ./telegrafFritzBox.4040.py .
+COPY --chown=fritzbox:fritzbox ./telegrafFritzBox.4060.py .
 COPY --chown=fritzbox:fritzbox ./telegrafFritzBox.7490.py .
 COPY --chown=fritzbox:fritzbox ./telegrafFritzBox.SmartHome.py .
 COPY --chown=fritzbox:fritzbox ./telegrafFritzBox.sh .

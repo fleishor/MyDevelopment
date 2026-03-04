@@ -1,0 +1,20 @@
+version: "3.5"
+
+services:
+  smtp2mqtt:
+    image: smtp2mqtt:latest
+    container_name: smtp2mqtt
+    user: 1009:995
+    volumes:
+      - /home/smtp2mqtt/storage:/storage:rw
+    ports:
+      - "2525:2525"
+    restart: always
+    networks:
+        - smarthome
+        
+networks:
+    smarthome:
+        external: true
+        name: "smarthome"
+

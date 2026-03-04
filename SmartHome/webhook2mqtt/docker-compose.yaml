@@ -1,0 +1,16 @@
+version: "3.5"
+
+services:
+  webhook2mqtt:
+    image: webhook2mqtt:latest
+    container_name: webhook2mqtt
+    user: 1014:995
+    restart: always
+    networks:
+        - smarthome
+    ports:
+      - "3001:3001"        
+networks:
+    smarthome:
+        external: true
+        name: "smarthome"
