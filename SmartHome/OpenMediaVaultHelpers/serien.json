@@ -10,5 +10,13 @@
   {
     "serienUrl": "/hubert-und-ohne-staller",
     "serieFileName": "Hubert_und_ohne_Staller.json"
+  },
+  {
+    "serienUrl": "/raumschiff-enterprise-das-naechste-jahrhundert",
+    "serieFileName": "StarTrek_Das_Naechste_Jahrhundert.json"
+  },
+  {
+    "serienUrl": "/star-trek-raumschiff-voyager",
+    "serieFileName": "StarTrek_Raumschiff_Voyager.json"
   }
 ]
