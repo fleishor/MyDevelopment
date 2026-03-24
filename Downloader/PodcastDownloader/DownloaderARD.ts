@@ -11,6 +11,7 @@ interface PodcastJson {
          item: {
             enclosure: { _url: string };
             pubDate: string;
+            title: string;
          }[];
          link: string;
       };
@@ -18,20 +19,7 @@ interface PodcastJson {
 }
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
-const startDate = new Date("2025-10-23");
-
-function GetFileName(parsedUrl: URL): string {
-   const urlParts = parsedUrl.pathname.split("/");
-   let fileName = "";
-
-   for (let i = 0; i < urlParts.length; i++) {
-      if (urlParts[i] === "feed") {
-         fileName = urlParts[i + 1];
-      }
-   }
-
-   return fileName + ".mp3";
-}
+const startDate = new Date("2026-03-24");
 
 function GetPodCastName(parsedUrl: URL): string {
    const urlParts = parsedUrl.pathname.split("/");
@@ -69,13 +57,18 @@ const url: URL = new URL(json.rss.channel.link);
 const podCastName = GetPodCastName(url);
 
 for (const item of json.rss.channel.item) {
-   const url: URL = new URL(item.enclosure._url);
+
    const downloadUrl: string = item.enclosure._url;
    const pubDate: Date = new Date(item.pubDate);
 
    if (pubDate < startDate) continue;
 
-   const podFileName = GetFileName(url);
+   const podFileName = item.title
+   .replace(/ö/g, "oe")
+   .replace(/ä/g, "ae")
+   .replace(/ü/g, "ue")
+   .replace(/ß/g, "ss")
+   .replace(/[^a-zA-Z0-9]/g, "_") + ".mp3";
    const pubDateStr = GetTimeStamp(pubDate);
 
    console.log("echo ./downloads/" + podCastName + "/" + pubDateStr + "_" + podFileName);
