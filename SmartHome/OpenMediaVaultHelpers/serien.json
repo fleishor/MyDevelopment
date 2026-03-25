@@ -4,6 +4,10 @@
     "serieFileName": "Die_Rosenheim_Cops.json"
   },
   {
+    "serienUrl": "/watzmann-ermittelt",
+    "serieFileName": "Watzmann_ermittelt.json"
+  },
+  {
     "serienUrl": "/um-himmels-willen",
     "serieFileName": "Um_Himmels_Willen.json"
   },

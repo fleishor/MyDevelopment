@@ -1,0 +1,15 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name": "Python: DownloadTelevisionSeries",
+         "type": "debugpy",
+         "request": "launch",
+         "python": "${workspaceFolder}/SmartHome/OpenMediaVaultHelpers/.venv/Scripts/python.exe",
+         "program": "${workspaceFolder}/SmartHome/OpenMediaVaultHelpers/DownloadTelevisionSeries/DownloadTelevisionSeries.py",
+         "cwd": "${workspaceFolder}/SmartHome/OpenMediaVaultHelpers",
+         "console": "integratedTerminal",
+         "args": ["Serien.json"]
+      }
+   ]
+}

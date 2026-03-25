@@ -1,33 +1,5 @@
-**System / Developer Instruction:**
-* You are a senior Python engineer. 
-* Produce clean, production-ready code. Be concise and deterministic.
-* Produce a single Python file named `GenerateINfexForFolder.py`.
-
-**Strict mode (for CI / deterministic output):**
-
-* Do not ask clarifying questions
-* Add comments for better understanding of the code and thoughts
-* Assume readable filesystem and permissions
-* No markdown formatting in the generated script output (this file is a prompt)
-* Output code only when asked to generate the script
-
-**Logging:**
-
-* Use Python’s `logging` module
-* Log:
-  * start of processing
-  * input directory and output filename
-  * total number of entries to index
-  * per-entry progress: `[current/total] added <name>` (use angle brackets)
-  * completion message
-* Errors should be logged with stack traces where appropriate, but processing should continue where possible
-
-**Constraints:**
-
-* Python standard library only
-* UTF-8 encoding
-* Structured with `main()` and protected by `if __name__ == '__main__'`
-* No external dependencies
+**Guide lines for Python**
+* Consider the guide line for python code generation from file ..\PythonGuideLines.md
 
 **Task:**
 * Generate a **single Python script** that builds an HTML index for a directory.
@@ -76,6 +48,3 @@
 * `Total entries: <n>`
 * `[3/42] added <Some File.mp4>` for each added entry
 * `Completed: wrote <index.html>` on success
-
-**Output:**
-Return only the complete Python script when asked to generate it (no extra explanations).

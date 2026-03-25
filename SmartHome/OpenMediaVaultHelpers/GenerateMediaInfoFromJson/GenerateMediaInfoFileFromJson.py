@@ -87,8 +87,8 @@ def main():
     # die Verarbeitung aber fortsetzen.
     for idx, obj in enumerate(data, start=1):
         try:
-            # Support `Episode` (new prompt) and fallback to legacy `seasonEpisode`
-            se = obj.get('Episode', obj.get('seasonEpisode'))
+            # Use 'seasonEpisode' as specified in the prompt
+            se = obj['seasonEpisode']
             name = obj['episodeName']
             filename = make_filename(se, name)
             outpath = os.path.join(output_dir, filename)
