@@ -1,31 +1,32 @@
-import { SMTPServer } from "smtp-server";
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
+import bunyan from "bunyan";
+import fs from "fs";
 import { simpleParser } from "mailparser";
 import mqtt from "mqtt";
-import fs from "fs";
-import bunyan from "bunyan";
+import { SMTPServer } from "smtp-server";
 
-function sessionInfoSerializer(sessionInfo) {
+function parsedMailInfoSerializer(parsedMailInfo: { from: string; messageId: string; }) {
    return {
+      from: parsedMailInfo.from,
+      messageId: parsedMailInfo.messageId,
+   };
+}
+
+function sessionInfoSerializer(sessionInfo: { clientHostname: string; id: string; remoteAddress: string; transaction: string; }) {
+   return {
+      clientHostname: sessionInfo.clientHostname,
       id: sessionInfo.id,
       remoteAddress: sessionInfo.remoteAddress,
-      clientHostname: sessionInfo.clientHostname,
       transaction: sessionInfo.transaction,
    };
 }
 
-function parsedMailInfoSerializer(parsedMailInfo) {
-   return {
-      messageId: parsedMailInfo.messageId,
-      from: parsedMailInfo.from,
-   };
-}
-
 const logger = bunyan.createLogger({
-   name: "smtp2mqtt",
    level: "debug",
+   name: "smtp2mqtt",
    serializers: {
-      sessionInfo: sessionInfoSerializer,
       parsedMailInfo: parsedMailInfoSerializer,
+      sessionInfo: sessionInfoSerializer, 
    },
 });
 
@@ -44,101 +45,105 @@ const smtpServer = new SMTPServer({
    // Disable STARTTLS to allow authentication in clear text mode
    disabledCommands: ["STARTTLS"],
    logger: logger,
-   onConnect(session, callback) {
-      logger.info({ sessionInfo: session }, "SMTPServer.onConnect from " + session.clientHostname);
-      return callback();
+   onAuth(auth, session, callback) {
+      logger.info({ sessionInfo: session }, "SMTPServer.onAuth");
+      if (auth.username !== smtpUserName && auth.password !== smtpPassword) {
+         callback(new Error("Invalid username/password:" + auth.username + "/" + auth.password));
+      }
+      callback(null, { user: 123456 }); // where 123 is the user id or similar property
    },
    onClose(session) {
       logger.info({ sessionInfo: session }, "SMTPServer.onClose from " + session.clientHostname);
+   },
+   onConnect(session, callback) {
+      logger.info({ sessionInfo: session }, "SMTPServer.onConnect from " + session.clientHostname);
+      callback();
    },
    onData(stream, session, callback) {
       // Receive email
       logger.info({ sessionInfo: session }, "SMTPServer.onData from " + session.clientHostname);
       simpleParser(stream, {}, (err, parsedMail) => {
          // Parse email
-         logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: start");
+         logger.info({ parsedMailInfo: parsedMail, sessionInfo: session }, "SMTPServer.onData.simpleParser: start");
          if (err) {
             logger.error({ sessionInfo: session }, "SMTPServer.onData.simpleParser: " + err);
          }
 
-         logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: parsed email with subject: " + parsedMail.subject);
+         logger.info({ parsedMailInfo: parsedMail, sessionInfo: session }, "SMTPServer.onData.simpleParser: parsed email with subject: " + parsedMail.subject);
 
          // Parsed mail without attachments
          const parsedMailWithoutAttachments = Object.assign({}, parsedMail);
-         delete parsedMailWithoutAttachments.attachments;
-         parsedMailWithoutAttachments.clientHostname = session.clientHostname;
-         if (!parsedMailWithoutAttachments.html) {
-            logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: replace html with textAsHtml");
-            parsedMailWithoutAttachments.html = parsedMailWithoutAttachments.textAsHtml;
-         }
+         parsedMailWithoutAttachments.attachments = [];
+         parsedMailWithoutAttachments.html = parsedMailWithoutAttachments.html || ( parsedMailWithoutAttachments.textAsHtml ?? false );
 
          // Create directory for writing mail
-         logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: make directory for session.id" + session.id);
+         logger.info({ parsedMailInfo: parsedMail, sessionInfo: session }, "SMTPServer.onData.simpleParser: make directory for session.id" + session.id);
          const dateNowUtc = new Date().toISOString();
          const mailDirectory = dateNowUtc + "_" + session.id;
          fs.mkdirSync(mailDirectory);
 
          // Write email as JSON
-         logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: write JSON file");
+         logger.info({ parsedMailInfo: parsedMail, sessionInfo: session }, "SMTPServer.onData.simpleParser: write JSON file");
          fs.writeFileSync(mailDirectory + "/" + session.id + ".json", JSON.stringify(parsedMailWithoutAttachments));
 
          // Write eamil as HTML
-         logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: write HTML file");
-         fs.writeFileSync(mailDirectory + "/" + session.id + ".html", parsedMailWithoutAttachments.html);
+         logger.info({ parsedMailInfo: parsedMail, sessionInfo: session }, "SMTPServer.onData.simpleParser: write HTML file");
+         fs.writeFileSync(mailDirectory + "/" + session.id + ".html", parsedMailWithoutAttachments.html === false ? "" : parsedMailWithoutAttachments.html);
 
          // Write Attachments
          parsedMail.attachments.forEach((attachment) => {
-            logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: write attachment: " + attachment.filename);
+            logger.info({ parsedMailInfo: parsedMail, sessionInfo: session }, "SMTPServer.onData.simpleParser: write attachment: " + attachment.filename);
             fs.writeFileSync(mailDirectory + "/" + attachment.filename, attachment.content);
          });
 
          // Publish sessionId via MQTT
          if (mqttClientConnected) {
-            const mqttPrefix = "smtp2mqtt";
-            let mqttDevice = parsedMail.from.value["0"].name;
+            const mqttPrefix = "smtp";
+            let mqttDevice = "UnknownDevice";
+            if (!parsedMail.from) {
+               logger.warn({ parsedMailInfo: parsedMail, sessionInfo: session }, "Email has no 'from' address");
+            }
+            else 
+            {
+               mqttDevice = parsedMail.from.value["0"].name;
+            }
             if (!mqttDevice) {
                mqttDevice = session.clientHostname.replace(".fritz.box", "");
             }
 
             let mqttSubDevice = mqttDevice;
-            if (parsedMailWithoutAttachments.subject.indexOf("OpenMediaVault") != -1) {
+            const mailSubject = parsedMailWithoutAttachments.subject ?? "No Subject";
+            if (mailSubject.includes("OpenMediaVault")) {
                mqttSubDevice = "OpenMediaVault";
-            } else if (parsedMailWithoutAttachments.subject.indexOf("Buero") != -1) {
+            } else if (mailSubject.includes("Buero")) {
                mqttSubDevice = "Buero";
-            } else if (parsedMailWithoutAttachments.subject.indexOf("Gefriertruhe") != -1) {
+            } else if (mailSubject.includes("Gefriertruhe")) {
                mqttSubDevice = "Gefriertruhe";
-            } else if (parsedMailWithoutAttachments.subject.indexOf("Kueche") != -1) {
+            } else if (mailSubject.includes("Kueche")) {
                mqttSubDevice = "Kueche";
-            } else if (parsedMailWithoutAttachments.subject.indexOf("Wintergarten") != -1) {
+            } else if (mailSubject.includes("Wintergarten")) {
                mqttSubDevice = "Wintergarten";
             }
 
-            const topic = "/" + mqttPrefix + "/" + mqttDevice + "/" + mqttSubDevice;
+            const topic = mqttPrefix + "/" + mqttDevice + "/" + mqttSubDevice;
             const mqttPayload = JSON.stringify({
-               topic: topic,
-               mqttPrefix: mqttPrefix,
-               mqttDevice: mqttDevice,
-               mqttSubDevice: mqttSubDevice,
-               mailDirectory: mailDirectory,
-               sessionId: session.id,
                clientHostname: session.clientHostname,
+               mailDirectory: mailDirectory,
+               mqttDevice: mqttDevice,
+               mqttPrefix: mqttPrefix,
+               mqttSubDevice: mqttSubDevice,
+               sessionId: session.id,
+               topic: topic,
             });
-            logger.info({ topic: topic, mqttPayload: mqttPayload }, "Publish to MQTT with topic " + topic);
+            logger.info({ mqttPayload: mqttPayload, topic: topic }, "Publish to MQTT with topic " + topic);
             mqttClient.publish(topic, mqttPayload);
          }
 
-         logger.info({ sessionInfo: session, parsedMailInfo: parsedMail }, "SMTPServer.onData.simpleParser: done");
+         logger.info({ parsedMailInfo: parsedMail, sessionInfo: session }, "SMTPServer.onData.simpleParser: done");
          callback();
       });
 
       logger.info({ sessionInfo: session }, "SMTPServer.onData: done");
-   },
-   onAuth(auth, session, callback) {
-      logger.info({ sessionInfo: session }, "SMTPServer.onAuth");
-      if (auth.username !== smtpUserName && auth.password !== smtpPassword) {
-         return callback(new Error("Invalid username/password:" + auth.username + "/" + auth.password));
-      }
-      callback(null, { user: 123456 }); // where 123 is the user id or similar property
    },
 });
 
