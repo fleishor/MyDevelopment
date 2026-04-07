@@ -1,19 +1,17 @@
-FROM node:19.3.0-alpine3.16
+FROM node:25-alpine
 
 # Create app directory
 WORKDIR /smtp2mqtt
 
 # Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-
+COPY package.json tsconfig.json eslint.config.js ./
 RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
 
-# Bundle app source
-COPY ./dist/smtp2mqtt.js .
+# Copy app source code
+COPY ./src/smtp2mqtt.ts ./src/
 
-EXPOSE 3001
-CMD [ "node", "/smtp2mqtt/smtp2mqtt.js" ]
+# build application
+RUN npm run build
+
+EXPOSE 2525
+CMD [ "node", "/smtp2mqtt/dist/smtp2mqtt.js" ]

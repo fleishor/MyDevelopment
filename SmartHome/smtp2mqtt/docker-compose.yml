@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   smtp2mqtt:
-    image: smtp2mqtt:latest
+    image: smtp2mqtt:20260402
     container_name: smtp2mqtt
     user: 1009:995
     volumes:

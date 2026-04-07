@@ -12,7 +12,7 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "buildImage": "docker build . -t smtp2mqtt"
+    "buildImage": "docker build . -t smtp2mqtt:20260402"
   },
   "author": "",
   "license": "ISC",
