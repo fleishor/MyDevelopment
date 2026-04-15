@@ -26,7 +26,7 @@ interface PodcastRSS {
 }
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
-const startDate = new Date("2026-02-01");
+const startDate = new Date("2026-03-01");
 
 function GetFileName(parsedUrl: URL): string {
    const urlFileName = parsedUrl.pathname;

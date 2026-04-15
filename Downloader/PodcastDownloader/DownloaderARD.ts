@@ -1,5 +1,12 @@
 // Ende der Welt: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5915996"
 // radioSpitzen: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5962920"
+// radioWissen: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5945518"
+// IQ Wissenschaft und Forschung: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5941402"
+// Radioreportage: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=47284568"
+// Religion: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=61704588"
+// Radiofeature: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5961998"
+// Zeit für Bayern: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=7273948"
+// Bayerisches Feuilleton: curl -o "Podcast.xml" "http://docker.fritz.box:3010/index.php?show=5963112"
 
 import { XMLParser } from "fast-xml-parser";
 import { readFileSync } from "fs";
@@ -9,6 +16,7 @@ interface PodcastJson {
    rss: {
       channel: {
          item: {
+            description: string;
             enclosure: { _url: string };
             pubDate: string;
             title: string;
@@ -19,7 +27,7 @@ interface PodcastJson {
 }
 
 const xmlFile = readFileSync("Podcast.xml", "utf8");
-const startDate = new Date("2026-03-24");
+const startDate = new Date("2026-03-01");
 
 function GetPodCastName(parsedUrl: URL): string {
    const urlParts = parsedUrl.pathname.split("/");
@@ -63,14 +71,37 @@ for (const item of json.rss.channel.item) {
 
    if (pubDate < startDate) continue;
 
-   const podFileName = item.title
-   .replace(/ö/g, "oe")
-   .replace(/ä/g, "ae")
-   .replace(/ü/g, "ue")
-   .replace(/ß/g, "ss")
-   .replace(/[^a-zA-Z0-9]/g, "_") + ".mp3";
+   const podFileName = item.title.replace(/ö/g, "oe")
+                                 .replace(/ä/g, "ae")
+                                 .replace(/ü/g, "ue")
+                                 .replace(/ß/g, "ss")
+                                 .replace(/[^a-zA-Z0-9]/g, "_") + ".mp3";
    const pubDateStr = GetTimeStamp(pubDate);
+   const title = item.title.replace(/"/g, '')
+                           .replace(/\n/g, ' ')
+                           .replace(/‘/g, "")
+                           .replace(/ – /g, " - ")
+                           .replace(/ö/g, "oe")
+                           .replace(/ä/g, "ae")
+                           .replace(/ü/g, "ue")
+                           .replace(/Ö/g, "Oe")
+                           .replace(/Ä/g, "Ae")
+                           .replace(/Ü/g, "ue")
+                           .replace(/ß/g, "ss");
+   const comment = item.description.replace(/"/g, '')
+                                   .replace(/\n/g, ' ')
+                                   .replace(/‘/g, "")
+                                   .replace(/ – /g, " - ")
+                                   .replace(/ö/g, "oe")
+                                   .replace(/ä/g, "ae")
+                                   .replace(/ü/g, "ue")
+                                   .replace(/Ö/g, "Oe")
+                                   .replace(/Ä/g, "Ae")
+                                   .replace(/Ü/g, "ue")
+                                   .replace(/ß/g, "ss")
+                                   .replace(/Ein Podcast von .../g, '');
 
    console.log("echo ./downloads/" + podCastName + "/" + pubDateStr + "_" + podFileName);
    console.log("curl --location " + downloadUrl + " --create-dirs --output ./download/" + podCastName + "/" + pubDateStr + "_" + podFileName);
+   console.log("eyed3 --title \"" + title + "\" --comment \"" + comment + "\" ./download/" + podCastName + "/" + pubDateStr + "_" + podFileName);
 }
