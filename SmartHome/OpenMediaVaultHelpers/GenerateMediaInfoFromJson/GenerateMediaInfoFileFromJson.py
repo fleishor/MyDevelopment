@@ -63,7 +63,8 @@ def main():
         sys.exit(2)
 
     input_file = sys.argv[1]
-    output_dir = "output"
+    input_name = os.path.splitext(os.path.basename(input_file))[0]
+    output_dir = os.path.join("Metadata", input_name)
 
     logger.info("Start processing")
     logger.info("Input file: %s", input_file)

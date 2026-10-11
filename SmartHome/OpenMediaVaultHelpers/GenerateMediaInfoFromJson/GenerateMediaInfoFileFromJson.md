@@ -22,7 +22,7 @@
 **Processing rules:**
 
 * Create one output JSON file per array element
-* Output directory: `output` (create if missing)
+* Output directory: `Metadata\{json_filename}` (create if missing); json_filename is the name of the JSON file from the commandline but without the file extension
 
 **Filename format:**
 

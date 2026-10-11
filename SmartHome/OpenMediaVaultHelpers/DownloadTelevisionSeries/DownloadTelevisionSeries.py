@@ -2,142 +2,183 @@ import json
 import logging
 import os
 import sys
-import urllib.parse
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 
-BASE_URL = "https://www.fernsehserien.de"
+BASE_URL = "https://www.fernsehserien.de/"
 
-class EpisodeDetails:
-    def __init__(self, episode_continuous: str, season_episode: str, episode_name: str, episode_description: str):
-        self.episodeContinuous = episode_continuous
-        self.seasonEpisode = season_episode
-        self.episodeName = episode_name
-        self.episodeDescription = episode_description
 
-    def to_dict(self):
-        return {
-            "episodeContinuous": self.episodeContinuous,
-            "seasonEpisode": self.seasonEpisode,
-            "episodeName": self.episodeName,
-            "episodeDescription": self.episodeDescription,
-        }
+def fetch_html(url):
+    response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+    response.raise_for_status()
+    return response.text
 
-def create_session(retries: int = 3, backoff_factor: float = 1.0) -> requests.Session:
-    session = requests.Session()
-    retry = Retry(
-        total=retries,
-        backoff_factor=backoff_factor,
-        status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=("GET", "POST"),
-    )
-    adapter = HTTPAdapter(max_retries=retry)
-    session.mount("http://", adapter)
-    session.mount("https://", adapter)
-    return session
 
-def load_episode_description(session: requests.Session, episode_description_url: str) -> str:
-    if not episode_description_url:
+def load_episode_description(episode_url):
+    if not episode_url:
         return ""
-    r = session.get(episode_description_url)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.text, "html.parser")
-    el = soup.select_one('.episode-output-inhalt-inner')
-    return el.get_text(strip=True) if el else ""
+    soup = BeautifulSoup(fetch_html(episode_url), "html.parser")
+    description = soup.select_one(".episode-output-inhalt-inner")
+    return description.get_text(strip=True) if description else ""
 
-def read_configuration(filename: str):
-    with open(filename, "r", encoding="utf-8") as f:
-        return json.load(f)
 
-def save_episode_details_to_file(filename: str, data):
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump([d.to_dict() if hasattr(d, "to_dict") else d for d in data], f, ensure_ascii=False, indent=2)
+def read_configuration(filename):
+    with open(filename, "r", encoding="utf-8") as config_file:
+        return json.load(config_file)
 
-def extract_text_excluding_children(tag):
-    # return text directly inside tag, excluding descendant tags' text
-    return "".join(t for t in tag.find_all(string=True, recursive=False)).strip()
 
-def sanitize_filename(filename: str) -> str:
-    # Remove or replace Windows-illegal characters
+def sanitize_filename(filename):
     illegal_chars = '<>:"/\\|?*'
-    for char in illegal_chars:
-        filename = filename.replace(char, '_')
-    return filename
+    sanitized = "".join("_" if char in illegal_chars else char for char in filename)
+    sanitized = sanitized.rstrip(" .")
+    return sanitized or "series"
+
+
+def metadata_filename(series_file_name):
+    sanitized_name = sanitize_filename(series_file_name)
+    if not sanitized_name.lower().endswith(".json"):
+        sanitized_name += ".json"
+    return sanitized_name
+
+
+def episode_key(episode):
+    return (
+        episode.get("episodeContinuous", ""),
+        episode.get("seasonEpisode", ""),
+    )
+
+
+def extract_episodes(html, episode_guide_url):
+    soup = BeautifulSoup(html, "html.parser")
+    episode_nodes = soup.find_all(attrs={"data-event-category": "liste-episoden"})
+    episodes = []
+
+    for episode_node in episode_nodes:
+        children = [child for child in episode_node.children if getattr(child, "name", None)]
+        episode_continuous = ""
+        season_episode = ""
+        episode_name = ""
+        if len(children) > 1:
+            episode_continuous = "".join(
+                str(text) for text in children[1].find_all(string=True, recursive=False)
+            ).strip()
+            bold_episode = children[1].select_one("span > b")
+            if bold_episode:
+                season_episode = bold_episode.get_text(strip=True)
+
+        if not season_episode:
+            episode_number_node = children[1]
+            if episode_number_node:
+                episode_number = episode_number_node.get_text(strip=True)
+                season_episode = "00." + episode_number.zfill(2)
+                episode_continuous = episode_number
+
+        if not season_episode:
+            season_episode = "00.00"
+            episode_continuous = "999"
+
+        if len(children) > 6:
+            name_node = children[6].select_one('span[itemprop="name"]')
+            if name_node:
+                episode_name = name_node.get_text(strip=True)
+
+        details_url = episode_node.get("href") or episode_node.get("data-href", "")
+        episode = {
+            "episodeContinuous": episode_continuous,
+            "seasonEpisode": season_episode,
+            "episodeName": episode_name,
+            "episodeDescription": "",
+        }
+        episodes.append((episode, urljoin(episode_guide_url, details_url) if details_url else ""))
+
+    return episodes
+
+
+def update_metadata_file(filename, new_episodes):
+    if os.path.exists(filename):
+        try:
+            with open(filename, "r", encoding="utf-8") as metadata_file:
+                existing_episodes = json.load(metadata_file)
+            if not isinstance(existing_episodes, list):
+                raise ValueError("metadata must contain a JSON array")
+        except (OSError, json.JSONDecodeError, ValueError) as error:
+            logging.error("Could not read existing metadata %s: %s", filename, error)
+            return
+    else:
+        existing_episodes = []
+
+    existing_keys = {episode_key(episode) for episode in existing_episodes if isinstance(episode, dict)}
+    additions = []
+    for episode, episode_url in new_episodes:
+        key = episode_key(episode)
+        if key in existing_keys:
+            logging.info(
+                "Already found episode: %s - %s - %s",
+                episode["episodeContinuous"],
+                episode["seasonEpisode"],
+                episode["episodeName"],
+            )
+            continue
+
+        logging.info(
+            "Adding episode: %s - %s - %s",
+            episode["episodeContinuous"],
+            episode["seasonEpisode"],
+            episode["episodeName"],
+        )
+        if episode_url:
+            try:
+                episode["episodeDescription"] = load_episode_description(episode_url)
+            except Exception as error:
+                logging.error("Failed to load description for %s: %s", episode["episodeName"], error)
+        additions.append(episode)
+        existing_keys.add(key)
+
+    if additions:
+        existing_episodes.extend(additions)
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, "w", encoding="utf-8") as metadata_file:
+            json.dump(existing_episodes, metadata_file, ensure_ascii=False, indent=2)
+    elif not os.path.exists(filename):
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, "w", encoding="utf-8") as metadata_file:
+            json.dump(existing_episodes, metadata_file, ensure_ascii=False, indent=2)
+
 
 def main():
     if len(sys.argv) != 2:
         print("Usage: python DownloadTelevisionSeries.py <json_filename>")
-        sys.exit(1)
-    
-    json_filename = sys.argv[1]
-    logging.basicConfig(level=logging.INFO)
+        return 1
+
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
     logging.info("Starting processing")
-    
-    serien_config = read_configuration(json_filename)
-    session = create_session()
-    
-    for serie_config in serien_config:
-        serien_url = serie_config.get("serienUrl")
-        serie_file_name = serie_config.get("serieFileName")
-        sanitized_filename = sanitize_filename(serie_file_name)
-        output_path = os.path.join("output", f"{sanitized_filename}")
-        
-        if os.path.exists(output_path):
-            logging.info(f"File {output_path} already exists. Skipping...")
-            continue
-        
-        episode_guide_url = urllib.parse.urljoin(BASE_URL, serien_url + "/episodenguide")
-        
+    try:
+        series_config = read_configuration(sys.argv[1])
+    except (OSError, json.JSONDecodeError) as error:
+        logging.error("Could not read configuration: %s", error)
+        return 1
+
+    os.makedirs("Metadata", exist_ok=True)
+    for series in series_config:
+        series_url = series.get("serienUrl", "")
+        series_file_name = series.get("serieFileName", "series")
+        output_path = os.path.join("Metadata", metadata_filename(series_file_name))
+        episode_guide_url = urljoin(BASE_URL, series_url.rstrip("/") + "/episodenguide")
+
         try:
-            r = session.get(episode_guide_url)
-            r.raise_for_status()
-            soup = BeautifulSoup(r.text, "html.parser")
-        except Exception as e:
-            logging.error(f"Failed to fetch {episode_guide_url}: {e}")
-            continue
-        
-        episodes = soup.select('[data-event-category="liste-episoden"]')
-        episode_details_array = []
-        
-        for ep in episodes:
-            details_url = ep.get("href") or ep.get("data-href") or ""
-            
-            children = [c for c in ep.find_all(recursive=False) if getattr(c, 'name', None)]
-            
-            episode_continuous = ""
-            season_episode = ""
-            episode_name = ""
-            
-            if len(children) > 1:
-                episode_continuous = extract_text_excluding_children(children[1])
-                b_elem = children[1].select_one("span > b")
-                season_episode = b_elem.get_text(strip=True) if b_elem else ""
-            
-            if not season_episode:
-                season_episode = "00.00"
-                episode_continuous = "999"
-            
-            if len(children) > 6:
-                name_span = children[6].select_one("span[itemprop='name']")
-                episode_name = name_span.get_text(strip=True) if name_span else ""
-            
-            logging.info(f"Extracted: {episode_continuous} - {season_episode} - {episode_name}")
-            logging.info(f"Download description for {episode_name}")
-            
-            details_full_url = urllib.parse.urljoin(BASE_URL, details_url)
-            episode_description = ""
-            try:
-                episode_description = load_episode_description(session, details_full_url)
-            except Exception as e:
-                logging.error(f"Failed to load description from {details_full_url}: {e}")
-            
-            episode_details_array.append(EpisodeDetails(episode_continuous, season_episode, episode_name, episode_description))
-        
-        save_episode_details_to_file(output_path, episode_details_array)
-        logging.info(f"Completed processing for {serie_file_name}")
+            logging.info("---------------------------------------------------------------------------------------------")
+            logging.info("Start processing for %s", series_file_name)
+            episodes = extract_episodes(fetch_html(episode_guide_url), episode_guide_url)
+            update_metadata_file(output_path, episodes)
+            logging.info("Completed processing for %s", series_file_name)
+        except Exception as error:
+            logging.error("Failed to process %s from %s: %s", series_file_name, episode_guide_url, error)
+
+    logging.info("Processing complete")
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

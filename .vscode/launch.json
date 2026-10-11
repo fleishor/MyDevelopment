@@ -9,7 +9,7 @@
          "program": "${workspaceFolder}/SmartHome/OpenMediaVaultHelpers/DownloadTelevisionSeries/DownloadTelevisionSeries.py",
          "cwd": "${workspaceFolder}/SmartHome/OpenMediaVaultHelpers",
          "console": "integratedTerminal",
-         "args": ["Serien.json"]
+         "args": ["./Metadata/Development.json"]
       }
    ]
 }
