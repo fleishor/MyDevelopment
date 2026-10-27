@@ -14,7 +14,6 @@ user/assistant turns are sent on each request. Responses are requested with
 store=False and the client does not write the chat to disk.
 """
 
-import json
 import os
 import sys
 
@@ -35,26 +34,6 @@ SYSTEM_PROMPT = os.getenv(
     "You are a helpful assistant. Answer in the language used by the user.",
 )
 MAX_HISTORY_MESSAGES = 20  # Ten user/assistant pairs.
-
-TOOLS = [
-    {
-        "type": "function",
-        "name": "read_file",
-        "description": "Read a UTF-8 text file from the local machine.",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "path": {
-                    "type": "string",
-                    "description": "The path of the text file to read.",
-                }
-            },
-            "required": ["path"],
-            "additionalProperties": False,
-        },
-        "strict": True,
-    }
-]
 
 
 class ChatApp(App[None]):
@@ -84,11 +63,6 @@ class ChatApp(App[None]):
         ("ctrl+q", "quit", "Beenden"),
         ("ctrl+l", "clear_chat", "Chat leeren"),
     ]
-
-    @staticmethod
-    def read_file(path: str) -> str:
-        with open(path, "r", encoding="utf-8") as f:
-            return f.read()
 
     def __init__(self) -> None:
         super().__init__()
@@ -136,40 +110,13 @@ class ChatApp(App[None]):
 
         try:
             request_input = list(self.history)
-            
-            while True:
-                response = await self.client.responses.create(
-                    model=MODEL,
-                    instructions=SYSTEM_PROMPT,
-                    input=request_input,
-                    tools=TOOLS,
-                    store=False,
-                    reasoning={"effort": "none"},
-                )
-                
-                function_calls = [
-                    item for item in response.output if item.type == "function_call"
-                ]
-                if not function_calls:
-                    chat.write(Markdown(f"**KI**:No function_calls requested"))
-                    break
-
-                request_input.extend(response.output)
-                for function_call in function_calls:
-                    chat.write(Markdown(f"**KI**:{function_call}"))
-
-                    try:
-                        arguments = json.loads(function_call.arguments)
-                        result = self.read_file(**arguments)
-                    except (OSError, TypeError, ValueError) as exc:
-                        result = f"read_file failed: {exc}"
-                    request_input.append(
-                        {
-                            "type": "function_call_output",
-                            "call_id": function_call.call_id,
-                            "output": result,
-                        }
-                    )
+            response = await self.client.responses.create(
+                model=MODEL,
+                instructions=SYSTEM_PROMPT,
+                input=request_input,
+                store=False,
+                reasoning={"effort": "none"},
+            )
 
             answer = response.output_text.strip()
             if not answer:

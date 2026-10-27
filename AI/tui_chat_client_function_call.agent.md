@@ -6,7 +6,7 @@
 - When imports or dependencies change, update `requirements.txt` and the module docstring's setup instructions together.
 
 # Application
-- `tui_chat_client` is a terminal-based proof-of-concept chat client using Textual, Rich, and the OpenAI Responses API.
+- `tui_chat_client_function_call` is a terminal-based proof-of-concept chat client using Textual, Rich, and the OpenAI Responses API.
 - The UI contains a header, a central log for messages, responses, tool-call diagnostics, errors, and token usage, plus bottom status, input, and keyboard-footer areas.
 
 ## Behavioral invariants
