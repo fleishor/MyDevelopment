@@ -1,0 +1,10 @@
+Python ist eine vielseitige Programmiersprache, die sich für viele Aufgaben eignet. 
+Mit ihr lassen sich kleine Hilfsprogramme, Webseiten, Datenanalysen und Anwendungen für künstliche Intelligenz entwickeln. 
+Der Code ist oft gut lesbar, weil Python eine klare und einfache Schreibweise verwendet. 
+Ein Programm besteht aus Anweisungen, die der Computer Schritt für Schritt ausführt. 
+Variablen speichern Werte, zum Beispiel Text oder Zahlen. 
+Mit Bedingungen kann ein Programm Entscheidungen treffen, und Schleifen wiederholen bestimmte Schritte. 
+Dateien lassen sich einlesen und beschreiben. 
+Außerdem gibt es viele Zusatzpakete, die fertige Funktionen bereitstellen. 
+Dadurch müssen Entwickler nicht alles selbst programmieren. 
+Python wird sowohl von Anfängern als auch von erfahrenen Programmierern verwendet.
