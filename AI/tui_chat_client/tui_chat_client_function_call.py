@@ -130,7 +130,7 @@ class ChatApp(App[None]):
         self.history.append({"role": "user", "content": prompt})
         self.run_worker(self._get_answer(), name="openai-response", exclusive=True)
 
-    async def _handle_function_calls(
+    async def handle_function_calls(
         self,
         response: Any,
         request_input: list[Any],
@@ -179,7 +179,7 @@ class ChatApp(App[None]):
                     reasoning={"effort": "none"},
                 )
 
-                if not await self._handle_function_calls(response, request_input, chat):
+                if not await self.handle_function_calls(response, request_input, chat):
                     break
 
             answer = response.output_text.strip()
